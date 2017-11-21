@@ -11,3 +11,6 @@ E:\Travail\SLAM4-5\C#\PPE - GSB part1\Authentification\Authentification\obj\Debu
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Authentification\Authentification\bin\Debug\Authentification.exe.config
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Authentification\Authentification\obj\Debug\Authentification.exe
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Authentification\Authentification\obj\Debug\Authentification.pdb
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Authentification\Authentification\bin\Debug\Authentification.exe.config
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Authentification\Authentification\obj\Debug\Authentification.exe
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Authentification\Authentification\obj\Debug\Authentification.pdb
