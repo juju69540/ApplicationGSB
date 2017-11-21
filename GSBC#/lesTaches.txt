@@ -2,9 +2,9 @@
 
 2- Création d'un schéma pour la BDD (création) ----> Fait
 
-3- Importer la BDD sur SQLServer
+3- Importer la BDD sur SQLServer ----> Fait
 
-4- Création du serveur d'authentification (FrontEnd/Connexion à un serveur SQLServer)
+4- Création du serveur d'authentification (FrontEnd/Connexion à un serveur SQLServer) ----> Fait
 
 5- Importer le projet sur Bitbucker/Git
 
