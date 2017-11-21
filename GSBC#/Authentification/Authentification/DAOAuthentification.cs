@@ -18,10 +18,10 @@ namespace Authentification
         /// </summary>
         /// <param name="loginToSearch"></param>
         /// <returns></returns>
+        /// 
         public static int logToGSB(string loginToSearch, string password)
         {
-            //Modifier la requête une fois que la BDD a été créée et uploadée
-            string req = "Select nom, solde From \"compte-nb\" Where nom Like '" + loginToSearch + "';";
+            string req = "Select * From dbo.connexion Where login Like '" + loginToSearch + "';";
             string logBDD;
             string passwordBDD;
             int logCorrect = 1;

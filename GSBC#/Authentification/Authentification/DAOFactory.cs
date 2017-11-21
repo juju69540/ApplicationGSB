@@ -17,7 +17,7 @@ namespace Authentification
         private SqlDataReader dtreader;
 
         //Modifier ce string pour utiliser une autre BDD
-        private string server = "Data Source='172.17.21.10';Initial Catalog=SIO2-AgenceBancaire;User ID=SIO2-dev;Password=btssio-slam-2018";
+        private string server = "Data Source='172.17.21.10';Initial Catalog=SIO2_GSB_TeamB;User ID=SIO2-dev;Password=btssio-slam-2018";
 
         public DAOFactory() { }
 
