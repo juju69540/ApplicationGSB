@@ -8,3 +8,6 @@ E:\Travail\SLAM4-5\C#\PPE - GSB part1\Authentification\Authentification\obj\Debu
 E:\Travail\SLAM4-5\C#\PPE - GSB part1\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 E:\Travail\SLAM4-5\C#\PPE - GSB part1\Authentification\Authentification\obj\Debug\Authentification.exe
 E:\Travail\SLAM4-5\C#\PPE - GSB part1\Authentification\Authentification\obj\Debug\Authentification.pdb
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Authentification\Authentification\bin\Debug\Authentification.exe.config
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Authentification\Authentification\obj\Debug\Authentification.exe
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Authentification\Authentification\obj\Debug\Authentification.pdb

@@ -15,6 +15,7 @@ namespace Authentification
         private SqlDataAdapter myadapt;
         private SqlCommand mycmd;
         private SqlDataReader dtreader;
+        //test
 
         //Modifier ce string pour utiliser une autre BDD
         private string server = "Data Source='172.17.21.10';Initial Catalog=SIO2-AgenceBancaire;User ID=SIO2-dev;Password=btssio-slam-2018";
