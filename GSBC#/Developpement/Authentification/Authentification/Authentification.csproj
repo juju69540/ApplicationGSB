@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DAOAuthentification.cs" />
     <Compile Include="DAOFactory.cs" />
+    <Compile Include="DAOProduit.cs" />
     <Compile Include="FormAuth.cs">
       <SubType>Form</SubType>
     </Compile>
