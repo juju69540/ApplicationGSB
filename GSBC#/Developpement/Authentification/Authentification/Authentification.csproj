@@ -61,6 +61,7 @@
     <Compile Include="GSB - connecté.Designer.cs">
       <DependentUpon>GSB - connecté.cs</DependentUpon>
     </Compile>
+    <Compile Include="Produit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAuth.resx">
