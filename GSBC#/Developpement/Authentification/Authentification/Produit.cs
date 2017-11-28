@@ -19,9 +19,10 @@ namespace Authentification
         public Produit()
         { }
 
-        public Produit(string nom, string desc, int dose, string effetThera, string contreIndic, int prixHT)
+        public Produit(string nom, string famille, string desc, int dose, string effetThera, string contreIndic, int prixHT)
         {
             this.Nom = nom;
+            this.famille = famille;
             this.Desc = desc;
             this.Dose = dose;
             this.EffetThera = effetThera;

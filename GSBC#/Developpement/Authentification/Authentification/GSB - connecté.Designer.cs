@@ -37,12 +37,12 @@
             this.btnMedUpd = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
-            this.tabPract = new System.Windows.Forms.TabPage();
             this.txbFindVisit = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnVisitDelete = new System.Windows.Forms.Button();
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitAdd = new System.Windows.Forms.Button();
+            this.tabPract = new System.Windows.Forms.TabPage();
             this.txbFindPrac = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnPracDelete = new System.Windows.Forms.Button();
@@ -52,8 +52,8 @@
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
             this.tabVisit.SuspendLayout();
-            this.tabPract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,21 +152,6 @@
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
             // 
-            // tabPract
-            // 
-            this.tabPract.Controls.Add(this.txbFindPrac);
-            this.tabPract.Controls.Add(this.dataGridView2);
-            this.tabPract.Controls.Add(this.btnPracDelete);
-            this.tabPract.Controls.Add(this.btnPracModif);
-            this.tabPract.Controls.Add(this.btnParcAdd);
-            this.tabPract.Location = new System.Drawing.Point(4, 22);
-            this.tabPract.Name = "tabPract";
-            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPract.Size = new System.Drawing.Size(436, 265);
-            this.tabPract.TabIndex = 2;
-            this.tabPract.Text = "Practiciens";
-            this.tabPract.UseVisualStyleBackColor = true;
-            // 
             // txbFindVisit
             // 
             this.txbFindVisit.Location = new System.Drawing.Point(104, 70);
@@ -208,6 +193,21 @@
             this.btnVisitAdd.TabIndex = 5;
             this.btnVisitAdd.Text = "Ajouter";
             this.btnVisitAdd.UseVisualStyleBackColor = true;
+            // 
+            // tabPract
+            // 
+            this.tabPract.Controls.Add(this.txbFindPrac);
+            this.tabPract.Controls.Add(this.dataGridView2);
+            this.tabPract.Controls.Add(this.btnPracDelete);
+            this.tabPract.Controls.Add(this.btnPracModif);
+            this.tabPract.Controls.Add(this.btnParcAdd);
+            this.tabPract.Location = new System.Drawing.Point(4, 22);
+            this.tabPract.Name = "tabPract";
+            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPract.Size = new System.Drawing.Size(436, 265);
+            this.tabPract.TabIndex = 2;
+            this.tabPract.Text = "Practiciens";
+            this.tabPract.UseVisualStyleBackColor = true;
             // 
             // txbFindPrac
             // 
@@ -259,15 +259,16 @@
             this.Controls.Add(this.tbcOnglets);
             this.Name = "GSB___connecté";
             this.Text = "GSB___connecté";
+            this.Load += new System.EventHandler(this.GSB___connecté_Load);
             this.tbcOnglets.ResumeLayout(false);
             this.tabMed.ResumeLayout(false);
             this.tabMed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).EndInit();
             this.tabVisit.ResumeLayout(false);
             this.tabVisit.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPract.ResumeLayout(false);
             this.tabPract.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
