@@ -8,13 +8,13 @@ namespace Authentification
 {
     class Praticien
     {
-        string nom;
-        string social;
-        string adresse;
-        string tel;
-        string contact;
-        float coefnoto;
-        float coef_confiance;
+        private string nom;
+        private string social;
+        private string adresse;
+        private string tel;
+        private string contact;
+        private float coefnoto;
+        private float coef_confiance;
 
         public Praticien(string nom, string social, string adresse, string tel, string contact, float coefnoto, float coef_confiance)
         {
