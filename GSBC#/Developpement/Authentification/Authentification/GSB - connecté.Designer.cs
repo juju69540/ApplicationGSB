@@ -112,7 +112,7 @@
             // 
             // btnMedDel
             // 
-            this.btnMedDel.Location = new System.Drawing.Point(248, 38);
+            this.btnMedDel.Location = new System.Drawing.Point(257, 38);
             this.btnMedDel.Name = "btnMedDel";
             this.btnMedDel.Size = new System.Drawing.Size(75, 23);
             this.btnMedDel.TabIndex = 2;
@@ -130,7 +130,7 @@
             // 
             // btnMedAdd
             // 
-            this.btnMedAdd.Location = new System.Drawing.Point(104, 38);
+            this.btnMedAdd.Location = new System.Drawing.Point(95, 38);
             this.btnMedAdd.Name = "btnMedAdd";
             this.btnMedAdd.Size = new System.Drawing.Size(75, 23);
             this.btnMedAdd.TabIndex = 0;
@@ -155,10 +155,14 @@
             // txbFindVisit
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.txbFindVisit.Location = new System.Drawing.Point(163, 56);
 =======
             this.txbFindVisit.Location = new System.Drawing.Point(176, 70);
 >>>>>>> devZERBIB
+=======
+            this.txbFindVisit.Location = new System.Drawing.Point(167, 56);
+>>>>>>> devPIOT
             this.txbFindVisit.Name = "txbFindVisit";
             this.txbFindVisit.Size = new System.Drawing.Size(100, 20);
             this.txbFindVisit.TabIndex = 9;
@@ -173,7 +177,7 @@
             // 
             // btnVisitDelete
             // 
-            this.btnVisitDelete.Location = new System.Drawing.Point(248, 27);
+            this.btnVisitDelete.Location = new System.Drawing.Point(257, 27);
             this.btnVisitDelete.Name = "btnVisitDelete";
             this.btnVisitDelete.Size = new System.Drawing.Size(75, 23);
             this.btnVisitDelete.TabIndex = 7;
@@ -191,7 +195,7 @@
             // 
             // btnVisitAdd
             // 
-            this.btnVisitAdd.Location = new System.Drawing.Point(104, 27);
+            this.btnVisitAdd.Location = new System.Drawing.Point(95, 27);
             this.btnVisitAdd.Name = "btnVisitAdd";
             this.btnVisitAdd.Size = new System.Drawing.Size(75, 23);
             this.btnVisitAdd.TabIndex = 5;
@@ -231,7 +235,7 @@
             // 
             // txbFindPrac
             // 
-            this.txbFindPrac.Location = new System.Drawing.Point(162, 56);
+            this.txbFindPrac.Location = new System.Drawing.Point(164, 56);
             this.txbFindPrac.Name = "txbFindPrac";
             this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
             this.txbFindPrac.TabIndex = 9;
@@ -246,12 +250,13 @@
             // 
             // btnPracDelete
             // 
-            this.btnPracDelete.Location = new System.Drawing.Point(248, 27);
+            this.btnPracDelete.Location = new System.Drawing.Point(257, 27);
             this.btnPracDelete.Name = "btnPracDelete";
             this.btnPracDelete.Size = new System.Drawing.Size(75, 23);
             this.btnPracDelete.TabIndex = 7;
             this.btnPracDelete.Text = "Supprimer";
             this.btnPracDelete.UseVisualStyleBackColor = true;
+            this.btnPracDelete.Click += new System.EventHandler(this.btnPracDelete_Click);
             // 
             // btnPracModif
             // 
@@ -261,15 +266,17 @@
             this.btnPracModif.TabIndex = 6;
             this.btnPracModif.Text = "Modifier";
             this.btnPracModif.UseVisualStyleBackColor = true;
+            this.btnPracModif.Click += new System.EventHandler(this.btnPracModif_Click);
             // 
             // btnPracAdd
             // 
-            this.btnPracAdd.Location = new System.Drawing.Point(104, 27);
+            this.btnPracAdd.Location = new System.Drawing.Point(95, 27);
             this.btnPracAdd.Name = "btnPracAdd";
             this.btnPracAdd.Size = new System.Drawing.Size(75, 23);
             this.btnPracAdd.TabIndex = 5;
             this.btnPracAdd.Text = "Ajouter";
             this.btnPracAdd.UseVisualStyleBackColor = true;
+            this.btnPracAdd.Click += new System.EventHandler(this.btnPracAdd_Click);
             // 
             // GSB___connecté
             // 
