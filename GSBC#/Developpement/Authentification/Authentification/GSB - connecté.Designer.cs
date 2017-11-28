@@ -154,7 +154,11 @@
             // 
             // txbFindVisit
             // 
+<<<<<<< HEAD
             this.txbFindVisit.Location = new System.Drawing.Point(163, 56);
+=======
+            this.txbFindVisit.Location = new System.Drawing.Point(176, 70);
+>>>>>>> devZERBIB
             this.txbFindVisit.Name = "txbFindVisit";
             this.txbFindVisit.Size = new System.Drawing.Size(100, 20);
             this.txbFindVisit.TabIndex = 9;
@@ -193,6 +197,22 @@
             this.btnVisitAdd.TabIndex = 5;
             this.btnVisitAdd.Text = "Ajouter";
             this.btnVisitAdd.UseVisualStyleBackColor = true;
+            this.btnVisitAdd.Click += new System.EventHandler(this.btnVisitAdd_Click);
+            // 
+            // tabPract
+            // 
+            this.tabPract.Controls.Add(this.txbFindPrac);
+            this.tabPract.Controls.Add(this.dataGridView2);
+            this.tabPract.Controls.Add(this.btnPracDelete);
+            this.tabPract.Controls.Add(this.btnPracModif);
+            this.tabPract.Controls.Add(this.btnParcAdd);
+            this.tabPract.Location = new System.Drawing.Point(4, 22);
+            this.tabPract.Name = "tabPract";
+            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPract.Size = new System.Drawing.Size(436, 265);
+            this.tabPract.TabIndex = 2;
+            this.tabPract.Text = "Practiciens";
+            this.tabPract.UseVisualStyleBackColor = true;
             // 
             // tabPract
             // 
