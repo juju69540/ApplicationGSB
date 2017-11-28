@@ -48,7 +48,11 @@
   <ItemGroup>
     <Compile Include="DAOAuthentification.cs" />
     <Compile Include="DAOFactory.cs" />
+<<<<<<< HEAD
+    <Compile Include="DAOProduit.cs" />
+=======
     <Compile Include="DAOPraticien.cs" />
+>>>>>>> devPIOT
     <Compile Include="FormAuth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,7 +65,11 @@
     <Compile Include="GSB - connecté.Designer.cs">
       <DependentUpon>GSB - connecté.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Produit.cs" />
+=======
     <Compile Include="Praticien.cs" />
+>>>>>>> devPIOT
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAuth.resx">
