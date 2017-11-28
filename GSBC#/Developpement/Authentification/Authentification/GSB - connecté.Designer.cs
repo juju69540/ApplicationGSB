@@ -37,23 +37,23 @@
             this.btnMedUpd = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
-            this.tabPract = new System.Windows.Forms.TabPage();
             this.txbFindVisit = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnVisitDelete = new System.Windows.Forms.Button();
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitAdd = new System.Windows.Forms.Button();
+            this.tabPract = new System.Windows.Forms.TabPage();
             this.txbFindPrac = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnPracDelete = new System.Windows.Forms.Button();
             this.btnPracModif = new System.Windows.Forms.Button();
-            this.btnParcAdd = new System.Windows.Forms.Button();
+            this.btnPracAdd = new System.Windows.Forms.Button();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
             this.tabVisit.SuspendLayout();
-            this.tabPract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,24 +152,9 @@
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
             // 
-            // tabPract
-            // 
-            this.tabPract.Controls.Add(this.txbFindPrac);
-            this.tabPract.Controls.Add(this.dataGridView2);
-            this.tabPract.Controls.Add(this.btnPracDelete);
-            this.tabPract.Controls.Add(this.btnPracModif);
-            this.tabPract.Controls.Add(this.btnParcAdd);
-            this.tabPract.Location = new System.Drawing.Point(4, 22);
-            this.tabPract.Name = "tabPract";
-            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPract.Size = new System.Drawing.Size(436, 265);
-            this.tabPract.TabIndex = 2;
-            this.tabPract.Text = "Practiciens";
-            this.tabPract.UseVisualStyleBackColor = true;
-            // 
             // txbFindVisit
             // 
-            this.txbFindVisit.Location = new System.Drawing.Point(104, 70);
+            this.txbFindVisit.Location = new System.Drawing.Point(163, 56);
             this.txbFindVisit.Name = "txbFindVisit";
             this.txbFindVisit.Size = new System.Drawing.Size(100, 20);
             this.txbFindVisit.TabIndex = 9;
@@ -209,9 +194,24 @@
             this.btnVisitAdd.Text = "Ajouter";
             this.btnVisitAdd.UseVisualStyleBackColor = true;
             // 
+            // tabPract
+            // 
+            this.tabPract.Controls.Add(this.txbFindPrac);
+            this.tabPract.Controls.Add(this.dataGridView2);
+            this.tabPract.Controls.Add(this.btnPracDelete);
+            this.tabPract.Controls.Add(this.btnPracModif);
+            this.tabPract.Controls.Add(this.btnPracAdd);
+            this.tabPract.Location = new System.Drawing.Point(4, 22);
+            this.tabPract.Name = "tabPract";
+            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPract.Size = new System.Drawing.Size(436, 265);
+            this.tabPract.TabIndex = 2;
+            this.tabPract.Text = "Practiciens";
+            this.tabPract.UseVisualStyleBackColor = true;
+            // 
             // txbFindPrac
             // 
-            this.txbFindPrac.Location = new System.Drawing.Point(104, 70);
+            this.txbFindPrac.Location = new System.Drawing.Point(162, 56);
             this.txbFindPrac.Name = "txbFindPrac";
             this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
             this.txbFindPrac.TabIndex = 9;
@@ -242,14 +242,14 @@
             this.btnPracModif.Text = "Modifier";
             this.btnPracModif.UseVisualStyleBackColor = true;
             // 
-            // btnParcAdd
+            // btnPracAdd
             // 
-            this.btnParcAdd.Location = new System.Drawing.Point(104, 27);
-            this.btnParcAdd.Name = "btnParcAdd";
-            this.btnParcAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnParcAdd.TabIndex = 5;
-            this.btnParcAdd.Text = "Ajouter";
-            this.btnParcAdd.UseVisualStyleBackColor = true;
+            this.btnPracAdd.Location = new System.Drawing.Point(104, 27);
+            this.btnPracAdd.Name = "btnPracAdd";
+            this.btnPracAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnPracAdd.TabIndex = 5;
+            this.btnPracAdd.Text = "Ajouter";
+            this.btnPracAdd.UseVisualStyleBackColor = true;
             // 
             // GSB___connecté
             // 
@@ -265,9 +265,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).EndInit();
             this.tabVisit.ResumeLayout(false);
             this.tabVisit.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPract.ResumeLayout(false);
             this.tabPract.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
@@ -294,6 +294,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnPracDelete;
         private System.Windows.Forms.Button btnPracModif;
-        private System.Windows.Forms.Button btnParcAdd;
+        private System.Windows.Forms.Button btnPracAdd;
     }
 }
