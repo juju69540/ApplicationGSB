@@ -27,3 +27,12 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Authentification\Authentifi
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+E:\Travail\SLAM4-5\Authentification\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+E:\Travail\SLAM4-5\Authentification\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+E:\Travail\SLAM4-5\Authentification\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
