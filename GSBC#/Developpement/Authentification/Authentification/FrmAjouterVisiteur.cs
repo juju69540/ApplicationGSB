@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Authentification
 {
-    public partial class GSB___connecté : Form
+    public partial class FrmAjouterVisiteur : Form
     {
-        public GSB___connecté()
+        public FrmAjouterVisiteur()
         {
             InitializeComponent();
-        }
-
-        private void btnVisitAdd_Click(object sender, EventArgs e)
-        {
-            FrmAjouterVisiteur addVisiteur = new FrmAjouterVisiteur();
-            addVisiteur.Show();
         }
     }
 }
