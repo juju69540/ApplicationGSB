@@ -67,6 +67,12 @@
     <Compile Include="FrmAjouterVisiteur.Designer.cs">
       <DependentUpon>FrmAjouterVisiteur.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModifierPracticien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifierPracticien.Designer.cs">
+      <DependentUpon>FrmModifierPracticien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GSB - connecté.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAjouterVisiteur.resx">
       <DependentUpon>FrmAjouterVisiteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifierPracticien.resx">
+      <DependentUpon>FrmModifierPracticien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GSB - connecté.resx">
       <DependentUpon>GSB - connecté.cs</DependentUpon>
