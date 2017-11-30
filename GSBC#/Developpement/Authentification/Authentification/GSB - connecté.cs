@@ -66,8 +66,7 @@ namespace Authentification
 
         private void btnMedAdd_Click(object sender, EventArgs e)
         {
-            FrmAddMed newMed = new FrmAddMed();
-            newMed.Show();
+            
         }
     }
 }
