@@ -9,7 +9,6 @@ namespace Authentification
 {
     class DAOProduit
     {
-
         public static List<Produit> getAllProduits()
         {
             List<Produit> meds = new List<Produit>();

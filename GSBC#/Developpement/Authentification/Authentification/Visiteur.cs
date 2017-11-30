@@ -15,8 +15,10 @@ namespace Authentification
         private string adresse;
         private string codePostal;
         private string ville;
-        private DateTime dateEmbauche;
+        private string dateEmbauche;
+        private string zoneGeo;
 
+        #region Accesseur
         public string Nom
         {
             get
@@ -101,7 +103,7 @@ namespace Authentification
                 ville = value;
             }
         }
-        public DateTime DateEmbauche
+        public string DateEmbauche
         {
             get
             {
@@ -113,7 +115,21 @@ namespace Authentification
                 dateEmbauche = value;
             }
         }
-        public Visiteur(string nom, string prenom, string login, string password, string adresse, string codePostal, string ville, DateTime dateEmbauche)
+        public string ZoneGeo
+        {
+            get
+            {
+                return zoneGeo;
+            }
+
+            set
+            {
+                zoneGeo = value;
+            }
+        }
+        #endregion
+        #region Constructeur
+        public Visiteur(string nom, string prenom, string login, string password, string adresse, string codePostal, string ville, string dateEmbauche, string ZoneGeo)
         {
             this.Nom = nom;
             this.Prenom = prenom;
@@ -123,8 +139,8 @@ namespace Authentification
             this.CodePostal = codePostal;
             this.Ville = ville;
             this.DateEmbauche = dateEmbauche;
+            this.ZoneGeo = zoneGeo;
         }
-
-
+        #endregion
     }
 }
