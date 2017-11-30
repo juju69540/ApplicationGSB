@@ -82,3 +82,6 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentificat
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAjouterPracticien.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAjouterVisiteur.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmModifierPracticien.resources
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSB_Kraken\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSB_Kraken\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSB_Kraken\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
