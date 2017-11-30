@@ -19,8 +19,7 @@ namespace Authentification
 
         private void btnVisitAdd_Click(object sender, EventArgs e)
         {
-            FrmAjouterVisiteur addVisiteur = new FrmAjouterVisiteur();
-            addVisiteur.Show();
+            
         }
 
         private void btnMedAdd_Click(object sender, EventArgs e)
@@ -30,8 +29,7 @@ namespace Authentification
 
         private void btnParcAdd_Click(object sender, EventArgs e)
         {
-            FrmAjouterPracticien addPracticien = new FrmAjouterPracticien();
-            addPracticien.Show();
+
         }
     }
 }
