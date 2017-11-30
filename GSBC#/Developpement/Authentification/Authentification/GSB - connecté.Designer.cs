@@ -102,9 +102,9 @@
             this.tbcOnglets.Size = new System.Drawing.Size(966, 398);
             this.tbcOnglets.TabIndex = 0;
             // 
-<<<<<<< HEAD
+
             // tabMed
-=======
+
 
             // tabMed
             // 
@@ -179,7 +179,7 @@
             // 
 
             // tabVisit
->>>>>>> master
+
             // 
             this.tabMed.Controls.Add(this.txbMedSearch);
             this.tabMed.Controls.Add(this.dgvMed);
@@ -280,11 +280,10 @@
             this.tabPract.Text = "Practiciens";
             this.tabPract.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
-=======
+
             // tabPract
             // 
-            this.tabPract.Controls.Add(this.txbFindPrac);
+            //this.tabPract.Controls.Add(this.txbFindPrac);
             this.tabPract.Controls.Add(this.dataGridView2);
             this.tabPract.Controls.Add(this.btnPracDelete);
             this.tabPract.Controls.Add(this.btnPracModif);
@@ -299,10 +298,10 @@
             // 
             // txbFindPrac
             // 
-            this.txbFindPrac.Location = new System.Drawing.Point(165, 56);
-            this.txbFindPrac.Name = "txbFindPrac";
-            this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
-            this.txbFindPrac.TabIndex = 9;
+            //this.txbFindPrac.Location = new System.Drawing.Point(165, 56);
+            //this.txbFindPrac.Name = "txbFindPrac";
+            //this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
+            //this.txbFindPrac.TabIndex = 9;
             // 
             // dataGridView2
             // 
@@ -312,7 +311,7 @@
             this.dataGridView2.Size = new System.Drawing.Size(424, 141);
             this.dataGridView2.TabIndex = 8;
             // 
->>>>>>> master
+
             // btnPracDelete
             // 
             this.btnPracDelete.Location = new System.Drawing.Point(833, 24);
