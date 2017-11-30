@@ -68,7 +68,7 @@
             // lblAdressePrac
             // 
             this.lblAdressePrac.AutoSize = true;
-            this.lblAdressePrac.Location = new System.Drawing.Point(133, 129);
+            this.lblAdressePrac.Location = new System.Drawing.Point(117, 128);
             this.lblAdressePrac.Name = "lblAdressePrac";
             this.lblAdressePrac.Size = new System.Drawing.Size(35, 13);
             this.lblAdressePrac.TabIndex = 2;
@@ -77,7 +77,7 @@
             // lblTelPrac
             // 
             this.lblTelPrac.AutoSize = true;
-            this.lblTelPrac.Location = new System.Drawing.Point(133, 173);
+            this.lblTelPrac.Location = new System.Drawing.Point(117, 164);
             this.lblTelPrac.Name = "lblTelPrac";
             this.lblTelPrac.Size = new System.Drawing.Size(35, 13);
             this.lblTelPrac.TabIndex = 3;
@@ -86,7 +86,7 @@
             // lblContactPrac
             // 
             this.lblContactPrac.AutoSize = true;
-            this.lblContactPrac.Location = new System.Drawing.Point(133, 214);
+            this.lblContactPrac.Location = new System.Drawing.Point(117, 197);
             this.lblContactPrac.Name = "lblContactPrac";
             this.lblContactPrac.Size = new System.Drawing.Size(35, 13);
             this.lblContactPrac.TabIndex = 4;
