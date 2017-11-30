@@ -73,5 +73,21 @@ namespace Authentification
         {
 
         }
+
+        private void dgvMed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMedCancel_Click(object sender, EventArgs e)
+        {
+            txbMedNom.Text = "";
+            txbMedDescpt.Text = "";
+            txbMedDos.Text = "";
+            txbMedEffet.Text = "";
+            txbMedContrIndic.Text = "";
+            txbPrixMedHt.Text = "";
+
+        }
     }
 }
