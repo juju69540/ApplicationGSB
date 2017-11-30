@@ -47,7 +47,7 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnPracDelete = new System.Windows.Forms.Button();
             this.btnPracModif = new System.Windows.Forms.Button();
-            this.btnPracAdd = new System.Windows.Forms.Button();
+            this.btnParcAdd = new System.Windows.Forms.Button();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -112,7 +112,7 @@
             // 
             // btnMedDel
             // 
-            this.btnMedDel.Location = new System.Drawing.Point(257, 38);
+            this.btnMedDel.Location = new System.Drawing.Point(248, 38);
             this.btnMedDel.Name = "btnMedDel";
             this.btnMedDel.Size = new System.Drawing.Size(75, 23);
             this.btnMedDel.TabIndex = 2;
@@ -130,7 +130,7 @@
             // 
             // btnMedAdd
             // 
-            this.btnMedAdd.Location = new System.Drawing.Point(95, 38);
+            this.btnMedAdd.Location = new System.Drawing.Point(104, 38);
             this.btnMedAdd.Name = "btnMedAdd";
             this.btnMedAdd.Size = new System.Drawing.Size(75, 23);
             this.btnMedAdd.TabIndex = 0;
@@ -154,7 +154,7 @@
             // 
             // txbFindVisit
             // 
-            this.txbFindVisit.Location = new System.Drawing.Point(167, 56);
+            this.txbFindVisit.Location = new System.Drawing.Point(176, 70);
             this.txbFindVisit.Name = "txbFindVisit";
             this.txbFindVisit.Size = new System.Drawing.Size(100, 20);
             this.txbFindVisit.TabIndex = 9;
@@ -169,7 +169,7 @@
             // 
             // btnVisitDelete
             // 
-            this.btnVisitDelete.Location = new System.Drawing.Point(257, 27);
+            this.btnVisitDelete.Location = new System.Drawing.Point(248, 27);
             this.btnVisitDelete.Name = "btnVisitDelete";
             this.btnVisitDelete.Size = new System.Drawing.Size(75, 23);
             this.btnVisitDelete.TabIndex = 7;
@@ -187,12 +187,13 @@
             // 
             // btnVisitAdd
             // 
-            this.btnVisitAdd.Location = new System.Drawing.Point(95, 27);
+            this.btnVisitAdd.Location = new System.Drawing.Point(104, 27);
             this.btnVisitAdd.Name = "btnVisitAdd";
             this.btnVisitAdd.Size = new System.Drawing.Size(75, 23);
             this.btnVisitAdd.TabIndex = 5;
             this.btnVisitAdd.Text = "Ajouter";
             this.btnVisitAdd.UseVisualStyleBackColor = true;
+            this.btnVisitAdd.Click += new System.EventHandler(this.btnVisitAdd_Click);
             // 
             // tabPract
             // 
@@ -200,7 +201,7 @@
             this.tabPract.Controls.Add(this.dataGridView2);
             this.tabPract.Controls.Add(this.btnPracDelete);
             this.tabPract.Controls.Add(this.btnPracModif);
-            this.tabPract.Controls.Add(this.btnPracAdd);
+            this.tabPract.Controls.Add(this.btnParcAdd);
             this.tabPract.Location = new System.Drawing.Point(4, 22);
             this.tabPract.Name = "tabPract";
             this.tabPract.Padding = new System.Windows.Forms.Padding(3);
@@ -211,7 +212,7 @@
             // 
             // txbFindPrac
             // 
-            this.txbFindPrac.Location = new System.Drawing.Point(164, 56);
+            this.txbFindPrac.Location = new System.Drawing.Point(104, 70);
             this.txbFindPrac.Name = "txbFindPrac";
             this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
             this.txbFindPrac.TabIndex = 9;
@@ -226,13 +227,12 @@
             // 
             // btnPracDelete
             // 
-            this.btnPracDelete.Location = new System.Drawing.Point(257, 27);
+            this.btnPracDelete.Location = new System.Drawing.Point(248, 27);
             this.btnPracDelete.Name = "btnPracDelete";
             this.btnPracDelete.Size = new System.Drawing.Size(75, 23);
             this.btnPracDelete.TabIndex = 7;
             this.btnPracDelete.Text = "Supprimer";
             this.btnPracDelete.UseVisualStyleBackColor = true;
-            this.btnPracDelete.Click += new System.EventHandler(this.btnPracDelete_Click);
             // 
             // btnPracModif
             // 
@@ -242,17 +242,15 @@
             this.btnPracModif.TabIndex = 6;
             this.btnPracModif.Text = "Modifier";
             this.btnPracModif.UseVisualStyleBackColor = true;
-            this.btnPracModif.Click += new System.EventHandler(this.btnPracModif_Click);
             // 
-            // btnPracAdd
+            // btnParcAdd
             // 
-            this.btnPracAdd.Location = new System.Drawing.Point(95, 27);
-            this.btnPracAdd.Name = "btnPracAdd";
-            this.btnPracAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnPracAdd.TabIndex = 5;
-            this.btnPracAdd.Text = "Ajouter";
-            this.btnPracAdd.UseVisualStyleBackColor = true;
-            this.btnPracAdd.Click += new System.EventHandler(this.btnPracAdd_Click);
+            this.btnParcAdd.Location = new System.Drawing.Point(104, 27);
+            this.btnParcAdd.Name = "btnParcAdd";
+            this.btnParcAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnParcAdd.TabIndex = 5;
+            this.btnParcAdd.Text = "Ajouter";
+            this.btnParcAdd.UseVisualStyleBackColor = true;
             // 
             // GSB___connecté
             // 
@@ -297,6 +295,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnPracDelete;
         private System.Windows.Forms.Button btnPracModif;
-        private System.Windows.Forms.Button btnPracAdd;
+        private System.Windows.Forms.Button btnParcAdd;
     }
 }

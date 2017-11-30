@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Authentification
 {
-    public partial class FrmModifierPracticien : Form
+    public partial class FrmAjouterVisiteur : Form
     {
-        public FrmModifierPracticien()
+        public FrmAjouterVisiteur()
         {
             InitializeComponent();
         }
