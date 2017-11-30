@@ -104,5 +104,10 @@ namespace Authentification
             txbPrixMedHt.Text = "";
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
