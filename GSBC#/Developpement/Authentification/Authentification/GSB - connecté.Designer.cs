@@ -86,7 +86,7 @@
             this.tbcOnglets.Size = new System.Drawing.Size(966, 398);
             this.tbcOnglets.TabIndex = 0;
             // 
-<<<<<<< HEAD
+
             // tabMed
             // 
             this.tabMed.Controls.Add(this.cbxMedType);
@@ -158,8 +158,7 @@
             this.btnMedAdd.UseVisualStyleBackColor = true;
             this.btnMedAdd.Click += new System.EventHandler(this.btnMedAdd_Click);
             // 
-=======
->>>>>>> devPIOT
+
             // tabVisit
             // 
             this.tabVisit.Controls.Add(this.lblVisitRechercherV);
