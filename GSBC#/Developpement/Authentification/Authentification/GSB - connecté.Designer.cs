@@ -1094,4 +1094,4 @@
         private System.Windows.Forms.DataGridView dgvMed;
         private System.Windows.Forms.Button btnMedDel;
         private System.Windows.Forms.Button btnMedUpdt;
-        private System.Windows.Forms.Button btnMedAdd;
+        private System.Windows.Forms.Button btnMedAdd;
