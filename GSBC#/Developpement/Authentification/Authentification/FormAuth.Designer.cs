@@ -112,7 +112,7 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblLogin);
             this.Name = "FormAuth";
-            this.Text = "Form1";
+            this.Text = "Authentification";
             this.Load += new System.EventHandler(this.FormAuth_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
