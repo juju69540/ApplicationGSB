@@ -37,6 +37,7 @@
             this.lblVilleVisit = new System.Windows.Forms.Label();
             this.lblDateEmbVisit = new System.Windows.Forms.Label();
             this.btnValVisiteur = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblNomVisit
@@ -120,11 +121,19 @@
             this.btnValVisiteur.Text = "Valider";
             this.btnValVisiteur.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(258, 59);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 9;
+            // 
             // FrmAjouterVisiteur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 379);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnValVisiteur);
             this.Controls.Add(this.lblDateEmbVisit);
             this.Controls.Add(this.lblVilleVisit);
@@ -152,5 +161,6 @@
         private System.Windows.Forms.Label lblVilleVisit;
         private System.Windows.Forms.Label lblDateEmbVisit;
         private System.Windows.Forms.Button btnValVisiteur;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
