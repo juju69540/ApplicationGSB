@@ -59,7 +59,7 @@
             // lblSocialPrac
             // 
             this.lblSocialPrac.AutoSize = true;
-            this.lblSocialPrac.Location = new System.Drawing.Point(117, 86);
+            this.lblSocialPrac.Location = new System.Drawing.Point(12, 173);
             this.lblSocialPrac.Name = "lblSocialPrac";
             this.lblSocialPrac.Size = new System.Drawing.Size(35, 13);
             this.lblSocialPrac.TabIndex = 1;
