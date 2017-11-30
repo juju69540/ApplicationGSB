@@ -22,5 +22,16 @@ namespace Authentification
             FrmAjouterVisiteur addVisiteur = new FrmAjouterVisiteur();
             addVisiteur.Show();
         }
+
+        private void btnMedAdd_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnParcAdd_Click(object sender, EventArgs e)
+        {
+            FrmAjouterPracticien addPracticien = new FrmAjouterPracticien();
+            addPracticien.Show();
+        }
     }
 }

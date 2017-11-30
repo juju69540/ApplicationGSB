@@ -136,6 +136,7 @@
             this.btnMedAdd.TabIndex = 0;
             this.btnMedAdd.Text = "Ajouter";
             this.btnMedAdd.UseVisualStyleBackColor = true;
+            this.btnMedAdd.Click += new System.EventHandler(this.btnMedAdd_Click);
             // 
             // tabVisit
             // 
@@ -212,7 +213,7 @@
             // 
             // txbFindPrac
             // 
-            this.txbFindPrac.Location = new System.Drawing.Point(104, 70);
+            this.txbFindPrac.Location = new System.Drawing.Point(165, 56);
             this.txbFindPrac.Name = "txbFindPrac";
             this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
             this.txbFindPrac.TabIndex = 9;
@@ -227,7 +228,7 @@
             // 
             // btnPracDelete
             // 
-            this.btnPracDelete.Location = new System.Drawing.Point(248, 27);
+            this.btnPracDelete.Location = new System.Drawing.Point(257, 27);
             this.btnPracDelete.Name = "btnPracDelete";
             this.btnPracDelete.Size = new System.Drawing.Size(75, 23);
             this.btnPracDelete.TabIndex = 7;
@@ -245,12 +246,13 @@
             // 
             // btnParcAdd
             // 
-            this.btnParcAdd.Location = new System.Drawing.Point(104, 27);
+            this.btnParcAdd.Location = new System.Drawing.Point(95, 27);
             this.btnParcAdd.Name = "btnParcAdd";
             this.btnParcAdd.Size = new System.Drawing.Size(75, 23);
             this.btnParcAdd.TabIndex = 5;
             this.btnParcAdd.Text = "Ajouter";
             this.btnParcAdd.UseVisualStyleBackColor = true;
+            this.btnParcAdd.Click += new System.EventHandler(this.btnParcAdd_Click);
             // 
             // GSB___connecté
             // 
