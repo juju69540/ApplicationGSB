@@ -22,15 +22,13 @@ namespace Authentification
 
         private void btnVisitAdd_Click(object sender, EventArgs e)
         {
-            FrmAjouterVisiteur addVisiteur = new FrmAjouterVisiteur();
-            addVisiteur.Show();
+            
         }
 
 
         private void btnParcAdd_Click(object sender, EventArgs e)
         {
-            FrmAjouterPracticien addPracticien = new FrmAjouterPracticien();
-            addPracticien.Show();
+
         }
 
         private void GSB___connecté_Load(object sender, EventArgs e)
@@ -68,8 +66,12 @@ namespace Authentification
 
         private void btnMedAdd_Click(object sender, EventArgs e)
         {
-            FrmAddMed newMed = new FrmAddMed();
-            newMed.Show();
+            
+        }
+
+        private void tabVisit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
