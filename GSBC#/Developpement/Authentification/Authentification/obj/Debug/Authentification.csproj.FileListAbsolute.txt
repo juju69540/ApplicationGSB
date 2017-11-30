@@ -37,7 +37,6 @@ F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authe
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
 <<<<<<< HEAD
-<<<<<<< HEAD
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
@@ -71,7 +70,6 @@ G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developp
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmModifierPracticien.resources
-=======
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
@@ -81,3 +79,6 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentificat
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAddMed.resources
 >>>>>>> devBENSTITI
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAjouterPracticien.resources
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAjouterVisiteur.resources
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmModifierPracticien.resources
