@@ -101,6 +101,7 @@
             this.txbMedSearch.Name = "txbMedSearch";
             this.txbMedSearch.Size = new System.Drawing.Size(100, 20);
             this.txbMedSearch.TabIndex = 4;
+            this.txbMedSearch.TextChanged += new System.EventHandler(this.txbMedSearch_TextChanged);
             // 
             // dgvMed
             // 
@@ -211,6 +212,21 @@
             this.tabPract.Text = "Practiciens";
             this.tabPract.UseVisualStyleBackColor = true;
             // 
+            // tabPract
+            // 
+            this.tabPract.Controls.Add(this.txbFindPrac);
+            this.tabPract.Controls.Add(this.dataGridView2);
+            this.tabPract.Controls.Add(this.btnPracDelete);
+            this.tabPract.Controls.Add(this.btnPracModif);
+            this.tabPract.Controls.Add(this.btnParcAdd);
+            this.tabPract.Location = new System.Drawing.Point(4, 22);
+            this.tabPract.Name = "tabPract";
+            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPract.Size = new System.Drawing.Size(436, 265);
+            this.tabPract.TabIndex = 2;
+            this.tabPract.Text = "Practiciens";
+            this.tabPract.UseVisualStyleBackColor = true;
+            // 
             // txbFindPrac
             // 
             this.txbFindPrac.Location = new System.Drawing.Point(165, 56);
@@ -262,6 +278,7 @@
             this.Controls.Add(this.tbcOnglets);
             this.Name = "GSB___connecté";
             this.Text = "GSB___connecté";
+            this.Load += new System.EventHandler(this.GSB___connecté_Load);
             this.tbcOnglets.ResumeLayout(false);
             this.tabMed.ResumeLayout(false);
             this.tabMed.PerformLayout();
