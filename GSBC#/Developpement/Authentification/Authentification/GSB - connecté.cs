@@ -68,5 +68,10 @@ namespace Authentification
         {
             
         }
+
+        private void tabVisit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

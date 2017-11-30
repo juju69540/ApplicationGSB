@@ -93,3 +93,5 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentificat
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmModifierPracticien.resources
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAddMed.resources
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmModifierPracticien.resources
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmGSB.resources
+>>>>>>> devPIOT
