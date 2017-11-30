@@ -10,24 +10,41 @@ namespace Authentification
     class DAOProduit
     {
 
-        //public static List<Produit> getAllProduits()
-        //{
-        //    List<Produit> meds = new List<Produit>();
-        //    Dictionary<string, string> families = DAOProduit.getAllFamilies();
-        //    Produit med;
-        //    string req = "Select * from Produits;";
-        //    DAOFactory connectBDD = new DAOFactory();
-        //    connectBDD.connexion();
-        //    SqlDataReader result;
-        //    result = connectBDD.execSQLRead(req);
-        //    while(result.Read())
-        //    {
-        //        med = new Produit(result[1].ToString(), result[2].ToString(), Int32.Parse(result[3].ToString()), result[4].ToString(), result[5].ToString(), Int32.Parse(result[6].ToString()));
-        //        med.Famille = families[Int32.Parse(result)]
-        //    }
+        public static List<Produit> getAllProduits()
+        {
+            List<Produit> meds = new List<Produit>();
+            Dictionary<string, string> families = DAOProduit.getAllFamilies();
+            Produit med;
+            string req = "Select * from Produits;";
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            SqlDataReader result;
+            try
+            {
+                result = connectBDD.execSQLRead(req);
+                while (result.Read())
+                {
+                    med = new Produit(result[1].ToString(), result[7].ToString(), result[2].ToString(), Int32.Parse(result[3].ToString()), result[4].ToString(), result[5].ToString(), Int32.Parse(result[6].ToString()));
+                    foreach (KeyValuePair<string, string> entry in families)
+                    {
+                        if (entry.Key == med.Famille)
+                        {
+                            med.Famille = entry.Value;
+                        }
+                    }
+                }
+                return meds;
 
-        //    connectBDD.deconnexion();
-        //}
+            }
+            catch (Exception exMed)
+            {
+                throw exMed;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
 
         public static Dictionary<string, string> getAllFamilies()
         {
