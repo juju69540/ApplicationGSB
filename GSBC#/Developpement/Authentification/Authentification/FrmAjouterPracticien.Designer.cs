@@ -68,7 +68,7 @@
             // lblAdressePrac
             // 
             this.lblAdressePrac.AutoSize = true;
-            this.lblAdressePrac.Location = new System.Drawing.Point(117, 128);
+            this.lblAdressePrac.Location = new System.Drawing.Point(-2, 128);
             this.lblAdressePrac.Name = "lblAdressePrac";
             this.lblAdressePrac.Size = new System.Drawing.Size(35, 13);
             this.lblAdressePrac.TabIndex = 2;
@@ -95,7 +95,7 @@
             // lblCoeffNotoPrac
             // 
             this.lblCoeffNotoPrac.AutoSize = true;
-            this.lblCoeffNotoPrac.Location = new System.Drawing.Point(117, 253);
+            this.lblCoeffNotoPrac.Location = new System.Drawing.Point(34, 252);
             this.lblCoeffNotoPrac.Name = "lblCoeffNotoPrac";
             this.lblCoeffNotoPrac.Size = new System.Drawing.Size(35, 13);
             this.lblCoeffNotoPrac.TabIndex = 5;
@@ -119,7 +119,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(199, 90);
+            this.textBox2.Location = new System.Drawing.Point(297, 86);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 8;
@@ -147,7 +147,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(199, 214);
+            this.textBox6.Location = new System.Drawing.Point(282, 201);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 12;
@@ -176,7 +176,7 @@
             // 
             // btnValiderPrac
             // 
-            this.btnValiderPrac.Location = new System.Drawing.Point(202, 339);
+            this.btnValiderPrac.Location = new System.Drawing.Point(322, 344);
             this.btnValiderPrac.Name = "btnValiderPrac";
             this.btnValiderPrac.Size = new System.Drawing.Size(75, 23);
             this.btnValiderPrac.TabIndex = 16;
