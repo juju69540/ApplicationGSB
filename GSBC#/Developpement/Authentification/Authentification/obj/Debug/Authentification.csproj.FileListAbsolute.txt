@@ -43,3 +43,4 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentificat
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
+E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAddMed.resources

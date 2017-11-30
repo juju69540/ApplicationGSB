@@ -12,7 +12,7 @@ namespace Authentification
 {
     public partial class GSB___connecté : Form
     {
-        
+        List<Produit> listMed;
         Dictionary<string, string> listFamilies;
 
         public GSB___connecté()
@@ -24,19 +24,39 @@ namespace Authentification
         {
             //listMed = DAOProduit.getAllProduits();
             //TODO Résoudre le problème relatif aux Familles de produits
-            listFamilies = DAOProduit.getAllFamilies();
+            //listFamilies = DAOProduit.getAllFamilies();
+            
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            List<Produit> listMed = DAOProduit.getAllProduits();
-            //Switch doesn't work, you have to add your own tab with a else if
-            if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabMed"])
+            try
             {
-                dgvMed.DataSource = null;
-                dgvMed.DataSource = listMed;
+                
+                //Switch doesn't work, you have to add your own tab with a else if
+                if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabMed"])
+                {
+                    listMed = DAOProduit.getAllProduits();
+                    dgvMed.DataSource = null;
+                    dgvMed.DataSource = listMed;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void txbMedSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMedAdd_Click(object sender, EventArgs e)
+        {
+            FrmAddMed newMed = new FrmAddMed();
+            newMed.Show();
         }
     }
 }

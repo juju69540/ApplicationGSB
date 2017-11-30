@@ -101,6 +101,7 @@
             this.txbMedSearch.Name = "txbMedSearch";
             this.txbMedSearch.Size = new System.Drawing.Size(100, 20);
             this.txbMedSearch.TabIndex = 4;
+            this.txbMedSearch.TextChanged += new System.EventHandler(this.txbMedSearch_TextChanged);
             // 
             // dgvMed
             // 
@@ -136,6 +137,7 @@
             this.btnMedAdd.TabIndex = 0;
             this.btnMedAdd.Text = "Ajouter";
             this.btnMedAdd.UseVisualStyleBackColor = true;
+            this.btnMedAdd.Click += new System.EventHandler(this.btnMedAdd_Click);
             // 
             // tabVisit
             // 
