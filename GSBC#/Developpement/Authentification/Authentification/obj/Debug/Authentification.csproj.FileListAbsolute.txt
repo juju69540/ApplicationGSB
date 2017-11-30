@@ -44,3 +44,9 @@ F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authe
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmAjouterVisiteur.resources
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
