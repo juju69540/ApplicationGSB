@@ -33,5 +33,10 @@ namespace Authentification
             FrmAjouterPracticien addPracticien = new FrmAjouterPracticien();
             addPracticien.Show();
         }
+
+        private void tabVisit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

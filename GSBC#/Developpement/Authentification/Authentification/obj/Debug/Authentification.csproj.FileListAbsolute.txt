@@ -70,3 +70,4 @@ G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developp
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmModifierPracticien.resources
+G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\AppliGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FrmGSB.resources
