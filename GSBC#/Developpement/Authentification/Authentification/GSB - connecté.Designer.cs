@@ -102,7 +102,84 @@
             this.tbcOnglets.Size = new System.Drawing.Size(966, 398);
             this.tbcOnglets.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // tabMed
+=======
+
+            // tabMed
+            // 
+            this.tabMed.Controls.Add(this.cbxMedType);
+            this.tabMed.Controls.Add(this.txbMedSearch);
+            this.tabMed.Controls.Add(this.dgvMed);
+            this.tabMed.Controls.Add(this.btnMedDel);
+            this.tabMed.Controls.Add(this.btnMedUpd);
+            this.tabMed.Controls.Add(this.btnMedAdd);
+            this.tabMed.Location = new System.Drawing.Point(4, 22);
+            this.tabMed.Name = "tabMed";
+            this.tabMed.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMed.Size = new System.Drawing.Size(436, 265);
+            this.tabMed.TabIndex = 0;
+            this.tabMed.Text = "Produits";
+            this.tabMed.UseVisualStyleBackColor = true;
+            // 
+            // cbxMedType
+            // 
+            this.cbxMedType.FormattingEnabled = true;
+            this.cbxMedType.Items.AddRange(new object[] {
+            "Par nom",
+            "Par famille"});
+            this.cbxMedType.Location = new System.Drawing.Point(248, 81);
+            this.cbxMedType.Name = "cbxMedType";
+            this.cbxMedType.Size = new System.Drawing.Size(121, 21);
+            this.cbxMedType.TabIndex = 5;
+            // 
+            // txbMedSearch
+            // 
+            this.txbMedSearch.Location = new System.Drawing.Point(104, 81);
+            this.txbMedSearch.Name = "txbMedSearch";
+            this.txbMedSearch.Size = new System.Drawing.Size(100, 20);
+            this.txbMedSearch.TabIndex = 4;
+            this.txbMedSearch.TextChanged += new System.EventHandler(this.txbMedSearch_TextChanged);
+            // 
+            // dgvMed
+            // 
+            this.dgvMed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMed.Location = new System.Drawing.Point(6, 107);
+            this.dgvMed.Name = "dgvMed";
+            this.dgvMed.Size = new System.Drawing.Size(424, 141);
+            this.dgvMed.TabIndex = 3;
+            // 
+            // btnMedDel
+            // 
+            this.btnMedDel.Location = new System.Drawing.Point(248, 38);
+            this.btnMedDel.Name = "btnMedDel";
+            this.btnMedDel.Size = new System.Drawing.Size(75, 23);
+            this.btnMedDel.TabIndex = 2;
+            this.btnMedDel.Text = "Supprimer";
+            this.btnMedDel.UseVisualStyleBackColor = true;
+            // 
+            // btnMedUpd
+            // 
+            this.btnMedUpd.Location = new System.Drawing.Point(176, 38);
+            this.btnMedUpd.Name = "btnMedUpd";
+            this.btnMedUpd.Size = new System.Drawing.Size(75, 23);
+            this.btnMedUpd.TabIndex = 1;
+            this.btnMedUpd.Text = "Modifier";
+            this.btnMedUpd.UseVisualStyleBackColor = true;
+            // 
+            // btnMedAdd
+            // 
+            this.btnMedAdd.Location = new System.Drawing.Point(104, 38);
+            this.btnMedAdd.Name = "btnMedAdd";
+            this.btnMedAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnMedAdd.TabIndex = 0;
+            this.btnMedAdd.Text = "Ajouter";
+            this.btnMedAdd.UseVisualStyleBackColor = true;
+            this.btnMedAdd.Click += new System.EventHandler(this.btnMedAdd_Click);
+            // 
+
+            // tabVisit
+>>>>>>> master
             // 
             this.tabMed.Controls.Add(this.txbMedSearch);
             this.tabMed.Controls.Add(this.dgvMed);
@@ -203,6 +280,39 @@
             this.tabPract.Text = "Practiciens";
             this.tabPract.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
+=======
+            // tabPract
+            // 
+            this.tabPract.Controls.Add(this.txbFindPrac);
+            this.tabPract.Controls.Add(this.dataGridView2);
+            this.tabPract.Controls.Add(this.btnPracDelete);
+            this.tabPract.Controls.Add(this.btnPracModif);
+            this.tabPract.Controls.Add(this.btnParcAdd);
+            this.tabPract.Location = new System.Drawing.Point(4, 22);
+            this.tabPract.Name = "tabPract";
+            this.tabPract.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPract.Size = new System.Drawing.Size(436, 265);
+            this.tabPract.TabIndex = 2;
+            this.tabPract.Text = "Practiciens";
+            this.tabPract.UseVisualStyleBackColor = true;
+            // 
+            // txbFindPrac
+            // 
+            this.txbFindPrac.Location = new System.Drawing.Point(165, 56);
+            this.txbFindPrac.Name = "txbFindPrac";
+            this.txbFindPrac.Size = new System.Drawing.Size(100, 20);
+            this.txbFindPrac.TabIndex = 9;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 96);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(424, 141);
+            this.dataGridView2.TabIndex = 8;
+            // 
+>>>>>>> master
             // btnPracDelete
             // 
             this.btnPracDelete.Location = new System.Drawing.Point(833, 24);
@@ -608,6 +718,7 @@
             this.Controls.Add(this.tbcOnglets);
             this.Name = "GSB___connecté";
             this.Text = "GSB___connecté";
+            this.Load += new System.EventHandler(this.GSB___connecté_Load);
             this.tbcOnglets.ResumeLayout(false);
             this.tabMed.ResumeLayout(false);
             this.tabMed.PerformLayout();
