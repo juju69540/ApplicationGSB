@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.txbMedSearch = new System.Windows.Forms.TextBox();
@@ -1096,8 +1094,6 @@
         private System.Windows.Forms.Button btnMedDel;
         private System.Windows.Forms.Button btnMedUpdt;
         private System.Windows.Forms.Button btnMedAdd;
-=======
-
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.txbMedSearch = new System.Windows.Forms.TextBox();
@@ -1106,7 +1102,6 @@
             this.btnMedUpd = new System.Windows.Forms.Button();
             this.btnMedDel = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.tabVisit = new System.Windows.Forms.TabPage();
             this.lblVisitRechercherV = new System.Windows.Forms.Label();
             this.txbVisitRechercher = new System.Windows.Forms.TextBox();
@@ -1131,13 +1126,10 @@
             this.btnVisitDelete = new System.Windows.Forms.Button();
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitAdd = new System.Windows.Forms.Button();
-=======
->>>>>>> devPIOT
             this.tabPract = new System.Windows.Forms.TabPage();
             this.btnPracDelete = new System.Windows.Forms.Button();
             this.btnPracModif = new System.Windows.Forms.Button();
             this.btnParcAdd = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.txbVisitZonegeo = new System.Windows.Forms.TextBox();
             this.lblVisitZonegeo = new System.Windows.Forms.Label();
             this.tbcOnglets.SuspendLayout();
@@ -1145,7 +1137,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
             this.tabVisit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).BeginInit();
-=======
             this.btnVisitAdd = new System.Windows.Forms.Button();
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitDelete = new System.Windows.Forms.Button();
@@ -1191,7 +1182,6 @@
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
->>>>>>> devPIOT
             this.tabPract.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabVisit.SuspendLayout();
@@ -1288,7 +1278,6 @@
             // tabVisit
 
             // 
-<<<<<<< HEAD
             this.tabVisit.Controls.Add(this.lblVisitZonegeo);
             this.tabVisit.Controls.Add(this.txbVisitZonegeo);
             this.tabVisit.Controls.Add(this.lblVisitRechercherV);
@@ -1484,7 +1473,6 @@
             this.dgvVisiteur.Name = "dgvVisiteur";
             this.dgvVisiteur.Size = new System.Drawing.Size(946, 186);
             this.dgvVisiteur.TabIndex = 8;
-=======
             this.tabMed.Controls.Add(this.txbMedSearch);
             this.tabMed.Controls.Add(this.dgvMed);
             this.tabMed.Controls.Add(this.cbxMedType);
@@ -1505,7 +1493,6 @@
             this.txbMedSearch.Name = "txbMedSearch";
             this.txbMedSearch.Size = new System.Drawing.Size(100, 20);
             this.txbMedSearch.TabIndex = 4;
->>>>>>> devPIOT
             // 
             // dgvMed
             // 
@@ -1581,8 +1568,6 @@
             this.tabPract.Name = "tabPract";
             this.tabPract.Padding = new System.Windows.Forms.Padding(3);
             this.tabPract.Size = new System.Drawing.Size(958, 372);
-<<<<<<< HEAD
-=======
             this.tabPract.TabIndex = 2;
             this.tabPract.Text = "Practiciens";
             this.tabPract.UseVisualStyleBackColor = true;
@@ -1599,7 +1584,6 @@
             this.tabPract.Name = "tabPract";
             this.tabPract.Padding = new System.Windows.Forms.Padding(3);
             this.tabPract.Size = new System.Drawing.Size(436, 265);
->>>>>>> devPIOT
             this.tabPract.TabIndex = 2;
             this.tabPract.Text = "Practiciens";
             this.tabPract.UseVisualStyleBackColor = true;
@@ -1648,9 +1632,7 @@
             this.btnParcAdd.UseVisualStyleBackColor = true;
             this.btnParcAdd.Click += new System.EventHandler(this.btnParcAdd_Click);
             // 
-<<<<<<< HEAD
             // txbVisitZonegeo
-=======
             // btnVisitAdd
             // 
             this.btnVisitAdd.Location = new System.Drawing.Point(703, 24);
@@ -1790,7 +1772,6 @@
             this.txbVisitLogin.TabIndex = 21;
             // 
             // txbVisitPassword
->>>>>>> devPIOT
             // 
             this.txbVisitZonegeo.Location = new System.Drawing.Point(569, 87);
             this.txbVisitZonegeo.Name = "txbVisitZonegeo";
@@ -1999,12 +1980,9 @@
             this.tabMed.ResumeLayout(false);
             this.tabMed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).EndInit();
-<<<<<<< HEAD
             this.tabVisit.ResumeLayout(false);
             this.tabVisit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).EndInit();
-=======
->>>>>>> devPIOT
             this.tabPract.ResumeLayout(false);
             this.tabPract.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -2013,7 +1991,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
-<<<<<<< HEAD
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.tabVisit = new System.Windows.Forms.TabPage();
@@ -2656,7 +2633,6 @@
         private System.Windows.Forms.Button btnMedDel;
         private System.Windows.Forms.Button btnMedUpdt;
         private System.Windows.Forms.Button btnMedAdd;
-=======
         }
 
         #endregion
@@ -2717,5 +2693,3 @@
         private System.Windows.Forms.Button btnPracAnnuler;
     }
 }
->>>>>>> devPIOT
->>>>>>> master
