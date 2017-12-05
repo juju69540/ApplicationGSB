@@ -89,5 +89,10 @@ namespace Authentification
             txbPrixMedHt.Text = "";
 
         }
+
+        private void btnVisitAnnuler_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
