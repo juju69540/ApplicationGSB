@@ -72,21 +72,6 @@ namespace Authentification
         private void tabVisit_Click(object sender, EventArgs e)
         {
 
-            txbVisitZonegeo.Text = "";
-            txbVisitVille.Text = "";
-        }
-            txbVisitRechercher.Text = "";
-            txbVisitPrenom.Text = "";
-            txbVisitNom.Text = "";
-            txbVisitPassword.Text = "";
-            txbVisitLogin.Text = "";
-            txbVisitDateEmbauche.Text = "";
-            txbVisitCP.Text = "";
-            txbVisitAdresse.Text = "";
-        {
-        private void btnVisitAnnuler_Click(object sender, EventArgs e)
-
-        }
         }
 
         private void dgvMed_Click(object sender, EventArgs e)
@@ -102,11 +87,6 @@ namespace Authentification
             txbMedEffet.Text = "";
             txbMedContrIndic.Text = "";
             txbPrixMedHt.Text = "";
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
 
         }
     }
