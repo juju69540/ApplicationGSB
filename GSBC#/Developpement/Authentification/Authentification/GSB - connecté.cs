@@ -118,13 +118,10 @@ namespace Authentification
         {
 
         }
-<<<<<<< HEAD
-=======
 
         private void tabPract_Click(object sender, EventArgs e)
         {
 
         }
->>>>>>> master
     }
 }

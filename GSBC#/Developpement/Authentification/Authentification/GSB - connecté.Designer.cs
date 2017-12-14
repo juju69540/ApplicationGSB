@@ -81,19 +81,6 @@ namespace Authentification
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitAdd = new System.Windows.Forms.Button();
             this.tabPract = new System.Windows.Forms.TabPage();
-<<<<<<< HEAD
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.lblPracRechercher = new System.Windows.Forms.Label();
-            this.txbPracRechercherPracticien = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-=======
             this.btnPracAjouter = new System.Windows.Forms.Button();
             this.btnPracAnnuler = new System.Windows.Forms.Button();
             this.btnPracSupp = new System.Windows.Forms.Button();
@@ -103,22 +90,11 @@ namespace Authentification
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
->>>>>>> master
             this.txbPracCoefConfiance = new System.Windows.Forms.TextBox();
             this.txbPracCoefNoto = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-=======
             this.lblParcCoefConfiance = new System.Windows.Forms.Label();
             this.lblParcCoefNoto = new System.Windows.Forms.Label();
             this.lblParcContact = new System.Windows.Forms.Label();
@@ -126,7 +102,6 @@ namespace Authentification
             this.lblParcAdresse = new System.Windows.Forms.Label();
             this.lblParcSocial = new System.Windows.Forms.Label();
             this.lblParcNom = new System.Windows.Forms.Label();
->>>>>>> master
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -234,7 +209,6 @@ namespace Authentification
             this.textBox1.TabIndex = 50;
             // 
             // txbMedPrixEchant
-<<<<<<< HEAD
             // 
             this.txbMedPrixEchant.Location = new System.Drawing.Point(562, 47);
             this.txbMedPrixEchant.Name = "txbMedPrixEchant";
@@ -243,16 +217,6 @@ namespace Authentification
             // 
             // txbPrixMedHt
             // 
-=======
-            // 
-            this.txbMedPrixEchant.Location = new System.Drawing.Point(562, 47);
-            this.txbMedPrixEchant.Name = "txbMedPrixEchant";
-            this.txbMedPrixEchant.Size = new System.Drawing.Size(100, 20);
-            this.txbMedPrixEchant.TabIndex = 49;
-            // 
-            // txbPrixMedHt
-            // 
->>>>>>> master
             this.txbPrixMedHt.Location = new System.Drawing.Point(562, 22);
             this.txbPrixMedHt.Name = "txbPrixMedHt";
             this.txbPrixMedHt.Size = new System.Drawing.Size(100, 20);
@@ -641,19 +605,6 @@ namespace Authentification
             // 
             // tabPract
             // 
-<<<<<<< HEAD
-            this.tabPract.Controls.Add(this.button4);
-            this.tabPract.Controls.Add(this.button1);
-            this.tabPract.Controls.Add(this.button2);
-            this.tabPract.Controls.Add(this.button3);
-            this.tabPract.Controls.Add(this.lblPracRechercher);
-            this.tabPract.Controls.Add(this.txbPracRechercherPracticien);
-            this.tabPract.Controls.Add(this.dataGridView1);
-            this.tabPract.Controls.Add(this.label10);
-            this.tabPract.Controls.Add(this.textBox2);
-            this.tabPract.Controls.Add(this.textBox3);
-            this.tabPract.Controls.Add(this.textBox4);
-=======
             this.tabPract.Controls.Add(this.btnPracAjouter);
             this.tabPract.Controls.Add(this.btnPracAnnuler);
             this.tabPract.Controls.Add(this.btnPracSupp);
@@ -663,22 +614,11 @@ namespace Authentification
             this.tabPract.Controls.Add(this.dataGridView1);
             this.tabPract.Controls.Add(this.textBox2);
             this.tabPract.Controls.Add(this.textBox3);
->>>>>>> master
             this.tabPract.Controls.Add(this.txbPracCoefConfiance);
             this.tabPract.Controls.Add(this.txbPracCoefNoto);
             this.tabPract.Controls.Add(this.textBox7);
             this.tabPract.Controls.Add(this.textBox8);
             this.tabPract.Controls.Add(this.textBox9);
-<<<<<<< HEAD
-            this.tabPract.Controls.Add(this.label11);
-            this.tabPract.Controls.Add(this.label12);
-            this.tabPract.Controls.Add(this.label13);
-            this.tabPract.Controls.Add(this.label14);
-            this.tabPract.Controls.Add(this.label15);
-            this.tabPract.Controls.Add(this.label16);
-            this.tabPract.Controls.Add(this.label17);
-            this.tabPract.Controls.Add(this.label18);
-=======
             this.tabPract.Controls.Add(this.lblParcCoefConfiance);
             this.tabPract.Controls.Add(this.lblParcCoefNoto);
             this.tabPract.Controls.Add(this.lblParcContact);
@@ -686,7 +626,6 @@ namespace Authentification
             this.tabPract.Controls.Add(this.lblParcAdresse);
             this.tabPract.Controls.Add(this.lblParcSocial);
             this.tabPract.Controls.Add(this.lblParcNom);
->>>>>>> master
             this.tabPract.Location = new System.Drawing.Point(4, 22);
             this.tabPract.Name = "tabPract";
             this.tabPract.Padding = new System.Windows.Forms.Padding(3);
@@ -696,52 +635,6 @@ namespace Authentification
             this.tabPract.UseVisualStyleBackColor = true;
             this.tabPract.Click += new System.EventHandler(this.tabPract_Click);
             // 
-<<<<<<< HEAD
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(703, 25);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(112, 42);
-            this.button4.TabIndex = 84;
-            this.button4.Text = "Ajouter";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(831, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 44);
-            this.button1.TabIndex = 83;
-            this.button1.Text = "Annuler";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(831, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 42);
-            this.button2.TabIndex = 82;
-            this.button2.Text = "Supprimer";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(703, 73);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(112, 44);
-            this.button3.TabIndex = 81;
-            this.button3.Text = "Modifier";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // lblPracRechercher
-            // 
-            this.lblPracRechercher.AutoSize = true;
-            this.lblPracRechercher.Location = new System.Drawing.Point(307, 141);
-            this.lblPracRechercher.Name = "lblPracRechercher";
-            this.lblPracRechercher.Size = new System.Drawing.Size(120, 13);
-            this.lblPracRechercher.TabIndex = 80;
-            this.lblPracRechercher.Text = "Rechercher un visiteur :";
-=======
             // btnPracAjouter
             // 
             this.btnPracAjouter.Location = new System.Drawing.Point(703, 25);
@@ -750,161 +643,9 @@ namespace Authentification
             this.btnPracAjouter.TabIndex = 84;
             this.btnPracAjouter.Text = "Ajouter";
             this.btnPracAjouter.UseVisualStyleBackColor = true;
->>>>>>> master
             // 
             // btnPracAnnuler
             // 
-<<<<<<< HEAD
-            this.txbPracRechercherPracticien.Location = new System.Drawing.Point(444, 138);
-            this.txbPracRechercherPracticien.Name = "txbPracRechercherPracticien";
-            this.txbPracRechercherPracticien.Size = new System.Drawing.Size(100, 20);
-            this.txbPracRechercherPracticien.TabIndex = 79;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 183);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(946, 186);
-            this.dataGridView1.TabIndex = 78;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(452, 92);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 13);
-            this.label10.TabIndex = 77;
-            this.label10.Text = "Zone géographique";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(580, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 76;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(580, 29);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 75;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(327, 86);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 74;
-            // 
-            // txbPracCoefConfiance
-            // 
-            this.txbPracCoefConfiance.Location = new System.Drawing.Point(327, 58);
-            this.txbPracCoefConfiance.Name = "txbPracCoefConfiance";
-            this.txbPracCoefConfiance.Size = new System.Drawing.Size(100, 20);
-            this.txbPracCoefConfiance.TabIndex = 73;
-            // 
-            // txbPracCoefNoto
-            // 
-            this.txbPracCoefNoto.Location = new System.Drawing.Point(327, 29);
-            this.txbPracCoefNoto.Name = "txbPracCoefNoto";
-            this.txbPracCoefNoto.Size = new System.Drawing.Size(100, 20);
-            this.txbPracCoefNoto.TabIndex = 72;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(113, 81);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 71;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(113, 55);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 70;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(113, 29);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 69;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(461, 61);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 13);
-            this.label11.TabIndex = 68;
-            this.label11.Text = "Date d\'embauche";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(526, 32);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 13);
-            this.label12.TabIndex = 67;
-            this.label12.Text = "Ville";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(239, 89);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 13);
-            this.label13.TabIndex = 66;
-            this.label13.Text = "Code Postal";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(258, 58);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 13);
-            this.label14.TabIndex = 65;
-            this.label14.Text = "Adresse";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(250, 29);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 13);
-            this.label15.TabIndex = 64;
-            this.label15.Text = "Password";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(45, 89);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(33, 13);
-            this.label16.TabIndex = 63;
-            this.label16.Text = "Login";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(35, 58);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 13);
-            this.label17.TabIndex = 62;
-            this.label17.Text = "Prénom";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(49, 29);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 13);
-            this.label18.TabIndex = 61;
-            this.label18.Text = "Nom";
-=======
             this.btnPracAnnuler.Location = new System.Drawing.Point(831, 73);
             this.btnPracAnnuler.Name = "btnPracAnnuler";
             this.btnPracAnnuler.Size = new System.Drawing.Size(112, 44);
@@ -1065,7 +806,6 @@ namespace Authentification
             this.lblParcNom.Size = new System.Drawing.Size(29, 13);
             this.lblParcNom.TabIndex = 61;
             this.lblParcNom.Text = "Nom";
->>>>>>> master
             // 
             // GSB___connecté
             // 
@@ -1131,7 +871,6 @@ namespace Authentification
         private System.Windows.Forms.TextBox txbMedEffet;
         private System.Windows.Forms.TextBox txbMedDescpt;
         private System.Windows.Forms.TextBox txbMedNom;
-<<<<<<< HEAD
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -1139,59 +878,6 @@ namespace Authentification
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnMedCancel;
-        private System.Windows.Forms.DataGridView dgvMed;
-        private System.Windows.Forms.Button btnMedDel;
-        private System.Windows.Forms.Button btnMedUpdt;
-        private System.Windows.Forms.Button btnMedAdd;
-        private System.Windows.Forms.TextBox txbVisitZoneGeo;
-        private System.Windows.Forms.Label lblVisitZoneGeo;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txbPracCoefConfiance;
-        private System.Windows.Forms.TextBox txbPracCoefNoto;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label lblPracRechercher;
-        private System.Windows.Forms.TextBox txbPracRechercherPracticien;
-    }
-    #region Windows Form Designer generated code
-        #endregion
-    /*
-        private System.Windows.Forms.TextBox txbPracContact;
-        private System.Windows.Forms.TextBox txbPracTel;
-        private System.Windows.Forms.TextBox txbPracAdresse;
-        private System.Windows.Forms.TextBox txbPracSocial;
-        private System.Windows.Forms.TextBox txbPracNom;
-=======
->>>>>>> master
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-<<<<<<< HEAD
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button btnPracAnnuler; */
-=======
         private System.Windows.Forms.Button btnMedCancel;
         private System.Windows.Forms.DataGridView dgvMed;
         private System.Windows.Forms.Button btnMedDel;
@@ -1221,5 +907,4 @@ namespace Authentification
         private System.Windows.Forms.Label lblPracRechercher;
         private System.Windows.Forms.TextBox txbPracRechercherPracticien;
     }
->>>>>>> master
 }
