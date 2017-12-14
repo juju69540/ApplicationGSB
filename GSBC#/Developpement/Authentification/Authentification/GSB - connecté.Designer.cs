@@ -84,8 +84,8 @@
             this.btnPracDelete = new System.Windows.Forms.Button();
             this.btnPracModif = new System.Windows.Forms.Button();
             this.btnParcAdd = new System.Windows.Forms.Button();
-            this.lblVisitZoneGeo = new System.Windows.Forms.Label();
             this.txbVisitZoneGeo = new System.Windows.Forms.TextBox();
+            this.lblVisitZoneGeo = new System.Windows.Forms.Label();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -108,8 +108,6 @@
             // 
             // tabMed
             // 
-            this.tabMed.Controls.Add(this.txbVisitZoneGeo);
-            this.tabMed.Controls.Add(this.lblVisitZoneGeo);
             this.tabMed.Controls.Add(this.comboBox2);
             this.tabMed.Controls.Add(this.txbMedDos);
             this.tabMed.Controls.Add(this.label6);
@@ -346,6 +344,8 @@
             // 
             // tabVisit
             // 
+            this.tabVisit.Controls.Add(this.lblVisitZoneGeo);
+            this.tabVisit.Controls.Add(this.txbVisitZoneGeo);
             this.tabVisit.Controls.Add(this.lblVisitRechercherV);
             this.tabVisit.Controls.Add(this.txbVisitRechercher);
             this.tabVisit.Controls.Add(this.txbVisitDateEmbauche);
@@ -396,14 +396,14 @@
             // 
             // txbVisitDateEmbauche
             // 
-            this.txbVisitDateEmbauche.Location = new System.Drawing.Point(569, 83);
+            this.txbVisitDateEmbauche.Location = new System.Drawing.Point(569, 59);
             this.txbVisitDateEmbauche.Name = "txbVisitDateEmbauche";
             this.txbVisitDateEmbauche.Size = new System.Drawing.Size(100, 20);
             this.txbVisitDateEmbauche.TabIndex = 26;
             // 
             // txbVisitVille
             // 
-            this.txbVisitVille.Location = new System.Drawing.Point(569, 46);
+            this.txbVisitVille.Location = new System.Drawing.Point(569, 30);
             this.txbVisitVille.Name = "txbVisitVille";
             this.txbVisitVille.Size = new System.Drawing.Size(100, 20);
             this.txbVisitVille.TabIndex = 25;
@@ -453,7 +453,7 @@
             // lblVisitDateEmbauche
             // 
             this.lblVisitDateEmbauche.AutoSize = true;
-            this.lblVisitDateEmbauche.Location = new System.Drawing.Point(450, 82);
+            this.lblVisitDateEmbauche.Location = new System.Drawing.Point(450, 62);
             this.lblVisitDateEmbauche.Name = "lblVisitDateEmbauche";
             this.lblVisitDateEmbauche.Size = new System.Drawing.Size(91, 13);
             this.lblVisitDateEmbauche.TabIndex = 18;
@@ -462,7 +462,7 @@
             // lblVisitVille
             // 
             this.lblVisitVille.AutoSize = true;
-            this.lblVisitVille.Location = new System.Drawing.Point(477, 46);
+            this.lblVisitVille.Location = new System.Drawing.Point(515, 33);
             this.lblVisitVille.Name = "lblVisitVille";
             this.lblVisitVille.Size = new System.Drawing.Size(26, 13);
             this.lblVisitVille.TabIndex = 17;
@@ -626,21 +626,21 @@
             this.btnParcAdd.UseVisualStyleBackColor = true;
             this.btnParcAdd.Click += new System.EventHandler(this.btnParcAdd_Click);
             // 
+            // txbVisitZoneGeo
+            // 
+            this.txbVisitZoneGeo.Location = new System.Drawing.Point(569, 90);
+            this.txbVisitZoneGeo.Name = "txbVisitZoneGeo";
+            this.txbVisitZoneGeo.Size = new System.Drawing.Size(100, 20);
+            this.txbVisitZoneGeo.TabIndex = 59;
+            // 
             // lblVisitZoneGeo
             // 
             this.lblVisitZoneGeo.AutoSize = true;
-            this.lblVisitZoneGeo.Location = new System.Drawing.Point(456, 80);
+            this.lblVisitZoneGeo.Location = new System.Drawing.Point(441, 93);
             this.lblVisitZoneGeo.Name = "lblVisitZoneGeo";
             this.lblVisitZoneGeo.Size = new System.Drawing.Size(100, 13);
-            this.lblVisitZoneGeo.TabIndex = 56;
+            this.lblVisitZoneGeo.TabIndex = 60;
             this.lblVisitZoneGeo.Text = "Zone géographique";
-            // 
-            // txbVisitZoneGeo
-            // 
-            this.txbVisitZoneGeo.Location = new System.Drawing.Point(562, 77);
-            this.txbVisitZoneGeo.Name = "txbVisitZoneGeo";
-            this.txbVisitZoneGeo.Size = new System.Drawing.Size(100, 20);
-            this.txbVisitZoneGeo.TabIndex = 57;
             // 
             // GSB___connecté
             // 
@@ -723,7 +723,7 @@
         private System.Windows.Forms.Button btnMedDel;
         private System.Windows.Forms.Button btnMedUpdt;
         private System.Windows.Forms.Button btnMedAdd;
-        private System.Windows.Forms.Label lblVisitZoneGeo;
         private System.Windows.Forms.TextBox txbVisitZoneGeo;
+        private System.Windows.Forms.Label lblVisitZoneGeo;
     }
 }
