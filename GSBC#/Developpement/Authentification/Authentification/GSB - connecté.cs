@@ -118,5 +118,10 @@ namespace Authentification
         {
 
         }
+
+        private void tabPract_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
