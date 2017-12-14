@@ -74,7 +74,47 @@ namespace Authentification
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void dgvMed_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMedCancel_Click(object sender, EventArgs e)
+        {
+            txbMedNom.Text = "";
+            txbMedDescpt.Text = "";
+            txbMedDos.Text = "";
+            txbMedEffet.Text = "";
+            txbMedContrIndic.Text = "";
+            txbPrixMedHt.Text = "";
+
+        }
+
+        private void btnVisitAnnuler_Click(object sender, EventArgs e)
+        {
+            txbVisitAdresse.Text = "";
+            txbVisitCP.Text = "";
+            txbVisitDateEmbauche.Text = "";
+            txbVisitLogin.Text = "";
+            txbVisitNom.Text = "";
+            txbVisitPassword.Text = "";
+            txbVisitPrenom.Text = "";
+            txbVisitRechercher.Text = "";
+            txbVisitVille.Text = "";
+            txbVisitZoneGeo.Text = "";
+        }
+
+        private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitModif_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitDelete_Click(object sender, EventArgs e)
         {
 
         }

@@ -50,6 +50,7 @@
     <Compile Include="DAOFactory.cs" />
     <Compile Include="DAOPracticien.cs" />
     <Compile Include="DAOProduit.cs" />
+    <Compile Include="DAOVisiteur.cs" />
     <Compile Include="FormAuth.cs">
       <SubType>Form</SubType>
     </Compile>
