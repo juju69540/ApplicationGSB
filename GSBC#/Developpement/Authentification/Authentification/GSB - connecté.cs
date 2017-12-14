@@ -13,6 +13,7 @@ namespace Authentification
     public partial class GSB___connecté : Form
     {
         List<Produit> listMed;
+        List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
 
         public GSB___connecté()
@@ -51,6 +52,12 @@ namespace Authentification
                     listMed = DAOProduit.getAllProduits();
                     dgvMed.DataSource = null;
                     dgvMed.DataSource = listMed;
+                }
+                else if(tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
+                {
+                    listVis = DAOVisiteur.getAllVisiteurs();
+                    dgvVisiteur.DataSource = null;
+                    dgvVisiteur.DataSource = listMed;
                 }
             }
             catch (Exception ex)
@@ -101,7 +108,6 @@ namespace Authentification
             txbVisitPrenom.Text = "";
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
-            txbVisitZoneGeo.Text = "";
         }
 
         private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
