@@ -92,7 +92,16 @@ namespace Authentification
 
         private void btnVisitAnnuler_Click(object sender, EventArgs e)
         {
-
+            txbVisitAdresse.Text = "";
+            txbVisitCP.Text = "";
+            txbVisitDateEmbauche.Text = "";
+            txbVisitLogin.Text = "";
+            txbVisitNom.Text = "";
+            txbVisitPassword.Text = "";
+            txbVisitPrenom.Text = "";
+            txbVisitRechercher.Text = "";
+            txbVisitVille.Text = "";
+            txbVisitZoneGeo.Text = "";
         }
     }
 }
