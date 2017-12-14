@@ -101,7 +101,7 @@ namespace Authentification
             txbVisitPrenom.Text = "";
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
-            txbVisitZonegeo.Text = "";
+            txbVisitZoneGeo.Text = "";
         }
     }
 }

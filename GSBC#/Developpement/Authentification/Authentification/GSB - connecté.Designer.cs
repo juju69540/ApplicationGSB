@@ -84,6 +84,8 @@
             this.btnPracDelete = new System.Windows.Forms.Button();
             this.btnPracModif = new System.Windows.Forms.Button();
             this.btnParcAdd = new System.Windows.Forms.Button();
+            this.lblVisitZoneGeo = new System.Windows.Forms.Label();
+            this.txbVisitZoneGeo = new System.Windows.Forms.TextBox();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -106,6 +108,8 @@
             // 
             // tabMed
             // 
+            this.tabMed.Controls.Add(this.txbVisitZoneGeo);
+            this.tabMed.Controls.Add(this.lblVisitZoneGeo);
             this.tabMed.Controls.Add(this.comboBox2);
             this.tabMed.Controls.Add(this.txbMedDos);
             this.tabMed.Controls.Add(this.label6);
@@ -622,6 +626,22 @@
             this.btnParcAdd.UseVisualStyleBackColor = true;
             this.btnParcAdd.Click += new System.EventHandler(this.btnParcAdd_Click);
             // 
+            // lblVisitZoneGeo
+            // 
+            this.lblVisitZoneGeo.AutoSize = true;
+            this.lblVisitZoneGeo.Location = new System.Drawing.Point(456, 80);
+            this.lblVisitZoneGeo.Name = "lblVisitZoneGeo";
+            this.lblVisitZoneGeo.Size = new System.Drawing.Size(100, 13);
+            this.lblVisitZoneGeo.TabIndex = 56;
+            this.lblVisitZoneGeo.Text = "Zone géographique";
+            // 
+            // txbVisitZoneGeo
+            // 
+            this.txbVisitZoneGeo.Location = new System.Drawing.Point(562, 77);
+            this.txbVisitZoneGeo.Name = "txbVisitZoneGeo";
+            this.txbVisitZoneGeo.Size = new System.Drawing.Size(100, 20);
+            this.txbVisitZoneGeo.TabIndex = 57;
+            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -703,5 +723,7 @@
         private System.Windows.Forms.Button btnMedDel;
         private System.Windows.Forms.Button btnMedUpdt;
         private System.Windows.Forms.Button btnMedAdd;
+        private System.Windows.Forms.Label lblVisitZoneGeo;
+        private System.Windows.Forms.TextBox txbVisitZoneGeo;
     }
 }
