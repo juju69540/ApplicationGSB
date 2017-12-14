@@ -9,7 +9,6 @@ namespace Authentification
 {
     class DAOProduit
     {
-
         public static List<Produit> getAllProduits()
         {
             List<Produit> meds = new List<Produit>();
@@ -53,13 +52,24 @@ namespace Authentification
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
-            result = connectBDD.execSQLRead(req);
-            while (result.Read())
+            try
             {
-                families.Add(result[0].ToString(), result[1].ToString());
+                result = connectBDD.execSQLRead(req);
+                while (result.Read())
+                {
+                    families.Add(result[0].ToString(), result[1].ToString());
+                }
+                connectBDD.deconnexion();
+                return families;
             }
-            connectBDD.deconnexion();
-            return families;
+            catch(Exception exFam)
+            {
+                throw exFam;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
         }
     }
 }
