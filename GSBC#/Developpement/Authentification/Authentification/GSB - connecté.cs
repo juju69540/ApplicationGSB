@@ -103,5 +103,25 @@ namespace Authentification
             txbVisitVille.Text = "";
             txbVisitZoneGeo.Text = "";
         }
+
+        private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitModif_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPract_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
