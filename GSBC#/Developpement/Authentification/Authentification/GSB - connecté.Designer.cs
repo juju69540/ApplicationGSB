@@ -56,7 +56,6 @@ namespace Authentification
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
             this.lblVisitZoneGeo = new System.Windows.Forms.Label();
-            this.txbVisitZoneGeo = new System.Windows.Forms.TextBox();
             this.lblVisitRechercherV = new System.Windows.Forms.Label();
             this.txbVisitRechercher = new System.Windows.Forms.TextBox();
             this.txbVisitDateEmbauche = new System.Windows.Forms.TextBox();
@@ -102,6 +101,7 @@ namespace Authentification
             this.lblParcAdresse = new System.Windows.Forms.Label();
             this.lblParcSocial = new System.Windows.Forms.Label();
             this.lblParcNom = new System.Windows.Forms.Label();
+            this.cbxVisitZoneGeo = new System.Windows.Forms.ComboBox();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -361,8 +361,8 @@ namespace Authentification
             // 
             // tabVisit
             // 
+            this.tabVisit.Controls.Add(this.cbxVisitZoneGeo);
             this.tabVisit.Controls.Add(this.lblVisitZoneGeo);
-            this.tabVisit.Controls.Add(this.txbVisitZoneGeo);
             this.tabVisit.Controls.Add(this.lblVisitRechercherV);
             this.tabVisit.Controls.Add(this.txbVisitRechercher);
             this.tabVisit.Controls.Add(this.txbVisitDateEmbauche);
@@ -403,13 +403,6 @@ namespace Authentification
             this.lblVisitZoneGeo.Size = new System.Drawing.Size(100, 13);
             this.lblVisitZoneGeo.TabIndex = 60;
             this.lblVisitZoneGeo.Text = "Zone géographique";
-            // 
-            // txbVisitZoneGeo
-            // 
-            this.txbVisitZoneGeo.Location = new System.Drawing.Point(569, 90);
-            this.txbVisitZoneGeo.Name = "txbVisitZoneGeo";
-            this.txbVisitZoneGeo.Size = new System.Drawing.Size(100, 20);
-            this.txbVisitZoneGeo.TabIndex = 59;
             // 
             // lblVisitRechercherV
             // 
@@ -807,6 +800,14 @@ namespace Authentification
             this.lblParcNom.TabIndex = 61;
             this.lblParcNom.Text = "Nom";
             // 
+            // cbxVisitZoneGeo
+            // 
+            this.cbxVisitZoneGeo.FormattingEnabled = true;
+            this.cbxVisitZoneGeo.Location = new System.Drawing.Point(569, 90);
+            this.cbxVisitZoneGeo.Name = "cbxVisitZoneGeo";
+            this.cbxVisitZoneGeo.Size = new System.Drawing.Size(100, 21);
+            this.cbxVisitZoneGeo.TabIndex = 61;
+            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -883,7 +884,6 @@ namespace Authentification
         private System.Windows.Forms.Button btnMedDel;
         private System.Windows.Forms.Button btnMedUpdt;
         private System.Windows.Forms.Button btnMedAdd;
-        private System.Windows.Forms.TextBox txbVisitZoneGeo;
         private System.Windows.Forms.Label lblVisitZoneGeo;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox2;
@@ -906,5 +906,6 @@ namespace Authentification
         private System.Windows.Forms.Button btnPracModifier;
         private System.Windows.Forms.Label lblPracRechercher;
         private System.Windows.Forms.TextBox txbPracRechercherPracticien;
+        private System.Windows.Forms.ComboBox cbxVisitZoneGeo;
     }
 }
