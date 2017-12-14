@@ -1413,5 +1413,4 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button btnPracAnnuler;
     }
->>>>>>> devPIOT
 }
