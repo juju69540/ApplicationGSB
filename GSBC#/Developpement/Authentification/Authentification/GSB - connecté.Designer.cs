@@ -30,25 +30,25 @@ namespace Authentification
         {
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxMedSearch = new System.Windows.Forms.ComboBox();
             this.txbMedDos = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblMedEffet = new System.Windows.Forms.Label();
             this.cbxMedFamille = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblMedSearch = new System.Windows.Forms.Label();
+            this.txbMedSearch = new System.Windows.Forms.TextBox();
             this.txbMedPrixEchant = new System.Windows.Forms.TextBox();
             this.txbPrixMedHt = new System.Windows.Forms.TextBox();
             this.txbMedContrIndic = new System.Windows.Forms.TextBox();
             this.txbMedEffet = new System.Windows.Forms.TextBox();
             this.txbMedDescpt = new System.Windows.Forms.TextBox();
             this.txbMedNom = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblMedPrixEchant = new System.Windows.Forms.Label();
+            this.lblMedPrix = new System.Windows.Forms.Label();
+            this.lblMedContrIndic = new System.Windows.Forms.Label();
+            this.lblMedDos = new System.Windows.Forms.Label();
+            this.lblMedDesc = new System.Windows.Forms.Label();
+            this.lblMedFamille = new System.Windows.Forms.Label();
+            this.lblMedNom = new System.Windows.Forms.Label();
             this.btnMedCancel = new System.Windows.Forms.Button();
             this.dgvMed = new System.Windows.Forms.DataGridView();
             this.btnMedDel = new System.Windows.Forms.Button();
@@ -125,25 +125,25 @@ namespace Authentification
             // 
             // tabMed
             // 
-            this.tabMed.Controls.Add(this.comboBox2);
+            this.tabMed.Controls.Add(this.cbxMedSearch);
             this.tabMed.Controls.Add(this.txbMedDos);
-            this.tabMed.Controls.Add(this.label6);
+            this.tabMed.Controls.Add(this.lblMedEffet);
             this.tabMed.Controls.Add(this.cbxMedFamille);
-            this.tabMed.Controls.Add(this.label1);
-            this.tabMed.Controls.Add(this.textBox1);
+            this.tabMed.Controls.Add(this.lblMedSearch);
+            this.tabMed.Controls.Add(this.txbMedSearch);
             this.tabMed.Controls.Add(this.txbMedPrixEchant);
             this.tabMed.Controls.Add(this.txbPrixMedHt);
             this.tabMed.Controls.Add(this.txbMedContrIndic);
             this.tabMed.Controls.Add(this.txbMedEffet);
             this.tabMed.Controls.Add(this.txbMedDescpt);
             this.tabMed.Controls.Add(this.txbMedNom);
-            this.tabMed.Controls.Add(this.label2);
-            this.tabMed.Controls.Add(this.label3);
-            this.tabMed.Controls.Add(this.label4);
-            this.tabMed.Controls.Add(this.label5);
-            this.tabMed.Controls.Add(this.label7);
-            this.tabMed.Controls.Add(this.label8);
-            this.tabMed.Controls.Add(this.label9);
+            this.tabMed.Controls.Add(this.lblMedPrixEchant);
+            this.tabMed.Controls.Add(this.lblMedPrix);
+            this.tabMed.Controls.Add(this.lblMedContrIndic);
+            this.tabMed.Controls.Add(this.lblMedDos);
+            this.tabMed.Controls.Add(this.lblMedDesc);
+            this.tabMed.Controls.Add(this.lblMedFamille);
+            this.tabMed.Controls.Add(this.lblMedNom);
             this.tabMed.Controls.Add(this.btnMedCancel);
             this.tabMed.Controls.Add(this.dgvMed);
             this.tabMed.Controls.Add(this.btnMedDel);
@@ -157,16 +157,16 @@ namespace Authentification
             this.tabMed.Text = "Produits";
             this.tabMed.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cbxMedSearch
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbxMedSearch.FormattingEnabled = true;
+            this.cbxMedSearch.Items.AddRange(new object[] {
             "Par nom",
             "Par famille"});
-            this.comboBox2.Location = new System.Drawing.Point(609, 122);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(95, 21);
-            this.comboBox2.TabIndex = 55;
+            this.cbxMedSearch.Location = new System.Drawing.Point(609, 122);
+            this.cbxMedSearch.Name = "cbxMedSearch";
+            this.cbxMedSearch.Size = new System.Drawing.Size(95, 21);
+            this.cbxMedSearch.TabIndex = 55;
             // 
             // txbMedDos
             // 
@@ -175,14 +175,14 @@ namespace Authentification
             this.txbMedDos.Size = new System.Drawing.Size(100, 20);
             this.txbMedDos.TabIndex = 54;
             // 
-            // label6
+            // lblMedEffet
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(216, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 13);
-            this.label6.TabIndex = 53;
-            this.label6.Text = "Effet thérapeutique";
+            this.lblMedEffet.AutoSize = true;
+            this.lblMedEffet.Location = new System.Drawing.Point(216, 50);
+            this.lblMedEffet.Name = "lblMedEffet";
+            this.lblMedEffet.Size = new System.Drawing.Size(97, 13);
+            this.lblMedEffet.TabIndex = 53;
+            this.lblMedEffet.Text = "Effet thérapeutique";
             // 
             // cbxMedFamille
             // 
@@ -192,21 +192,21 @@ namespace Authentification
             this.cbxMedFamille.Size = new System.Drawing.Size(100, 21);
             this.cbxMedFamille.TabIndex = 52;
             // 
-            // label1
+            // lblMedSearch
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(378, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 13);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Rechercher un produit :";
+            this.lblMedSearch.AutoSize = true;
+            this.lblMedSearch.Location = new System.Drawing.Point(378, 125);
+            this.lblMedSearch.Name = "lblMedSearch";
+            this.lblMedSearch.Size = new System.Drawing.Size(119, 13);
+            this.lblMedSearch.TabIndex = 51;
+            this.lblMedSearch.Text = "Rechercher un produit :";
             // 
-            // textBox1
+            // txbMedSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(503, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 50;
+            this.txbMedSearch.Location = new System.Drawing.Point(503, 122);
+            this.txbMedSearch.Name = "txbMedSearch";
+            this.txbMedSearch.Size = new System.Drawing.Size(100, 20);
+            this.txbMedSearch.TabIndex = 50;
             // 
             // txbMedPrixEchant
             // 
@@ -250,68 +250,68 @@ namespace Authentification
             this.txbMedNom.Size = new System.Drawing.Size(100, 20);
             this.txbMedNom.TabIndex = 42;
             // 
-            // label2
+            // lblMedPrixEchant
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(478, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Prix échantillon";
+            this.lblMedPrixEchant.AutoSize = true;
+            this.lblMedPrixEchant.Location = new System.Drawing.Point(478, 50);
+            this.lblMedPrixEchant.Name = "lblMedPrixEchant";
+            this.lblMedPrixEchant.Size = new System.Drawing.Size(78, 13);
+            this.lblMedPrixEchant.TabIndex = 41;
+            this.lblMedPrixEchant.Text = "Prix échantillon";
             // 
-            // label3
+            // lblMedPrix
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(514, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Prix HT";
+            this.lblMedPrix.AutoSize = true;
+            this.lblMedPrix.Location = new System.Drawing.Point(514, 25);
+            this.lblMedPrix.Name = "lblMedPrix";
+            this.lblMedPrix.Size = new System.Drawing.Size(42, 13);
+            this.lblMedPrix.TabIndex = 40;
+            this.lblMedPrix.Text = "Prix HT";
             // 
-            // label4
+            // lblMedContrIndic
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(227, 77);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 13);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Contre-indication";
+            this.lblMedContrIndic.AutoSize = true;
+            this.lblMedContrIndic.Location = new System.Drawing.Point(227, 77);
+            this.lblMedContrIndic.Name = "lblMedContrIndic";
+            this.lblMedContrIndic.Size = new System.Drawing.Size(86, 13);
+            this.lblMedContrIndic.TabIndex = 39;
+            this.lblMedContrIndic.Text = "Contre-indication";
             // 
-            // label5
+            // lblMedDos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(269, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Dosage";
+            this.lblMedDos.AutoSize = true;
+            this.lblMedDos.Location = new System.Drawing.Point(269, 25);
+            this.lblMedDos.Name = "lblMedDos";
+            this.lblMedDos.Size = new System.Drawing.Size(44, 13);
+            this.lblMedDos.TabIndex = 38;
+            this.lblMedDos.Text = "Dosage";
             // 
-            // label7
+            // lblMedDesc
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(39, 77);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Description";
+            this.lblMedDesc.AutoSize = true;
+            this.lblMedDesc.Location = new System.Drawing.Point(39, 77);
+            this.lblMedDesc.Name = "lblMedDesc";
+            this.lblMedDesc.Size = new System.Drawing.Size(60, 13);
+            this.lblMedDesc.TabIndex = 36;
+            this.lblMedDesc.Text = "Description";
             // 
-            // label8
+            // lblMedFamille
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(60, 54);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 13);
-            this.label8.TabIndex = 35;
-            this.label8.Text = "Famille";
+            this.lblMedFamille.AutoSize = true;
+            this.lblMedFamille.Location = new System.Drawing.Point(60, 54);
+            this.lblMedFamille.Name = "lblMedFamille";
+            this.lblMedFamille.Size = new System.Drawing.Size(39, 13);
+            this.lblMedFamille.TabIndex = 35;
+            this.lblMedFamille.Text = "Famille";
             // 
-            // label9
+            // lblMedNom
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(60, 25);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(29, 13);
-            this.label9.TabIndex = 34;
-            this.label9.Text = "Nom";
+            this.lblMedNom.AutoSize = true;
+            this.lblMedNom.Location = new System.Drawing.Point(60, 25);
+            this.lblMedNom.Name = "lblMedNom";
+            this.lblMedNom.Size = new System.Drawing.Size(29, 13);
+            this.lblMedNom.TabIndex = 34;
+            this.lblMedNom.Text = "Nom";
             // 
             // btnMedCancel
             // 
@@ -859,25 +859,25 @@ namespace Authentification
         private System.Windows.Forms.Button btnVisitAnnuler;
         private System.Windows.Forms.Label lblVisitRechercherV;
         private System.Windows.Forms.TextBox txbVisitRechercher;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxMedSearch;
         private System.Windows.Forms.TextBox txbMedDos;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblMedEffet;
         private System.Windows.Forms.ComboBox cbxMedFamille;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblMedSearch;
+        private System.Windows.Forms.TextBox txbMedSearch;
         private System.Windows.Forms.TextBox txbMedPrixEchant;
         private System.Windows.Forms.TextBox txbPrixMedHt;
         private System.Windows.Forms.TextBox txbMedContrIndic;
         private System.Windows.Forms.TextBox txbMedEffet;
         private System.Windows.Forms.TextBox txbMedDescpt;
         private System.Windows.Forms.TextBox txbMedNom;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblMedPrixEchant;
+        private System.Windows.Forms.Label lblMedPrix;
+        private System.Windows.Forms.Label lblMedContrIndic;
+        private System.Windows.Forms.Label lblMedDos;
+        private System.Windows.Forms.Label lblMedDesc;
+        private System.Windows.Forms.Label lblMedFamille;
+        private System.Windows.Forms.Label lblMedNom;
         private System.Windows.Forms.Button btnMedCancel;
         private System.Windows.Forms.DataGridView dgvMed;
         private System.Windows.Forms.Button btnMedDel;
