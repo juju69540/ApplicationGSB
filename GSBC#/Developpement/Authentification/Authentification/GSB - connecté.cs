@@ -13,6 +13,7 @@ namespace Authentification
     public partial class GSB___connecté : Form
     {
         List<Produit> listMed;
+        List<Praticien> listPrat;
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
 
@@ -58,6 +59,12 @@ namespace Authentification
                     listVis = DAOVisiteur.getAllVisiteurs();
                     dgvVisiteur.DataSource = null;
                     dgvVisiteur.DataSource = listMed;
+                }
+                else
+                {
+                    listPrat = DAOPraticien.getAllPraticien();
+                    dgvPrat.DataSource = null;
+                    dgvPrat.DataSource = listPrat;
                 }
             }
             catch (Exception ex)
@@ -111,6 +118,11 @@ namespace Authentification
         }
 
         private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPrat_Click(object sender, EventArgs e)
         {
 
         }

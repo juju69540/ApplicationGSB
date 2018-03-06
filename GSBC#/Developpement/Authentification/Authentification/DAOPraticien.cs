@@ -23,8 +23,8 @@ namespace Authentification
                 result = connectBDD.execSQLRead(req);
                 while (result.Read())
                 {
-                    prat = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString());
-                    foreach (KeyValuePair<string, string> entry in Specialite)
+                    prat = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
+                    foreach (KeyValuePair<string, string> entry in specialites)
                     {
                         if (entry.Key == prat.Specialite)
                         {

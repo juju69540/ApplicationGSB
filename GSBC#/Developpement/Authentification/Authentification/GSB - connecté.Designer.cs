@@ -635,6 +635,7 @@ namespace Authentification
             this.tabPrat.TabIndex = 2;
             this.tabPrat.Text = "Praticiens";
             this.tabPrat.UseVisualStyleBackColor = true;
+            this.tabPrat.Click += new System.EventHandler(this.tabPrat_Click);
             // 
             // cbxPartSpé
             // 
