@@ -9,6 +9,7 @@ namespace Authentification
 {
     class DAOVisiteur
     {
+        // TEST
          public static List<Visiteur> getAllVisiteurs()
         {
             List<Visiteur> lesVisiteurs = new List<Visiteur>();
