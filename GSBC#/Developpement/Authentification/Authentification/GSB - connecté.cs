@@ -15,6 +15,7 @@ namespace Authentification
         List<Produit> listMed;
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
+        Dictionary<string, string> listZoneGeo;
 
         public GSB___connecté()
         {
@@ -56,8 +57,13 @@ namespace Authentification
                 else if(tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
                 {
                     listVis = DAOVisiteur.getAllVisiteurs();
+                    listZoneGeo = DAOVisiteur.getAllZones();
                     dgvVisiteur.DataSource = null;
-                    dgvVisiteur.DataSource = listMed;
+                    dgvVisiteur.DataSource = listVis;
+                    /*cbxVisitZoneGeo.Items.Clear();
+                    cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
+                    cbxVisitZoneGeo.DisplayMember = "Value";
+                    cbxVisitZoneGeo.ValueMember = "Key";*/
                 }
             }
             catch (Exception ex)
@@ -78,7 +84,21 @@ namespace Authentification
 
         private void tabVisit_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                listVis = DAOVisiteur.getAllVisiteurs();
+                listZoneGeo = DAOVisiteur.getAllZones();
+                dgvVisiteur.DataSource = null;
+                dgvVisiteur.DataSource = listVis;
+                cbxVisitZoneGeo.Items.Clear();
+                cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
+                cbxVisitZoneGeo.DisplayMember = "Value";
+                cbxVisitZoneGeo.ValueMember = "Key";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void dgvMed_Click(object sender, EventArgs e)
@@ -99,7 +119,7 @@ namespace Authentification
             txbMedDos.Text = "";
             txbMedEffet.Text = "";
             txbMedContrIndic.Text = "";
-            txbPrixMedHt.Text = "";
+            txbMedPrixHt.Text = "";
 
         }
 
@@ -114,6 +134,32 @@ namespace Authentification
             txbVisitPrenom.Text = "";
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
+        }
+
+        private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitModif_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPract_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbxVisitZoneGeo_Click(object sender, EventArgs e)
+        {
+            
+            
         }
     }
 }

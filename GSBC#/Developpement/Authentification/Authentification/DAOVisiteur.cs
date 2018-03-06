@@ -15,7 +15,7 @@ namespace Authentification
             List<Visiteur> lesVisiteurs = new List<Visiteur>();
             Dictionary<string, string> zoneGeo = DAOVisiteur.getAllZones();
             Visiteur unVisiteur;
-            string req = "Select * from Visiteur";
+            string req = "Select * from Visiteurs";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
