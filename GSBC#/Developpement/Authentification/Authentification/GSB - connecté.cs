@@ -109,5 +109,10 @@ namespace Authentification
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
         }
+
+        private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

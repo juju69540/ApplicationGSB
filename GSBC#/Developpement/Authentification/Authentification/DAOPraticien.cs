@@ -14,7 +14,7 @@ namespace Authentification
             List<Praticien> prati = new List<Praticien>();
             Dictionary<string, string> specialites = DAOPraticien.getAllSpecialite();
             Praticien prat;
-            string req = "Select * from Praticien;";
+            string req = "Select * from Praticiens;";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
