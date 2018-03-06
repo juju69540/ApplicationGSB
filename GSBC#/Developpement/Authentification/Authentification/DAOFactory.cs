@@ -30,7 +30,7 @@ namespace Authentification
             }
             catch (Exception e)
             {
-                MessageBox.Show("Erreur de connexion: " + e);
+                throw e;
             }
         }
 
@@ -42,7 +42,7 @@ namespace Authentification
             }
             catch (Exception e)
             {
-                MessageBox.Show("Erreur de déconnexion: " + e);
+                throw e;
             }
         }
 
@@ -65,8 +65,7 @@ namespace Authentification
             }
             catch (Exception e)
             {
-                MessageBox.Show("Erreur durant la récupération de données: " + e);
-                return null;
+                throw e;
             }
         }
 
@@ -81,7 +80,7 @@ namespace Authentification
             }
             catch (Exception e)
             {
-                MessageBox.Show("Erreur durant l'écriture des données: " + e);
+                throw e;
             }
         }
     }
