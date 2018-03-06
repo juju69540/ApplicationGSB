@@ -83,7 +83,13 @@ namespace Authentification
 
         private void dgvMed_Click(object sender, EventArgs e)
         {
-
+            txbMedNom.Text = dgvMed.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbMedDescpt.Text = dgvMed.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbMedDos.Text = dgvMed.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbMedEffet.Text = dgvMed.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbMedContrIndic.Text = dgvMed.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbMedPrixHt.Text = dgvMed.CurrentRow.Cells[6].FormattedValue.ToString();
+            txbMedPrixEchant.Text = dgvMed.CurrentRow.Cells[7].FormattedValue.ToString();
         }
 
         private void btnMedCancel_Click(object sender, EventArgs e)
