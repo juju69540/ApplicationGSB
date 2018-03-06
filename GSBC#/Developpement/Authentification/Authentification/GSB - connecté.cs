@@ -119,7 +119,7 @@ namespace Authentification
             txbMedDos.Text = "";
             txbMedEffet.Text = "";
             txbMedContrIndic.Text = "";
-            txbPrixMedHt.Text = "";
+            txbMedPrixHt.Text = "";
 
         }
 
@@ -135,7 +135,6 @@ namespace Authentification
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
         }
-<<<<<<< HEAD
 
         private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -162,7 +161,5 @@ namespace Authentification
             
             
         }
-=======
->>>>>>> master
     }
 }
