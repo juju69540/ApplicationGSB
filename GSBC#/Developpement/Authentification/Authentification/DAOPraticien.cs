@@ -31,6 +31,7 @@ namespace Authentification
                             prat.Specialite = entry.Value;
                         }
                     }
+                    prati.Add(prat);
                 }
                 return prati;
 
@@ -72,14 +73,12 @@ namespace Authentification
             }
         }
 
-        public static string AddPraticien(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, string uneDate, string uneZoneGeo)
+        /*public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
         {
-            /*
-            string req = "INSERT INTO visiteur (nom, prenom) VALUES (" + unNom +"," + unPrenom +",") 
+            string req = "INSERT INTO visiteur (nom, prenom) VALUES (" + unNom +"," + unPrenom +",");
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
-            */
             return null;
-        }
+        }*/
     }
 }
