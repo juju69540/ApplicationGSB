@@ -124,14 +124,42 @@ namespace Authentification
             txbVisitVille.Text = "";
         }
 
+<<<<<<< HEAD
         private void tabPrat_Click(object sender, EventArgs e)
+=======
+        private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnVisitModif_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitDelete_Click(object sender, EventArgs e)
+>>>>>>> devZERBIB
         {
 
         }
 
         private void btnPratAjouter_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
+=======
+            
+        }
+
+        private void cbxVisitZoneGeo_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+        private void tabPrat_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> devZERBIB
         }
     }
 }
