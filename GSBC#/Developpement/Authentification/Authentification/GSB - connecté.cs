@@ -17,33 +17,24 @@ namespace Authentification
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
+        Dictionary<string, string> listSpecialite;
 
         public GSB___connecté()
         {
             InitializeComponent();
         }
 
-        private void btnVisitAdd_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
-        private void btnParcAdd_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
-            //listMed = DAOProduit.getAllProduits();
-            //TODO Résoudre le problème relatif aux Familles de produits
-            //listFamilies = DAOProduit.getAllFamilies();
-            
+            listPrat = DAOPraticien.getAllPraticien();
+            listSpecialite = DAOPraticien.getAllSpecialite();
+            dgvPrat.DataSource = listPrat;
+            //les 2 petits PDs
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {   
 
             try
             {
@@ -77,16 +68,6 @@ namespace Authentification
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        private void txbMedSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMedAdd_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void tabVisit_Click(object sender, EventArgs e)
@@ -143,41 +124,14 @@ namespace Authentification
             txbVisitVille.Text = "";
         }
 
-<<<<<<< HEAD
-        private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
-=======
-        private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
->>>>>>> devPIOTtest
-        {
-
-        }
-
-<<<<<<< HEAD
-        private void btnVisitModif_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVisitDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPract_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cbxVisitZoneGeo_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-=======
         private void tabPrat_Click(object sender, EventArgs e)
         {
 
         }
->>>>>>> devPIOTtest
+
+        private void btnPratAjouter_Click(object sender, EventArgs e)
+        {
+            if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
+        }
     }
 }
