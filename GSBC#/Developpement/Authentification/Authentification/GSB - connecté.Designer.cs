@@ -403,7 +403,7 @@ namespace Authentification
             this.cbxVisitZoneGeo.Name = "cbxVisitZoneGeo";
             this.cbxVisitZoneGeo.Size = new System.Drawing.Size(100, 21);
             this.cbxVisitZoneGeo.TabIndex = 61;
-            this.cbxVisitZoneGeo.Click += new System.EventHandler(this.cbxVisitZoneGeo_Click);
+            //this.cbxVisitZoneGeo.Click += new System.EventHandler(this.cbxVisitZoneGeo_Click);
             // 
             // lblVisitZoneGeo
             // 
@@ -602,7 +602,7 @@ namespace Authentification
             this.btnVisitAdd.TabIndex = 5;
             this.btnVisitAdd.Text = "Ajouter";
             this.btnVisitAdd.UseVisualStyleBackColor = true;
-            this.btnVisitAdd.Click += new System.EventHandler(this.btnVisitAdd_Click);
+            //this.btnVisitAdd.Click += new System.EventHandler(this.btnVisitAdd_Click);
             // 
             // tabPrat
             // 
@@ -714,7 +714,7 @@ namespace Authentification
             this.dgvPrat.Name = "dgvPrat";
             this.dgvPrat.Size = new System.Drawing.Size(946, 186);
             this.dgvPrat.TabIndex = 78;
-            this.dgvPrat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrat_CellContentClick);
+            //this.dgvPrat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrat_CellContentClick);
             // 
             // txbPratCoefConf
             // 

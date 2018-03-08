@@ -27,6 +27,7 @@ namespace Authentification
                 case 2: lblErrorConnect.Text = "Mot de passe incorrect"; lblErrorConnect.Visible = true; break;
                 case 3: lblErrorConnect.Text = "Erreur inconnue au bataillon"; lblErrorConnect.Visible = true; break;
             }
+            //dgvPrat.DataSource = listPrat;
         }
 
         private void FormAuth_Load(object sender, EventArgs e)

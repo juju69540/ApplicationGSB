@@ -71,5 +71,15 @@ namespace Authentification
                 connectBDD.deconnexion();
             }
         }
+
+        public static string AddPraticien(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, string uneDate, string uneZoneGeo)
+        {
+            /*
+            string req = "INSERT INTO visiteur (nom, prenom) VALUES (" + unNom +"," + unPrenom +",") 
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            */
+            return null;
+        }
     }
 }
