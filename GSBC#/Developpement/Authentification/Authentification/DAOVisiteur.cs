@@ -14,7 +14,7 @@ namespace Authentification
             List<Visiteur> lesVisiteurs = new List<Visiteur>();
             Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
             Visiteur unVisiteur;
-            string req = "Select * from Visiteurs";
+            string req = "SELECT * FROM Visiteurs;";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
@@ -76,11 +76,21 @@ namespace Authentification
 
         public static string AddVisiteur(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, string uneDate, string uneZoneGeo)
         {
-            /*
-            string req = "INSERT INTO visiteur (nom, prenom) VALUES (" + unNom +"," + unPrenom +",") 
+            string req = "INSERT INTO Visiteurs (nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, idGeo) VALUES ('" + unNom +"','" + unPrenom +"','" + unLogin+"','" + unMdp + "','" + uneAdresse + "','" + unCodeP + "','" + uneVille + "','" + uneDate + "','" + uneZoneGeo + "')";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
-            */
+            try
+            {
+                connectBDD.execSQLRead(req);
+            }
+            catch (Exception exVis)
+            {
+                throw exVis;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
             return null;
         }
     }

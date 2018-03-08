@@ -139,7 +139,7 @@ namespace Authentification
             this.CodePostal = codePostal;
             this.Ville = ville;
             this.DateEmbauche = dateEmbauche;
-            this.ZoneGeo = zoneGeo;
+            this.ZoneGeo = ZoneGeo;
         }
         #endregion
     }

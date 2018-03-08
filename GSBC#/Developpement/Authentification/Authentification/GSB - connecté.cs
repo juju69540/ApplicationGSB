@@ -143,16 +143,11 @@ namespace Authentification
             txbVisitVille.Text = "";
         }
 
-<<<<<<< HEAD
-        private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
-=======
         private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
->>>>>>> devPIOTtest
         {
 
         }
 
-<<<<<<< HEAD
         private void btnVisitModif_Click(object sender, EventArgs e)
         {
 
@@ -173,11 +168,9 @@ namespace Authentification
             
             
         }
-=======
         private void tabPrat_Click(object sender, EventArgs e)
         {
 
         }
->>>>>>> devPIOTtest
     }
 }
