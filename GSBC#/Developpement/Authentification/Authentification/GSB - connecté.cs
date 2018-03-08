@@ -24,12 +24,13 @@ namespace Authentification
             InitializeComponent();
         }
 
+
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
-            //listMed = DAOProduit.getAllProduits();
-            //TODO Résoudre le problème relatif aux Familles de produits
-            //listFamilies = DAOProduit.getAllFamilies();
-            
+            listPrat = DAOPraticien.getAllPraticien();
+            listSpecialite = DAOPraticien.getAllSpecialite();
+            dgvPrat.DataSource = listPrat;
+            //les 2 petits PD
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
@@ -125,7 +126,7 @@ namespace Authentification
 
         private void tabPrat_Click(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 listPrat = DAOPraticien.getAllPraticien();
                 listSpecialite = DAOPraticien.getAllSpecialite();
@@ -139,7 +140,7 @@ namespace Authentification
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-            }
+            }*/
         }
     }
 }
