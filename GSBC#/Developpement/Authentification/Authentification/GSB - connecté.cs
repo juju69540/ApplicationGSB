@@ -16,6 +16,7 @@ namespace Authentification
         List<Praticien> listPrat;
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
+        Dictionary<string, string> listZoneGeo;
 
         public GSB___connecté()
         {
@@ -57,8 +58,13 @@ namespace Authentification
                 else if(tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
                 {
                     listVis = DAOVisiteur.getAllVisiteurs();
+                    listZoneGeo = DAOVisiteur.getAllZones();
                     dgvVisiteur.DataSource = null;
-                    dgvVisiteur.DataSource = listMed;
+                    dgvVisiteur.DataSource = listVis;
+                    /*cbxVisitZoneGeo.Items.Clear();
+                    cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
+                    cbxVisitZoneGeo.DisplayMember = "Value";
+                    cbxVisitZoneGeo.ValueMember = "Key";*/
                 }
                 else
                 {
@@ -85,12 +91,32 @@ namespace Authentification
 
         private void tabVisit_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                listVis = DAOVisiteur.getAllVisiteurs();
+                listZoneGeo = DAOVisiteur.getAllZones();
+                dgvVisiteur.DataSource = null;
+                dgvVisiteur.DataSource = listVis;
+                cbxVisitZoneGeo.Items.Clear();
+                cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
+                cbxVisitZoneGeo.DisplayMember = "Value";
+                cbxVisitZoneGeo.ValueMember = "Key";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void dgvMed_Click(object sender, EventArgs e)
         {
-
+            txbMedNom.Text = dgvMed.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbMedDescpt.Text = dgvMed.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbMedDos.Text = dgvMed.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbMedEffet.Text = dgvMed.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbMedContrIndic.Text = dgvMed.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbMedPrixHt.Text = dgvMed.CurrentRow.Cells[6].FormattedValue.ToString();
+            txbMedPrixEchant.Text = dgvMed.CurrentRow.Cells[7].FormattedValue.ToString();
         }
 
         private void btnMedCancel_Click(object sender, EventArgs e)
@@ -100,7 +126,7 @@ namespace Authentification
             txbMedDos.Text = "";
             txbMedEffet.Text = "";
             txbMedContrIndic.Text = "";
-            txbPrixMedHt.Text = "";
+            txbMedPrixHt.Text = "";
 
         }
 
@@ -117,14 +143,41 @@ namespace Authentification
             txbVisitVille.Text = "";
         }
 
+<<<<<<< HEAD
+        private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
+=======
         private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> devPIOTtest
         {
 
         }
 
+<<<<<<< HEAD
+        private void btnVisitModif_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVisitDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPract_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbxVisitZoneGeo_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+=======
         private void tabPrat_Click(object sender, EventArgs e)
         {
 
         }
+>>>>>>> devPIOTtest
     }
 }
