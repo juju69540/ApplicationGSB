@@ -13,6 +13,7 @@ namespace Authentification
     public partial class GSB___connecté : Form
     {
         List<Produit> listMed;
+        List<Praticien> listPrat;
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
@@ -64,6 +65,12 @@ namespace Authentification
                     cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
                     cbxVisitZoneGeo.DisplayMember = "Value";
                     cbxVisitZoneGeo.ValueMember = "Key";*/
+                }
+                else
+                {
+                    listPrat = DAOPraticien.getAllPraticien();
+                    dgvPrat.DataSource = null;
+                    dgvPrat.DataSource = listPrat;
                 }
             }
             catch (Exception ex)
@@ -136,11 +143,16 @@ namespace Authentification
             txbVisitVille.Text = "";
         }
 
+<<<<<<< HEAD
         private void tbcOnglets_SelectedIndexChanged_1(object sender, EventArgs e)
+=======
+        private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> devPIOTtest
         {
 
         }
 
+<<<<<<< HEAD
         private void btnVisitModif_Click(object sender, EventArgs e)
         {
 
@@ -161,5 +173,11 @@ namespace Authentification
             
             
         }
+=======
+        private void tabPrat_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> devPIOTtest
     }
 }
