@@ -30,11 +30,11 @@ namespace Authentification
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
             dgvPrat.DataSource = listPrat;
-            //les 2 petits PD
+            //les 2 petits PDs
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {   
 
             try
             {
@@ -126,21 +126,12 @@ namespace Authentification
 
         private void tabPrat_Click(object sender, EventArgs e)
         {
-            /*try
-            {
-                listPrat = DAOPraticien.getAllPraticien();
-                listSpecialite = DAOPraticien.getAllSpecialite();
-                dgvPrat.DataSource = null;
-                dgvPrat.DataSource = listPrat;
-                cbxPartSpé.Items.Clear();
-                cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
-                cbxPartSpé.DisplayMember = "Value";
-                cbxPartSpé.ValueMember = "Key";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }*/
+
+        }
+
+        private void btnPratAjouter_Click(object sender, EventArgs e)
+        {
+            if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
         }
     }
 }

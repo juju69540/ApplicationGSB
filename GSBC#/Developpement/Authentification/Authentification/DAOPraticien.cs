@@ -73,12 +73,12 @@ namespace Authentification
             }
         }
 
-        /*public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
+        public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
         {
-            string req = "INSERT INTO visiteur (nom, prenom) VALUES (" + unNom +"," + unPrenom +",");
+            string req = "INSERT INTO Praticiens ([nom],[social],[adresse],[telephone],[contact],[coeffnoto],[coeffconfiance],[idSpecialite]) VALUES (" + unNom +"," + unSocial +"," + uneAdresse +"," + unTelephone +"," + unContact +"," + unCoefNoto +"," + unCoefConfiance +"," + uneSpe +")";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             return null;
-        }*/
+        }
     }
 }
