@@ -123,10 +123,6 @@ namespace Authentification
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
         }
-
-<<<<<<< HEAD
-        private void tabPrat_Click(object sender, EventArgs e)
-=======
         private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -138,16 +134,13 @@ namespace Authentification
         }
 
         private void btnVisitDelete_Click(object sender, EventArgs e)
->>>>>>> devZERBIB
         {
 
         }
 
         private void btnPratAjouter_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
-=======
+            //if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
             
         }
 
@@ -159,7 +152,6 @@ namespace Authentification
         private void tabPrat_Click(object sender, EventArgs e)
         {
 
->>>>>>> devZERBIB
         }
     }
 }
