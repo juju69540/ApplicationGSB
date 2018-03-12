@@ -29,8 +29,12 @@ namespace Authentification
         {
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
+            dgvPrat.DataSource = null;
             dgvPrat.DataSource = listPrat;
-            //les 2 petits PDs
+            cbxPartSpé.Items.Clear();
+            cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
+            cbxPartSpé.DisplayMember = "Value";
+            cbxPartSpé.ValueMember = "Key";
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
@@ -124,14 +128,21 @@ namespace Authentification
             txbVisitVille.Text = "";
         }
 
-        private void tabPrat_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnPratAjouter_Click(object sender, EventArgs e)
         {
-            if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
+            //if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
+        }
+
+        private void btnPratAnnuler_Click(object sender, EventArgs e)
+        {
+            txbPratAdresse.Text = "";
+            txbPratCoefConf.Text = "";
+            txbPratCoefContact.Text = "";
+            txbPratCoefNotor.Text = "";
+            txbPratCoefTelephone.Text = "";
+            txbPratNom.Text = "";
+            txbPratSocial.Text = "";
+            txbPratRechercherPracticien.Text = "";
         }
     }
 }
