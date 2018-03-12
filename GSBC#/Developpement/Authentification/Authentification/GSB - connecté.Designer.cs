@@ -672,6 +672,7 @@ namespace Authentification
             this.btnPratAnnuler.TabIndex = 83;
             this.btnPratAnnuler.Text = "Annuler";
             this.btnPratAnnuler.UseVisualStyleBackColor = true;
+            this.btnPratAnnuler.Click += new System.EventHandler(this.btnPratAnnuler_Click);
             // 
             // btnPratSupp
             // 
