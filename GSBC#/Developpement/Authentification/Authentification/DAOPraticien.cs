@@ -73,12 +73,39 @@ namespace Authentification
             }
         }
 
-        public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
+        /*public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
         {
-            string req = "INSERT INTO Praticiens ([nom],[social],[adresse],[telephone],[contact],[coeffnoto],[coeffconfiance],[idSpecialite]) VALUES (" + unNom +"," + unSocial +"," + uneAdresse +"," + unTelephone +"," + unContact +"," + unCoefNoto +"," + unCoefConfiance +"," + uneSpe +")";
+            /*string req = "INSERT INTO Praticiens ([nom],[social],[adresse],[telephone],[contact],[coeffnoto],[coeffconfiance],[idSpecialite]) VALUES (" + unNom +"," + unSocial +"," + uneAdresse +"," + unTelephone +"," + unContact +"," + unCoefNoto +"," + unCoefConfiance +"," + uneSpe +")";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
-            return null;
-        }
+
+            try
+            {
+                result = connectBDD.execSQLRead(req);
+                while (result.Read())
+                {
+                    prat = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
+                    foreach (KeyValuePair<string, string> entry in specialites)
+                    {
+                        if (entry.Key == prat.Specialite)
+                        {
+                            prat.Specialite = entry.Value;
+                        }
+                    }
+                    prati.Add(prat);
+                }
+                return prati;
+
+            }
+            catch (Exception exPrat)
+            {
+                throw exPrat;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+            MessageBox.Show("Ajout du Praticien effectué !");
+        }*/
     }
 }
