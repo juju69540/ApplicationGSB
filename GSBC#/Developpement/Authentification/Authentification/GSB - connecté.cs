@@ -17,6 +17,7 @@ namespace Authentification
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
+        Dictionary<string, string> listSpecialite;
 
         public GSB___connecté()
         {
@@ -39,7 +40,16 @@ namespace Authentification
             //listMed = DAOProduit.getAllProduits();
             //TODO Résoudre le problème relatif aux Familles de produits
             //listFamilies = DAOProduit.getAllFamilies();
-            
+
+            listPrat = DAOPraticien.getAllPraticien();
+            listSpecialite = DAOPraticien.getAllSpecialite();
+            dgvPrat.DataSource = null;
+            dgvPrat.DataSource = listPrat;
+            cbxPartSpé.Items.Clear();
+            cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
+            cbxPartSpé.DisplayMember = "Value";
+            cbxPartSpé.ValueMember = "Key";
+
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
@@ -171,6 +181,18 @@ namespace Authentification
         private void tabPrat_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPratAnnuler_Click(object sender, EventArgs e)
+        {
+            txbPratAdresse.Text = "";
+            txbPratCoefConf.Text = "";
+            txbPratCoefConfiance.Text = "";
+            txbPratCoefNoto.Text = "";
+            txbPratCoefNotor.Text = "";
+            txbPratNom.Text = "";
+            txbPratRechercherPracticien.Text = "";
+            txbPratSocial.Text = "";
         }
     }
 }
