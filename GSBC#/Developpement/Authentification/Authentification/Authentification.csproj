@@ -57,13 +57,11 @@
     <Compile Include="FormAuth.Designer.cs">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\Nouveau dossier\GSB - connecté.cs">
+    <Compile Include="GSB - connecté.cs">
       <SubType>Form</SubType>
-      <Link>GSB - connecté.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\..\..\..\Nouveau dossier\GSB - connecté.Designer.cs">
+    <Compile Include="GSB - connecté.Designer.cs">
       <DependentUpon>GSB - connecté.cs</DependentUpon>
-      <Link>GSB - connecté.Designer.cs</Link>
     </Compile>
     <Compile Include="Praticien.cs" />
     <Compile Include="Produit.cs" />
@@ -73,9 +71,8 @@
     <EmbeddedResource Include="FormAuth.resx">
       <DependentUpon>FormAuth.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\..\..\..\Nouveau dossier\GSB - connecté.resx">
+    <EmbeddedResource Include="GSB - connecté.resx">
       <DependentUpon>GSB - connecté.cs</DependentUpon>
-      <Link>GSB - connecté.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
