@@ -148,6 +148,7 @@ namespace Authentification
 
         private void btnPratAnnuler_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //if (txbPratAdresse.Text && txbPratCoefConf.Text && txbPratCoefTelephone.Text && txbPratNom.Text && txbPratRechercherPracticien.Text && txbPratSocial.Text) ;
             
         }
