@@ -15,7 +15,7 @@ namespace Authentification
         List<Produit> listMed;
         List<Praticien> listPrat;
         List<Visiteur> listVis;
-        Dictionary<string, string> listFamilies;
+        //Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
         Dictionary<string, string> listSpecialite;
 
@@ -26,6 +26,8 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
+            // Part affichage Medicaments
+
             // Part affichage Visiteur
             listVis = DAOVisiteur.getAllVisiteurs();
             listZoneGeo = DAOVisiteur.getAllZones();
@@ -122,10 +124,10 @@ namespace Authentification
         private void btnPratAnnuler_Click(object sender, EventArgs e)
         {
             txbPratAdresse.Text = "";
-            txbPratCoefConfiance.Text = "";
+            txbPratContact.Text = "";
             txbPratContact.Text = "";
             txbPratTel.Text = "";
-            txbPratCoefNoto.Text = "";
+            txbPratTel.Text = "";
             txbPratNom.Text = "";
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
