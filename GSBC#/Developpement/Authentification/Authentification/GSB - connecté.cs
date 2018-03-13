@@ -125,9 +125,9 @@ namespace Authentification
         {
             txbPratAdresse.Text = "";
             txbPratContact.Text = "";
-            txbPratContact.Text = "";
+            txbPratCoefConfiance.Text = "";
             txbPratTel.Text = "";
-            txbPratTel.Text = "";
+            txbPratCoefNoto.Text = "";
             txbPratNom.Text = "";
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
