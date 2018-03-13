@@ -162,12 +162,18 @@ namespace Authentification
             txbPratSocial.Text = "";
         }
 
+<<<<<<< HEAD
+        private void txbPratQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+=======
         private void medUpdateDgv()
         {
             dgvMed.Rows.Clear();
             listMed = DAOProduit.getAllProduits();
             dgvMed.DataSource = listMed;
 
+>>>>>>> devBenstititest
         }
     }
 }

@@ -908,6 +908,7 @@ namespace Authentification
             this.lblPratAdresse = new System.Windows.Forms.Label();
             this.lblPratSocial = new System.Windows.Forms.Label();
             this.lblPratNom = new System.Windows.Forms.Label();
+            this.txbPratQuitter = new System.Windows.Forms.Button();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -1408,6 +1409,7 @@ namespace Authentification
             // 
             // tabPrat
             // 
+            this.tabPrat.Controls.Add(this.txbPratQuitter);
             this.tabPrat.Controls.Add(this.cbxPartSpé);
             this.tabPrat.Controls.Add(this.lblPratSpé);
             this.tabPrat.Controls.Add(this.btnPratAjouter);
@@ -1629,6 +1631,16 @@ namespace Authentification
             this.lblPratNom.TabIndex = 61;
             this.lblPratNom.Text = "Nom";
             // 
+            // txbPratQuitter
+            // 
+            this.txbPratQuitter.Location = new System.Drawing.Point(787, 123);
+            this.txbPratQuitter.Name = "txbPratQuitter";
+            this.txbPratQuitter.Size = new System.Drawing.Size(64, 24);
+            this.txbPratQuitter.TabIndex = 87;
+            this.txbPratQuitter.Text = "Quitter";
+            this.txbPratQuitter.UseVisualStyleBackColor = true;
+            this.txbPratQuitter.Click += new System.EventHandler(this.txbPratQuitter_Click);
+            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1731,5 +1743,6 @@ namespace Authentification
         private System.Windows.Forms.ComboBox cbxVisitZoneGeo;
         private System.Windows.Forms.ComboBox cbxPartSpé;
         private System.Windows.Forms.Label lblPratSpé;
+        private System.Windows.Forms.Button txbPratQuitter;
     }
 }
