@@ -26,13 +26,8 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            // Part affichage Mediacaments
-             
-=======
             // Part affichage Medicaments
 
->>>>>>> master
             // Part affichage Visiteur
             listVis = DAOVisiteur.getAllVisiteurs();
             listZoneGeo = DAOVisiteur.getAllZones();
@@ -130,9 +125,9 @@ namespace Authentification
         {
             txbPratAdresse.Text = "";
             txbPratContact.Text = "";
-            txbPratContact.Text = "";
+            txbPratCoefConfiance.Text = "";
             txbPratTel.Text = "";
-            txbPratTel.Text = "";
+            txbPratCoefNoto.Text = "";
             txbPratNom.Text = "";
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
@@ -155,11 +150,25 @@ namespace Authentification
             string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
             foreach (var item in cbxPartSpé.Items)
             {
-                if(item.ToString() == prat)
+                if (item.ToString() == prat)
                 {
                     cbxPartSpé.SelectedItem = item;
                 }
             }
+        }
+
+        private void dgvVisiteur_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbVisitNom.Text = dgvVisiteur.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbVisitPrenom.Text = dgvVisiteur.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbVisitLogin.Text = dgvVisiteur.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbVisitPassword.Text = dgvVisiteur.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbVisitAdresse.Text = dgvVisiteur.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbVisitCP.Text = dgvVisiteur.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbVisitVille.Text = dgvVisiteur.CurrentRow.Cells[6].FormattedValue.ToString();
+            txbVisitDateEmbauche.Text = dgvVisiteur.CurrentRow.Cells[7].FormattedValue.ToString();
+            string zone = dgvVisiteur.CurrentRow.Cells[8].FormattedValue.ToString();
+            cbxVisitZoneGeo.Text = zone;
         }
     }
 }
