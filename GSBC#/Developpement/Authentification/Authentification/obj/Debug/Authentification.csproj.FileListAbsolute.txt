@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
@@ -8,6 +9,16 @@ F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentif
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
 F:\PPE2\2eme_Annee\PPE\ApplicationGSB\GitKrakenGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
+H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
@@ -18,6 +29,17 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentificat
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
+=======
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
@@ -28,13 +50,4 @@ G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Aut
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
-H:\PPE2\2eme_Annee\PPE\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+>>>>>>> devBENSTITI

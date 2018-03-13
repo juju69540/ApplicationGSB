@@ -15,7 +15,7 @@ namespace Authentification
         List<Produit> listMed;
         List<Praticien> listPrat;
         List<Visiteur> listVis;
-        Dictionary<string, string> listFamilies;
+        //Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
         Dictionary<string, string> listSpecialite;
 
@@ -26,8 +26,13 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // Part affichage Mediacaments
              
+=======
+            // Part affichage Medicaments
+
+>>>>>>> master
             // Part affichage Visiteur
             listVis = DAOVisiteur.getAllVisiteurs();
             listZoneGeo = DAOVisiteur.getAllZones();
@@ -124,10 +129,10 @@ namespace Authentification
         private void btnPratAnnuler_Click(object sender, EventArgs e)
         {
             txbPratAdresse.Text = "";
-            txbPratCoefConf.Text = "";
-            txbPratCoefConfiance.Text = "";
-            txbPratCoefNoto.Text = "";
-            txbPratCoefNotor.Text = "";
+            txbPratContact.Text = "";
+            txbPratContact.Text = "";
+            txbPratTel.Text = "";
+            txbPratTel.Text = "";
             txbPratNom.Text = "";
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
@@ -136,6 +141,25 @@ namespace Authentification
         private void txbPratQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dgvPrat_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbPratNom.Text = dgvPrat.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbPratSocial.Text = dgvPrat.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbPratAdresse.Text = dgvPrat.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbPratTel.Text = dgvPrat.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbPratContact.Text = dgvPrat.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbPratCoefNoto.Text = dgvPrat.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbPratCoefConfiance.Text = dgvPrat.CurrentRow.Cells[6].FormattedValue.ToString();
+            string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
+            foreach (var item in cbxPartSpé.Items)
+            {
+                if(item.ToString() == prat)
+                {
+                    cbxPartSpé.SelectedItem = item;
+                }
+            }
         }
     }
 }
