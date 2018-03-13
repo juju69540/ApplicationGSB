@@ -16,12 +16,12 @@ namespace Authentification
         List<Praticien> listPrat;
         List<Visiteur> listVis;
         Dictionary<string, string> listFamilies;
-<<<<<<< HEAD
+
         TabPage currentpage;
-=======
+
         Dictionary<string, string> listZoneGeo;
         Dictionary<string, string> listSpecialite;
->>>>>>> devBENSTITI
+
 
         public GSB___connecté()
         {
@@ -30,7 +30,7 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+
             //Sert à récupérer les informations pour les mettre dans le tableau
             listMed = DAOProduit.getAllProduits();
             dgvMed.DataSource = listMed;
@@ -40,7 +40,7 @@ namespace Authentification
             {
                 cbxMedFamille.Items.Add(entry.Value);
             }
-=======
+
             //listMed = DAOProduit.getAllProduits();
             //TODO Résoudre le problème relatif aux Familles de produits
             //listFamilies = DAOProduit.getAllFamilies();
@@ -53,14 +53,13 @@ namespace Authentification
             cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
             cbxPartSpé.DisplayMember = "Value";
             cbxPartSpé.ValueMember = "Key";
->>>>>>> devBENSTITI
 
         }
 
         private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-<<<<<<< HEAD
+
         }
 
         private void txbMedSearch_TextChanged(object sender, EventArgs e)
@@ -87,42 +86,7 @@ namespace Authentification
 
         }
 
-=======
-            try
-            {
 
-                //Switch doesn't work, you have to add your own tab with a else if
-                if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabMed"])
-                {
-                    listMed = DAOProduit.getAllProduits();
-                    dgvMed.DataSource = null;
-                    dgvMed.DataSource = listMed;
-                }
-                else if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
-                {
-                    listVis = DAOVisiteur.getAllVisiteurs();
-                    listZoneGeo = DAOVisiteur.getAllZones();
-                    dgvVisiteur.DataSource = null;
-                    dgvVisiteur.DataSource = listVis;
-                    /*cbxVisitZoneGeo.Items.Clear();
-                    cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
-                    cbxVisitZoneGeo.DisplayMember = "Value";
-                    cbxVisitZoneGeo.ValueMember = "Key";*/
-                }
-                else
-                {
-                    listPrat = DAOPraticien.getAllPraticien();
-                    dgvPrat.DataSource = null;
-                    dgvPrat.DataSource = listPrat;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
->>>>>>> devBENSTITI
         private void tabVisit_Click(object sender, EventArgs e)
         {
             try
