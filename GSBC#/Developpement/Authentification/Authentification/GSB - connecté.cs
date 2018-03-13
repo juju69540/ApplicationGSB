@@ -26,7 +26,7 @@ namespace Authentification
 
         private void btnVisitAdd_Click(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -57,7 +57,7 @@ namespace Authentification
 
             try
             {
-                
+
                 //Switch doesn't work, you have to add your own tab with a else if
                 if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabMed"])
                 {
@@ -65,7 +65,7 @@ namespace Authentification
                     dgvMed.DataSource = null;
                     dgvMed.DataSource = listMed;
                 }
-                else if(tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
+                else if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
                 {
                     listVis = DAOVisiteur.getAllVisiteurs();
                     listZoneGeo = DAOVisiteur.getAllZones();
@@ -96,7 +96,7 @@ namespace Authentification
 
         private void btnMedAdd_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void tabVisit_Click(object sender, EventArgs e)
@@ -170,13 +170,13 @@ namespace Authentification
 
         private void tabPract_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void cbxVisitZoneGeo_Click(object sender, EventArgs e)
         {
-            
-            
+
+
         }
         private void tabPrat_Click(object sender, EventArgs e)
         {
