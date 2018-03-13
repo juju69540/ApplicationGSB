@@ -148,13 +148,14 @@ namespace Authentification
             txbPratCoefNoto.Text = dgvPrat.CurrentRow.Cells[5].FormattedValue.ToString();
             txbPratCoefConfiance.Text = dgvPrat.CurrentRow.Cells[6].FormattedValue.ToString();
             string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
-            foreach (var item in cbxPartSpé.Items)
+            cbxPartSpé.Text = prat;
+            /*foreach (var item in cbxPartSpé.Items)
             {
                 if(item.ToString() == prat)
                 {
                     cbxPartSpé.SelectedItem = item;
                 }
-            }
+            }*/
         }
     }
 }
