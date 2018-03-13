@@ -195,7 +195,7 @@ namespace Authentification
             txbPratSocial.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txbPratQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

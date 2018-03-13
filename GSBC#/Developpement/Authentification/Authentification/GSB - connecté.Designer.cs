@@ -127,7 +127,6 @@ namespace Authentification
             // 
             // tabMed
             // 
-            this.tabMed.Controls.Add(this.txbPratQuitter);
             this.tabMed.Controls.Add(this.cbxMedSearch);
             this.tabMed.Controls.Add(this.txbMedDos);
             this.tabMed.Controls.Add(this.lblMedEffet);
@@ -608,6 +607,7 @@ namespace Authentification
             // 
             // tabPrat
             // 
+            this.tabPrat.Controls.Add(this.txbPratQuitter);
             this.tabPrat.Controls.Add(this.cbxPartSpé);
             this.tabPrat.Controls.Add(this.lblPratSpé);
             this.tabPrat.Controls.Add(this.btnPratAjouter);
@@ -833,13 +833,13 @@ namespace Authentification
             // 
             // txbPratQuitter
             // 
-            this.txbPratQuitter.Location = new System.Drawing.Point(795, 114);
+            this.txbPratQuitter.Location = new System.Drawing.Point(787, 123);
             this.txbPratQuitter.Name = "txbPratQuitter";
             this.txbPratQuitter.Size = new System.Drawing.Size(64, 24);
-            this.txbPratQuitter.TabIndex = 56;
+            this.txbPratQuitter.TabIndex = 87;
             this.txbPratQuitter.Text = "Quitter";
             this.txbPratQuitter.UseVisualStyleBackColor = true;
-            this.txbPratQuitter.Click += new System.EventHandler(this.button1_Click);
+            this.txbPratQuitter.Click += new System.EventHandler(this.txbPratQuitter_Click);
             // 
             // GSB___connecté
             // 
