@@ -104,6 +104,7 @@ namespace Authentification
             this.lblPratAdresse = new System.Windows.Forms.Label();
             this.lblPratSocial = new System.Windows.Forms.Label();
             this.lblPratNom = new System.Windows.Forms.Label();
+            this.txbPratQuitter = new System.Windows.Forms.Button();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -126,6 +127,7 @@ namespace Authentification
             // 
             // tabMed
             // 
+            this.tabMed.Controls.Add(this.txbPratQuitter);
             this.tabMed.Controls.Add(this.cbxMedSearch);
             this.tabMed.Controls.Add(this.txbMedDos);
             this.tabMed.Controls.Add(this.lblMedEffet);
@@ -829,6 +831,16 @@ namespace Authentification
             this.lblPratNom.TabIndex = 61;
             this.lblPratNom.Text = "Nom";
             // 
+            // txbPratQuitter
+            // 
+            this.txbPratQuitter.Location = new System.Drawing.Point(795, 114);
+            this.txbPratQuitter.Name = "txbPratQuitter";
+            this.txbPratQuitter.Size = new System.Drawing.Size(64, 24);
+            this.txbPratQuitter.TabIndex = 56;
+            this.txbPratQuitter.Text = "Quitter";
+            this.txbPratQuitter.UseVisualStyleBackColor = true;
+            this.txbPratQuitter.Click += new System.EventHandler(this.button1_Click);
+            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -930,5 +942,6 @@ namespace Authentification
         private System.Windows.Forms.ComboBox cbxVisitZoneGeo;
         private System.Windows.Forms.ComboBox cbxPartSpé;
         private System.Windows.Forms.Label lblPratSpé;
+        private System.Windows.Forms.Button txbPratQuitter;
     }
 }
