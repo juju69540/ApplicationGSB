@@ -26,6 +26,8 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
+            // Part affichage Mediacaments
+             
             // Part affichage Visiteur
             listVis = DAOVisiteur.getAllVisiteurs();
             listZoneGeo = DAOVisiteur.getAllZones();
