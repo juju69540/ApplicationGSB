@@ -28,7 +28,6 @@ namespace Authentification
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.cbxMedSearch = new System.Windows.Forms.ComboBox();

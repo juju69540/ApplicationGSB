@@ -30,8 +30,6 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-
             //Sert à récupérer les informations pour les mettre dans le tableau
             listMed = DAOProduit.getAllProduits();
             dgvMed.DataSource = listMed;
@@ -45,8 +43,6 @@ namespace Authentification
             //listMed = DAOProduit.getAllProduits();
             //TODO Résoudre le problème relatif aux Familles de produits
             //listFamilies = DAOProduit.getAllFamilies();
-
-=======
             // Part affichage Visiteur
             listVis = DAOVisiteur.getAllVisiteurs();
             listZoneGeo = DAOVisiteur.getAllZones();
@@ -57,7 +53,6 @@ namespace Authentification
             cbxVisitZoneGeo.DisplayMember = "Value";
             cbxVisitZoneGeo.ValueMember = "Key";
             // Part affichage Praticien
->>>>>>> devZERBIB
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
             dgvPrat.DataSource = null;
@@ -98,9 +93,6 @@ namespace Authentification
             }
 
         }
-
-<<<<<<< HEAD
-
         private void tabVisit_Click(object sender, EventArgs e)
         {
             try
@@ -119,9 +111,6 @@ namespace Authentification
                 MessageBox.Show(ex.ToString());
             }
         }
-
-=======
->>>>>>> devZERBIB
         private void dgvMed_Click(object sender, EventArgs e)
         {
             txbMedNom.Text = dgvMed.CurrentRow.Cells[0].FormattedValue.ToString();
@@ -131,7 +120,6 @@ namespace Authentification
             txbMedContrIndic.Text = dgvMed.CurrentRow.Cells[5].FormattedValue.ToString();
             txbMedPrixHt.Text = dgvMed.CurrentRow.Cells[6].FormattedValue.ToString();
             //txbMedPrixEchant.Text = dgvMed.CurrentRow.Cells[7].FormattedValue.ToString();
-<<<<<<< HEAD
             string fam = dgvMed.CurrentRow.Cells[1].FormattedValue.ToString();
             foreach(var item in cbxMedFamille.Items)
             {
@@ -140,9 +128,6 @@ namespace Authentification
                     cbxMedFamille.SelectedItem = item;
                 }
             }
-
-=======
->>>>>>> devZERBIB
         }
 
         private void btnMedCancel_Click(object sender, EventArgs e)
@@ -180,19 +165,14 @@ namespace Authentification
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
         }
-
-<<<<<<< HEAD
         private void txbPratQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
-=======
         private void medUpdateDgv()
         {
             dgvMed.Rows.Clear();
             listMed = DAOProduit.getAllProduits();
             dgvMed.DataSource = listMed;
-
->>>>>>> devBenstititest
         }
     }
 }
