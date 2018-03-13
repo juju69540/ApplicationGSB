@@ -9,13 +9,12 @@ namespace Authentification
 {
     class DAOVisiteur
     {
-        // TEST123
          public static List<Visiteur> getAllVisiteurs()
         {
             List<Visiteur> lesVisiteurs = new List<Visiteur>();
-            Dictionary<string, string> zoneGeo = DAOVisiteur.getAllZones();
+            Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
             Visiteur unVisiteur;
-            string req = "Select * from Visiteur";
+            string req = "SELECT * FROM Visiteurs;";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
@@ -25,7 +24,7 @@ namespace Authentification
                 while (result.Read())
                 {
                     unVisiteur = new Visiteur(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), result[8].ToString(), result[9].ToString());
-                    foreach (KeyValuePair<string, string> entry in zoneGeo)
+                    foreach (KeyValuePair<string, string> entry in lesZoneGeo)
                     {
                         if (entry.Key == unVisiteur.ZoneGeo)
                         {
@@ -77,11 +76,21 @@ namespace Authentification
 
         public static string AddVisiteur(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, string uneDate, string uneZoneGeo)
         {
-            /*
-            string req = "INSERT INTO visiteur (nom, prenom) VALUES (" + unNom +"," + unPrenom +",") 
+            string req = "INSERT INTO Visiteurs (nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, idGeo) VALUES ('" + unNom +"','" + unPrenom +"','" + unLogin+"','" + unMdp + "','" + uneAdresse + "','" + unCodeP + "','" + uneVille + "','" + uneDate + "','" + uneZoneGeo + "')";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
-            */
+            try
+            {
+                connectBDD.execSQLRead(req);
+            }
+            catch (Exception exVis)
+            {
+                throw exVis;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
             return null;
         }
     }
