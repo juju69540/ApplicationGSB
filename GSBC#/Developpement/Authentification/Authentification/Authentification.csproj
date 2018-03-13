@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="DAOAuthentification.cs" />
     <Compile Include="DAOFactory.cs" />
-    <Compile Include="DAOPracticien.cs" />
+    <Compile Include="DAOPraticien.cs" />
     <Compile Include="DAOProduit.cs" />
     <Compile Include="DAOVisiteur.cs" />
     <Compile Include="FormAuth.cs">

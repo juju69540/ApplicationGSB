@@ -15,8 +15,9 @@ namespace Authentification
         private string contact;
         private float coefnoto;
         private float coef_confiance;
+        private string specialite;
 
-        public Praticien(string nom, string social, string adresse, string tel, string contact, float coefnoto, float coef_confiance)
+        public Praticien(string nom, string social, string adresse, string tel, string contact, float coefnoto, float coef_confiance, string specialite)
         {
             this.nom = nom;
             this.social = social;
@@ -25,6 +26,7 @@ namespace Authentification
             this.contact = contact;
             this.coefnoto = coefnoto;
             this.coef_confiance = coef_confiance;
+            this.Specialite = specialite;
         }
 
         public string Nom
@@ -115,6 +117,19 @@ namespace Authentification
             set
             {
                 coef_confiance = value;
+            }
+        }
+
+        public string Specialite
+        {
+            get
+            {
+                return specialite;
+            }
+
+            set
+            {
+                specialite = value;
             }
         }
     }
