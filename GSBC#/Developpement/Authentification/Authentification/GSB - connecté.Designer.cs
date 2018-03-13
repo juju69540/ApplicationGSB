@@ -559,7 +559,7 @@ namespace Authentification
             // 
             // btnVisitAnnuler
             // 
-            this.btnVisitAnnuler.Location = new System.Drawing.Point(831, 72);
+            this.btnVisitAnnuler.Location = new System.Drawing.Point(840, 72);
             this.btnVisitAnnuler.Name = "btnVisitAnnuler";
             this.btnVisitAnnuler.Size = new System.Drawing.Size(112, 44);
             this.btnVisitAnnuler.TabIndex = 10;
@@ -578,7 +578,7 @@ namespace Authentification
             // 
             // btnVisitDelete
             // 
-            this.btnVisitDelete.Location = new System.Drawing.Point(831, 24);
+            this.btnVisitDelete.Location = new System.Drawing.Point(840, 24);
             this.btnVisitDelete.Name = "btnVisitDelete";
             this.btnVisitDelete.Size = new System.Drawing.Size(112, 42);
             this.btnVisitDelete.TabIndex = 7;
@@ -587,7 +587,7 @@ namespace Authentification
             // 
             // btnVisitModif
             // 
-            this.btnVisitModif.Location = new System.Drawing.Point(703, 72);
+            this.btnVisitModif.Location = new System.Drawing.Point(722, 72);
             this.btnVisitModif.Name = "btnVisitModif";
             this.btnVisitModif.Size = new System.Drawing.Size(112, 44);
             this.btnVisitModif.TabIndex = 6;
@@ -596,7 +596,7 @@ namespace Authentification
             // 
             // btnVisitAdd
             // 
-            this.btnVisitAdd.Location = new System.Drawing.Point(703, 24);
+            this.btnVisitAdd.Location = new System.Drawing.Point(722, 24);
             this.btnVisitAdd.Name = "btnVisitAdd";
             this.btnVisitAdd.Size = new System.Drawing.Size(112, 42);
             this.btnVisitAdd.TabIndex = 5;
