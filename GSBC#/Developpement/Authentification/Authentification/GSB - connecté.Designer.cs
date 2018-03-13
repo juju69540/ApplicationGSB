@@ -1199,7 +1199,6 @@ namespace Authentification
             this.tabVisit.TabIndex = 1;
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
-            this.tabVisit.Click += new System.EventHandler(this.tabVisit_Click);
             // 
             // cbxVisitZoneGeo
             // 
