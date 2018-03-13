@@ -31,6 +31,7 @@ namespace Authentification
                             med.Famille = entry.Value;
                         }
                     }
+                    meds.Add(med);
                 }
                 return meds;
 
@@ -70,6 +71,14 @@ namespace Authentification
             {
                 connectBDD.deconnexion();
             }
+        }
+
+        public static bool addMed(string nom, string desc, string dose, string effetThera, string contreindic, string prixHT, string prixEchant, string famille)
+        {
+            
+
+
+            return true;
         }
     }
 }
