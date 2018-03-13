@@ -143,5 +143,10 @@ namespace Authentification
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
