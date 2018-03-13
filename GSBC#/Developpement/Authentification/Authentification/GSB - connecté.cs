@@ -12,7 +12,7 @@ namespace Authentification
 {
     public partial class GSB___connecté : Form
     {
-        List<Produit> listMed;
+        //List<Produit> listMed;
         List<Praticien> listPrat;
         List<Visiteur> listVis;
         //Dictionary<string, string> listFamilies;
@@ -47,43 +47,6 @@ namespace Authentification
             cbxPartSpé.DisplayMember = "Value";
             cbxPartSpé.ValueMember = "Key";
 
-        }
-
-        private void tbcOnglets_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            try
-            {
-
-                //Switch doesn't work, you have to add your own tab with a else if
-                if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabMed"])
-                {
-                    listMed = DAOProduit.getAllProduits();
-                    dgvMed.DataSource = null;
-                    dgvMed.DataSource = listMed;
-                }
-                else if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
-                {
-                    listVis = DAOVisiteur.getAllVisiteurs();
-                    listZoneGeo = DAOVisiteur.getAllZones();
-                    dgvVisiteur.DataSource = null;
-                    dgvVisiteur.DataSource = listVis;
-                    /*cbxVisitZoneGeo.Items.Clear();
-                    cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
-                    cbxVisitZoneGeo.DisplayMember = "Value";
-                    cbxVisitZoneGeo.ValueMember = "Key";*/
-                }
-                else
-                {
-                    listPrat = DAOPraticien.getAllPraticien();
-                    dgvPrat.DataSource = null;
-                    dgvPrat.DataSource = listPrat;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
         }
 
         private void dgvMed_Click(object sender, EventArgs e)
@@ -149,13 +112,20 @@ namespace Authentification
             txbPratCoefConfiance.Text = dgvPrat.CurrentRow.Cells[6].FormattedValue.ToString();
             string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
             cbxPartSpé.Text = prat;
-            /*foreach (var item in cbxPartSpé.Items)
-            {
-                if(item.ToString() == prat)
-                {
-                    cbxPartSpé.SelectedItem = item;
-                }
-            }*/
+        }
+
+        private void dgvVisiteur_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbVisitNom.Text = dgvVisiteur.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbVisitPrenom.Text = dgvVisiteur.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbVisitLogin.Text = dgvVisiteur.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbVisitPassword.Text = dgvVisiteur.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbVisitAdresse.Text = dgvVisiteur.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbVisitCP.Text = dgvVisiteur.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbVisitVille.Text = dgvVisiteur.CurrentRow.Cells[6].FormattedValue.ToString();
+            txbVisitDateEmbauche.Text = dgvVisiteur.CurrentRow.Cells[7].FormattedValue.ToString();
+            string zone = dgvVisiteur.CurrentRow.Cells[8].FormattedValue.ToString();
+            cbxVisitZoneGeo.Text = zone;
         }
     }
 }
