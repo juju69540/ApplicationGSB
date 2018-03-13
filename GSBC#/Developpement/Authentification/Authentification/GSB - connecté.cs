@@ -122,10 +122,10 @@ namespace Authentification
         private void btnPratAnnuler_Click(object sender, EventArgs e)
         {
             txbPratAdresse.Text = "";
-            txbPratCoefConf.Text = "";
             txbPratCoefConfiance.Text = "";
+            txbPratContact.Text = "";
+            txbPratTel.Text = "";
             txbPratCoefNoto.Text = "";
-            txbPratCoefNotor.Text = "";
             txbPratNom.Text = "";
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
@@ -134,6 +134,28 @@ namespace Authentification
         private void txbPratQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
+<<<<<<< HEAD
+=======
+        }
+
+        private void dgvPrat_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbPratNom.Text = dgvPrat.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbPratSocial.Text = dgvPrat.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbPratAdresse.Text = dgvPrat.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbPratTel.Text = dgvPrat.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbPratContact.Text = dgvPrat.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbPratCoefNoto.Text = dgvPrat.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbPratCoefConfiance.Text = dgvPrat.CurrentRow.Cells[6].FormattedValue.ToString();
+            string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
+            foreach (var item in cbxPartSpé.Items)
+            {
+                if(item.ToString() == prat)
+                {
+                    cbxPartSpé.SelectedItem = item;
+                }
+            }
+>>>>>>> devPIOTtest
         }
     }
 }
