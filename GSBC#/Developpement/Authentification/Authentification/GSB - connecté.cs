@@ -26,10 +26,16 @@ namespace Authentification
 
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
-            //listMed = DAOProduit.getAllProduits();
-            //TODO Résoudre le problème relatif aux Familles de produits
-            //listFamilies = DAOProduit.getAllFamilies();
-
+            // Part affichage Visiteur
+            listVis = DAOVisiteur.getAllVisiteurs();
+            listZoneGeo = DAOVisiteur.getAllZones();
+            dgvVisiteur.DataSource = null;
+            dgvVisiteur.DataSource = listVis;
+            cbxVisitZoneGeo.Items.Clear();
+            cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
+            cbxVisitZoneGeo.DisplayMember = "Value";
+            cbxVisitZoneGeo.ValueMember = "Key";
+            // Part affichage Praticien
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
             dgvPrat.DataSource = null;
@@ -78,25 +84,6 @@ namespace Authentification
             }
         }
 
-        private void tabVisit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                listVis = DAOVisiteur.getAllVisiteurs();
-                listZoneGeo = DAOVisiteur.getAllZones();
-                dgvVisiteur.DataSource = null;
-                dgvVisiteur.DataSource = listVis;
-                cbxVisitZoneGeo.Items.Clear();
-                cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
-                cbxVisitZoneGeo.DisplayMember = "Value";
-                cbxVisitZoneGeo.ValueMember = "Key";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
         private void dgvMed_Click(object sender, EventArgs e)
         {
             txbMedNom.Text = dgvMed.CurrentRow.Cells[0].FormattedValue.ToString();
@@ -105,7 +92,7 @@ namespace Authentification
             txbMedEffet.Text = dgvMed.CurrentRow.Cells[4].FormattedValue.ToString();
             txbMedContrIndic.Text = dgvMed.CurrentRow.Cells[5].FormattedValue.ToString();
             txbMedPrixHt.Text = dgvMed.CurrentRow.Cells[6].FormattedValue.ToString();
-            txbMedPrixEchant.Text = dgvMed.CurrentRow.Cells[7].FormattedValue.ToString();
+            //txbMedPrixEchant.Text = dgvMed.CurrentRow.Cells[7].FormattedValue.ToString();
         }
 
         private void btnMedCancel_Click(object sender, EventArgs e)
