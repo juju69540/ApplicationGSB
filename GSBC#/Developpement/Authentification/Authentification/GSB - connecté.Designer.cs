@@ -37,7 +37,7 @@ namespace Authentification
             this.lblMedSearch = new System.Windows.Forms.Label();
             this.txbMedSearch = new System.Windows.Forms.TextBox();
             this.txbMedPrixEchant = new System.Windows.Forms.TextBox();
-            this.txbPrixMedHt = new System.Windows.Forms.TextBox();
+            this.txbMedPrixHt = new System.Windows.Forms.TextBox();
             this.txbMedContrIndic = new System.Windows.Forms.TextBox();
             this.txbMedEffet = new System.Windows.Forms.TextBox();
             this.txbMedDescpt = new System.Windows.Forms.TextBox();
@@ -55,6 +55,7 @@ namespace Authentification
             this.btnMedUpdt = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
+            this.cbxVisitZoneGeo = new System.Windows.Forms.ComboBox();
             this.lblVisitZoneGeo = new System.Windows.Forms.Label();
             this.lblVisitRechercherV = new System.Windows.Forms.Label();
             this.txbVisitRechercher = new System.Windows.Forms.TextBox();
@@ -101,7 +102,6 @@ namespace Authentification
             this.lblParcAdresse = new System.Windows.Forms.Label();
             this.lblParcSocial = new System.Windows.Forms.Label();
             this.lblParcNom = new System.Windows.Forms.Label();
-            this.cbxVisitZoneGeo = new System.Windows.Forms.ComboBox();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -132,7 +132,7 @@ namespace Authentification
             this.tabMed.Controls.Add(this.lblMedSearch);
             this.tabMed.Controls.Add(this.txbMedSearch);
             this.tabMed.Controls.Add(this.txbMedPrixEchant);
-            this.tabMed.Controls.Add(this.txbPrixMedHt);
+            this.tabMed.Controls.Add(this.txbMedPrixHt);
             this.tabMed.Controls.Add(this.txbMedContrIndic);
             this.tabMed.Controls.Add(this.txbMedEffet);
             this.tabMed.Controls.Add(this.txbMedDescpt);
@@ -215,12 +215,12 @@ namespace Authentification
             this.txbMedPrixEchant.Size = new System.Drawing.Size(100, 20);
             this.txbMedPrixEchant.TabIndex = 49;
             // 
-            // txbPrixMedHt
+            // txbMedPrixHt
             // 
-            this.txbPrixMedHt.Location = new System.Drawing.Point(562, 22);
-            this.txbPrixMedHt.Name = "txbPrixMedHt";
-            this.txbPrixMedHt.Size = new System.Drawing.Size(100, 20);
-            this.txbPrixMedHt.TabIndex = 48;
+            this.txbMedPrixHt.Location = new System.Drawing.Point(562, 22);
+            this.txbMedPrixHt.Name = "txbMedPrixHt";
+            this.txbMedPrixHt.Size = new System.Drawing.Size(100, 20);
+            this.txbMedPrixHt.TabIndex = 48;
             // 
             // txbMedContrIndic
             // 
@@ -358,6 +358,7 @@ namespace Authentification
             this.btnMedAdd.TabIndex = 29;
             this.btnMedAdd.Text = "Ajouter";
             this.btnMedAdd.UseVisualStyleBackColor = true;
+            this.btnMedAdd.Click += new System.EventHandler(this.btnMedAdd_Click);
             // 
             // tabVisit
             // 
@@ -394,6 +395,14 @@ namespace Authentification
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
             this.tabVisit.Click += new System.EventHandler(this.tabVisit_Click);
+            // 
+            // cbxVisitZoneGeo
+            // 
+            this.cbxVisitZoneGeo.FormattingEnabled = true;
+            this.cbxVisitZoneGeo.Location = new System.Drawing.Point(569, 90);
+            this.cbxVisitZoneGeo.Name = "cbxVisitZoneGeo";
+            this.cbxVisitZoneGeo.Size = new System.Drawing.Size(100, 21);
+            this.cbxVisitZoneGeo.TabIndex = 61;
             // 
             // lblVisitZoneGeo
             // 
@@ -800,14 +809,6 @@ namespace Authentification
             this.lblParcNom.TabIndex = 61;
             this.lblParcNom.Text = "Nom";
             // 
-            // cbxVisitZoneGeo
-            // 
-            this.cbxVisitZoneGeo.FormattingEnabled = true;
-            this.cbxVisitZoneGeo.Location = new System.Drawing.Point(569, 90);
-            this.cbxVisitZoneGeo.Name = "cbxVisitZoneGeo";
-            this.cbxVisitZoneGeo.Size = new System.Drawing.Size(100, 21);
-            this.cbxVisitZoneGeo.TabIndex = 61;
-            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -867,7 +868,7 @@ namespace Authentification
         private System.Windows.Forms.Label lblMedSearch;
         private System.Windows.Forms.TextBox txbMedSearch;
         private System.Windows.Forms.TextBox txbMedPrixEchant;
-        private System.Windows.Forms.TextBox txbPrixMedHt;
+        private System.Windows.Forms.TextBox txbMedPrixHt;
         private System.Windows.Forms.TextBox txbMedContrIndic;
         private System.Windows.Forms.TextBox txbMedEffet;
         private System.Windows.Forms.TextBox txbMedDescpt;

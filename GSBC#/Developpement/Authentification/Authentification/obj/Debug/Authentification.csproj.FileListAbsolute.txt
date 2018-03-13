@@ -28,3 +28,13 @@ E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentificat
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 E:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
+F:\Travail\SLAM4-5\C#\PPEGSBGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
