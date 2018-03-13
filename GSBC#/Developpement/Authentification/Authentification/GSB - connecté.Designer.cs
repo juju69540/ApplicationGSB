@@ -28,7 +28,6 @@ namespace Authentification
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.cbxMedSearch = new System.Windows.Forms.ComboBox();
@@ -81,7 +80,7 @@ namespace Authentification
             this.btnVisitDelete = new System.Windows.Forms.Button();
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitAdd = new System.Windows.Forms.Button();
-            this.tabPract = new System.Windows.Forms.TabPage();
+            /*this.tabPract = new System.Windows.Forms.TabPage();
             this.btnPracAjouter = new System.Windows.Forms.Button();
             this.btnPracAnnuler = new System.Windows.Forms.Button();
             this.btnPracSupp = new System.Windows.Forms.Button();
@@ -102,7 +101,7 @@ namespace Authentification
             this.lblParcTelephone = new System.Windows.Forms.Label();
             this.lblParcAdresse = new System.Windows.Forms.Label();
             this.lblParcSocial = new System.Windows.Forms.Label();
-            this.lblParcNom = new System.Windows.Forms.Label();
+            this.lblParcNom = new System.Windows.Forms.Label();*/
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -831,7 +830,6 @@ namespace Authentification
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
-=======
             this.tbcOnglets = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.cbxMedSearch = new System.Windows.Forms.ComboBox();
@@ -1528,11 +1526,10 @@ namespace Authentification
             this.dgvPrat.Name = "dgvPrat";
             this.dgvPrat.Size = new System.Drawing.Size(946, 186);
             this.dgvPrat.TabIndex = 78;
-<<<<<<< HEAD
+
             this.dgvPrat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrat_CellClick);
             this.dgvPrat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrat_CellContentClick);
-=======
->>>>>>> master
+
             // 
             // txbPratCoefConfiance
             // 
@@ -1667,7 +1664,6 @@ namespace Authentification
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrat)).EndInit();
             this.ResumeLayout(false);
 
->>>>>>> devBENSTITI
         }
 
         #endregion
