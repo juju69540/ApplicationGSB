@@ -122,10 +122,10 @@ namespace Authentification
         private void btnPratAnnuler_Click(object sender, EventArgs e)
         {
             txbPratAdresse.Text = "";
-            txbPratCoefConfiance.Text = "";
+            txbPratContact.Text = "";
             txbPratContact.Text = "";
             txbPratTel.Text = "";
-            txbPratCoefNoto.Text = "";
+            txbPratTel.Text = "";
             txbPratNom.Text = "";
             txbPratRechercherPracticien.Text = "";
             txbPratSocial.Text = "";
@@ -134,8 +134,6 @@ namespace Authentification
         private void txbPratQuitter_Click(object sender, EventArgs e)
         {
             Application.Exit();
-<<<<<<< HEAD
-=======
         }
 
         private void dgvPrat_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -155,7 +153,6 @@ namespace Authentification
                     cbxPartSpé.SelectedItem = item;
                 }
             }
->>>>>>> devPIOTtest
         }
     }
 }
