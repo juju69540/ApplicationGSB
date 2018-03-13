@@ -24,17 +24,6 @@ namespace Authentification
             InitializeComponent();
         }
 
-        private void btnVisitAdd_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
-        private void btnParcAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void GSB___connecté_Load(object sender, EventArgs e)
         {
             //listMed = DAOProduit.getAllProduits();
@@ -57,7 +46,7 @@ namespace Authentification
 
             try
             {
-                
+
                 //Switch doesn't work, you have to add your own tab with a else if
                 if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabMed"])
                 {
@@ -65,7 +54,7 @@ namespace Authentification
                     dgvMed.DataSource = null;
                     dgvMed.DataSource = listMed;
                 }
-                else if(tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
+                else if (tbcOnglets.SelectedTab == tbcOnglets.TabPages["tabVisit"])
                 {
                     listVis = DAOVisiteur.getAllVisiteurs();
                     listZoneGeo = DAOVisiteur.getAllZones();
@@ -87,16 +76,6 @@ namespace Authentification
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        private void txbMedSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMedAdd_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void tabVisit_Click(object sender, EventArgs e)
@@ -151,36 +130,6 @@ namespace Authentification
             txbVisitPrenom.Text = "";
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
-        }
-
-        private void dgvPrat_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void btnVisitModif_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVisitDelete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPract_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void cbxVisitZoneGeo_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-        private void tabPrat_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnPratAnnuler_Click(object sender, EventArgs e)
