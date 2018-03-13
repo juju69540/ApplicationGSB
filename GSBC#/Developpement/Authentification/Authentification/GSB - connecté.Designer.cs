@@ -81,6 +81,7 @@ namespace Authentification
             this.btnVisitModif = new System.Windows.Forms.Button();
             this.btnVisitAdd = new System.Windows.Forms.Button();
             this.tabPrat = new System.Windows.Forms.TabPage();
+            this.txbPratQuitter = new System.Windows.Forms.Button();
             this.cbxPartSpé = new System.Windows.Forms.ComboBox();
             this.lblPratSpé = new System.Windows.Forms.Label();
             this.btnPratAjouter = new System.Windows.Forms.Button();
@@ -90,10 +91,10 @@ namespace Authentification
             this.lblPratRechercher = new System.Windows.Forms.Label();
             this.txbPratRechercherPracticien = new System.Windows.Forms.TextBox();
             this.dgvPrat = new System.Windows.Forms.DataGridView();
-            this.txbPratCoefConf = new System.Windows.Forms.TextBox();
-            this.txbPratCoefNotor = new System.Windows.Forms.TextBox();
             this.txbPratCoefConfiance = new System.Windows.Forms.TextBox();
             this.txbPratCoefNoto = new System.Windows.Forms.TextBox();
+            this.txbPratContact = new System.Windows.Forms.TextBox();
+            this.txbPratTel = new System.Windows.Forms.TextBox();
             this.txbPratAdresse = new System.Windows.Forms.TextBox();
             this.txbPratSocial = new System.Windows.Forms.TextBox();
             this.txbPratNom = new System.Windows.Forms.TextBox();
@@ -104,7 +105,6 @@ namespace Authentification
             this.lblPratAdresse = new System.Windows.Forms.Label();
             this.lblPratSocial = new System.Windows.Forms.Label();
             this.lblPratNom = new System.Windows.Forms.Label();
-            this.txbPratQuitter = new System.Windows.Forms.Button();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -617,10 +617,10 @@ namespace Authentification
             this.tabPrat.Controls.Add(this.lblPratRechercher);
             this.tabPrat.Controls.Add(this.txbPratRechercherPracticien);
             this.tabPrat.Controls.Add(this.dgvPrat);
-            this.tabPrat.Controls.Add(this.txbPratCoefConf);
-            this.tabPrat.Controls.Add(this.txbPratCoefNotor);
             this.tabPrat.Controls.Add(this.txbPratCoefConfiance);
             this.tabPrat.Controls.Add(this.txbPratCoefNoto);
+            this.tabPrat.Controls.Add(this.txbPratContact);
+            this.tabPrat.Controls.Add(this.txbPratTel);
             this.tabPrat.Controls.Add(this.txbPratAdresse);
             this.tabPrat.Controls.Add(this.txbPratSocial);
             this.tabPrat.Controls.Add(this.txbPratNom);
@@ -639,6 +639,16 @@ namespace Authentification
             this.tabPrat.Text = "Praticiens";
             this.tabPrat.UseVisualStyleBackColor = true;
             this.tabPrat.Click += new System.EventHandler(this.tabPrat_Click);
+            // 
+            // txbPratQuitter
+            // 
+            this.txbPratQuitter.Location = new System.Drawing.Point(787, 123);
+            this.txbPratQuitter.Name = "txbPratQuitter";
+            this.txbPratQuitter.Size = new System.Drawing.Size(64, 24);
+            this.txbPratQuitter.TabIndex = 87;
+            this.txbPratQuitter.Text = "Quitter";
+            this.txbPratQuitter.UseVisualStyleBackColor = true;
+            this.txbPratQuitter.Click += new System.EventHandler(this.txbPratQuitter_Click);
             // 
             // cbxPartSpé
             // 
@@ -717,35 +727,36 @@ namespace Authentification
             this.dgvPrat.Name = "dgvPrat";
             this.dgvPrat.Size = new System.Drawing.Size(946, 186);
             this.dgvPrat.TabIndex = 78;
+            this.dgvPrat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrat_CellClick);
             this.dgvPrat.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPrat_CellContentClick);
-            // 
-            // txbPratCoefConf
-            // 
-            this.txbPratCoefConf.Location = new System.Drawing.Point(580, 58);
-            this.txbPratCoefConf.Name = "txbPratCoefConf";
-            this.txbPratCoefConf.Size = new System.Drawing.Size(100, 20);
-            this.txbPratCoefConf.TabIndex = 76;
-            // 
-            // txbPratCoefNotor
-            // 
-            this.txbPratCoefNotor.Location = new System.Drawing.Point(580, 29);
-            this.txbPratCoefNotor.Name = "txbPratCoefNotor";
-            this.txbPratCoefNotor.Size = new System.Drawing.Size(100, 20);
-            this.txbPratCoefNotor.TabIndex = 75;
             // 
             // txbPratCoefConfiance
             // 
-            this.txbPratCoefConfiance.Location = new System.Drawing.Point(327, 58);
+            this.txbPratCoefConfiance.Location = new System.Drawing.Point(580, 58);
             this.txbPratCoefConfiance.Name = "txbPratCoefConfiance";
             this.txbPratCoefConfiance.Size = new System.Drawing.Size(100, 20);
-            this.txbPratCoefConfiance.TabIndex = 73;
+            this.txbPratCoefConfiance.TabIndex = 76;
             // 
             // txbPratCoefNoto
             // 
-            this.txbPratCoefNoto.Location = new System.Drawing.Point(327, 29);
+            this.txbPratCoefNoto.Location = new System.Drawing.Point(580, 29);
             this.txbPratCoefNoto.Name = "txbPratCoefNoto";
             this.txbPratCoefNoto.Size = new System.Drawing.Size(100, 20);
-            this.txbPratCoefNoto.TabIndex = 72;
+            this.txbPratCoefNoto.TabIndex = 75;
+            // 
+            // txbPratContact
+            // 
+            this.txbPratContact.Location = new System.Drawing.Point(327, 58);
+            this.txbPratContact.Name = "txbPratContact";
+            this.txbPratContact.Size = new System.Drawing.Size(100, 20);
+            this.txbPratContact.TabIndex = 73;
+            // 
+            // txbPratTel
+            // 
+            this.txbPratTel.Location = new System.Drawing.Point(327, 29);
+            this.txbPratTel.Name = "txbPratTel";
+            this.txbPratTel.Size = new System.Drawing.Size(100, 20);
+            this.txbPratTel.TabIndex = 72;
             // 
             // txbPratAdresse
             // 
@@ -831,16 +842,6 @@ namespace Authentification
             this.lblPratNom.TabIndex = 61;
             this.lblPratNom.Text = "Nom";
             // 
-            // txbPratQuitter
-            // 
-            this.txbPratQuitter.Location = new System.Drawing.Point(787, 123);
-            this.txbPratQuitter.Name = "txbPratQuitter";
-            this.txbPratQuitter.Size = new System.Drawing.Size(64, 24);
-            this.txbPratQuitter.TabIndex = 87;
-            this.txbPratQuitter.Text = "Quitter";
-            this.txbPratQuitter.UseVisualStyleBackColor = true;
-            this.txbPratQuitter.Click += new System.EventHandler(this.txbPratQuitter_Click);
-            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -919,10 +920,10 @@ namespace Authentification
         private System.Windows.Forms.Button btnMedAdd;
         private System.Windows.Forms.Label lblVisitZoneGeo;
         private System.Windows.Forms.DataGridView dgvPrat;
-        private System.Windows.Forms.TextBox txbPratCoefConf;
-        private System.Windows.Forms.TextBox txbPratCoefNotor;
         private System.Windows.Forms.TextBox txbPratCoefConfiance;
         private System.Windows.Forms.TextBox txbPratCoefNoto;
+        private System.Windows.Forms.TextBox txbPratContact;
+        private System.Windows.Forms.TextBox txbPratTel;
         private System.Windows.Forms.TextBox txbPratAdresse;
         private System.Windows.Forms.TextBox txbPratSocial;
         private System.Windows.Forms.TextBox txbPratNom;
