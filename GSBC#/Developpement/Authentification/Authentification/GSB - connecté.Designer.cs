@@ -584,6 +584,7 @@ namespace Authentification
             this.btnVisitDelete.TabIndex = 7;
             this.btnVisitDelete.Text = "Supprimer";
             this.btnVisitDelete.UseVisualStyleBackColor = true;
+            this.btnVisitDelete.Click += new System.EventHandler(this.btnVisitDelete_Click);
             // 
             // btnVisitModif
             // 
