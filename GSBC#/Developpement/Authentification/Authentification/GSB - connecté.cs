@@ -127,5 +127,17 @@ namespace Authentification
             string zone = dgvVisiteur.CurrentRow.Cells[8].FormattedValue.ToString();
             cbxVisitZoneGeo.Text = zone;
         }
+
+        private void btnVisitDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DAOVisiteur.DeleteVisiteur(txbVisitNom.Text);
+            } 
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }
