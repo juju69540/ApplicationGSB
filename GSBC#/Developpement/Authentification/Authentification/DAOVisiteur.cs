@@ -9,12 +9,12 @@ namespace Authentification
 {
     class DAOVisiteur
     {
-         public static List<Visiteur> getAllVisiteurs()
+        public static List<Visiteur> getAllVisiteurs()
         {
             List<Visiteur> lesVisiteurs = new List<Visiteur>();
             Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
             Visiteur unVisiteur;
-            string req = "SELECT * FROM Visiteurs WHERE suppVisiteur = 0;";
+            string req = "SELECT * FROM Visiteurs WHERE dateSupp = '0001-01-01';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
@@ -74,9 +74,18 @@ namespace Authentification
             }
         }
 
-        public static string AddVisiteur(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, string uneDate, string uneZoneGeo)
+        public static void AddVisiteurs(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, DateTime uneDate, string uneZoneGeo)
         {
-            string req = "INSERT INTO Visiteurs (nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, idGeo) VALUES ('" + unNom +"','" + unPrenom +"','" + unLogin+"','" + unMdp + "','" + uneAdresse + "','" + unCodeP + "','" + uneVille + "','" + uneDate + "','" + uneZoneGeo + "')";
+            Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
+            int laZoneGeo = 0;
+            foreach (KeyValuePair <string, string> entry in lesZoneGeo )
+            {
+                if (uneZoneGeo == entry.Value)
+                {
+                    laZoneGeo = Convert.ToInt32(entry.Key);
+                }
+            }
+            string req = "INSERT INTO Visiteurs (nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, idGeo) VALUES ('" + unNom + "','" + unPrenom + "','" + unLogin + "','" + unMdp + "','" + uneAdresse + "','" + unCodeP + "','" + uneVille + "','" + uneDate + "','" + laZoneGeo + "')";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             try
@@ -91,11 +100,10 @@ namespace Authentification
             {
                 connectBDD.deconnexion();
             }
-            return null;
         }
-        public static void DeleteVisiteur(string unNom)
+        public static void DeleteVisiteurs(string unNom)
         {
-            string req = "UPDATE Visiteurs SET suppVisiteur = 1 WHERE nom='"+unNom+"';";
+            string req = "UPDATE Visiteurs SET dateSupp = GETDATE() WHERE nom='"+unNom+"';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             try
