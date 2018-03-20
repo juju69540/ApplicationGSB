@@ -75,7 +75,6 @@ namespace Authentification
         {
             txbVisitAdresse.Text = "";
             txbVisitCP.Text = "";
-            txbVisitDateEmbauche.Text = "";
             txbVisitLogin.Text = "";
             txbVisitNom.Text = "";
             txbVisitPassword.Text = "";
@@ -123,7 +122,7 @@ namespace Authentification
             txbVisitAdresse.Text = dgvVisiteur.CurrentRow.Cells[4].FormattedValue.ToString();
             txbVisitCP.Text = dgvVisiteur.CurrentRow.Cells[5].FormattedValue.ToString();
             txbVisitVille.Text = dgvVisiteur.CurrentRow.Cells[6].FormattedValue.ToString();
-            txbVisitDateEmbauche.Text = dgvVisiteur.CurrentRow.Cells[7].FormattedValue.ToString();
+            dtpVisitDateEmb.Value = Convert.ToDateTime(dgvVisiteur.CurrentRow.Cells[7].FormattedValue);
             string zone = dgvVisiteur.CurrentRow.Cells[8].FormattedValue.ToString();
             cbxVisitZoneGeo.Text = zone;
         }
@@ -132,8 +131,31 @@ namespace Authentification
         {
             try
             {
-                DAOVisiteur.DeleteVisiteur(txbVisitNom.Text);
+                DAOVisiteur.DeleteVisiteurs(txbVisitNom.Text);
+                MessageBox.Show("Suppression Bien éffectué !");
             } 
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnVisitAdd_Click(object sender, EventArgs e)
+        {
+            string nomVisiteur = txbVisitNom.Text;
+            string prenomVisiteur = txbVisitPrenom.Text;
+            string loginVisiteur = txbVisitLogin.Text;
+            string mdpVisiteur = txbVisitPassword.Text;
+            string adresseVisiteur = txbVisitAdresse.Text;
+            string cpVisiteur = txbVisitCP.Text;
+            string villeVisiteur = txbVisitVille.Text;
+            DateTime dateEmbVisiteur = dtpVisitDateEmb.Value;
+            string zoneGeoVisiteur = cbxVisitZoneGeo.Text;
+            try
+            {
+                DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur);
+                MessageBox.Show("Ajout Bien éffectué !");
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
