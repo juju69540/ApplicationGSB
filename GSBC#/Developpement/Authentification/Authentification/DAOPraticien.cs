@@ -73,6 +73,7 @@ namespace Authentification
             }
         }
 
+        /*mettre un objet praticien pour les requete insert, update et delete*/
         /*public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
         {
             /*string req = "INSERT INTO Praticiens ([nom],[social],[adresse],[telephone],[contact],[coeffnoto],[coeffconfiance],[idSpecialite]) VALUES (" + unNom +"," + unSocial +"," + uneAdresse +"," + unTelephone +"," + unContact +"," + unCoefNoto +"," + unCoefConfiance +"," + uneSpe +")";
