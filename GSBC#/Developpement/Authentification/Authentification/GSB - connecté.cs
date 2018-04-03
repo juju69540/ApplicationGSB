@@ -108,15 +108,15 @@ namespace Authentification
 
         private void dgvVisiteur_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txbVisitNom.Text = dgvVisiteur.CurrentRow.Cells[0].FormattedValue.ToString();
-            txbVisitPrenom.Text = dgvVisiteur.CurrentRow.Cells[1].FormattedValue.ToString();
-            txbVisitLogin.Text = dgvVisiteur.CurrentRow.Cells[2].FormattedValue.ToString();
-            txbVisitPassword.Text = dgvVisiteur.CurrentRow.Cells[3].FormattedValue.ToString();
-            txbVisitAdresse.Text = dgvVisiteur.CurrentRow.Cells[4].FormattedValue.ToString();
-            txbVisitCP.Text = dgvVisiteur.CurrentRow.Cells[5].FormattedValue.ToString();
-            txbVisitVille.Text = dgvVisiteur.CurrentRow.Cells[6].FormattedValue.ToString();
-            dtpVisitDateEmb.Value = Convert.ToDateTime(dgvVisiteur.CurrentRow.Cells[7].FormattedValue);
-            string zone = dgvVisiteur.CurrentRow.Cells[8].FormattedValue.ToString();
+            txbVisitNom.Text = dgvVisiteur.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbVisitPrenom.Text = dgvVisiteur.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbVisitLogin.Text = dgvVisiteur.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbVisitPassword.Text = dgvVisiteur.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbVisitAdresse.Text = dgvVisiteur.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbVisitCP.Text = dgvVisiteur.CurrentRow.Cells[6].FormattedValue.ToString();
+            txbVisitVille.Text = dgvVisiteur.CurrentRow.Cells[7].FormattedValue.ToString();
+            dtpVisitDateEmb.Value = Convert.ToDateTime(dgvVisiteur.CurrentRow.Cells[8].FormattedValue);
+            string zone = dgvVisiteur.CurrentRow.Cells[9].FormattedValue.ToString();
             cbxVisitZoneGeo.Text = zone;
         }
 
@@ -124,8 +124,21 @@ namespace Authentification
         {
             try
             {
-                DAOVisiteur.DeleteVisiteurs(txbVisitNom.Text);
+                string unLogin = txbVisitLogin.Text;
+                string unMdp = txbVisitPassword.Text;
+
+                string id = DAOVisiteur.getIdentifiant(unLogin, unMdp);
+
+                DAOVisiteur.DeleteVisiteurs(id);
                 refreshDgvVisit();
+                txbVisitAdresse.Text = "";
+                txbVisitCP.Text = "";
+                txbVisitLogin.Text = "";
+                txbVisitNom.Text = "";
+                txbVisitPassword.Text = "";
+                txbVisitPrenom.Text = "";
+                txbVisitRechercher.Text = "";
+                txbVisitVille.Text = "";
                 MessageBox.Show("Suppression Bien éffectué !");
             } 
             catch (Exception ex)
@@ -147,13 +160,55 @@ namespace Authentification
             string zoneGeoVisiteur = cbxVisitZoneGeo.Text;
             try
             {
-                DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur);
-                refreshDgvVisit();
-                MessageBox.Show("Ajout Bien éffectué !");
+                if (DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur))
+                {
+                    refreshDgvVisit();
+                    MessageBox.Show("Ajout bien effectué !");
+                }
+                else
+                {
+                    MessageBox.Show("Erreur : Ce compte existe déjà !");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnVisitModif_Click(object sender, EventArgs e)
+        {
+            string unLogin = txbVisitLogin.Text;
+            string unMdp = txbVisitPassword.Text;
+
+            string unNom = txbVisitNom.Text;
+            string unPrenom = txbVisitPrenom.Text;
+            string uneAdresse = txbVisitAdresse.Text;
+            string unCP = txbVisitCP.Text;
+            string uneVille = txbVisitVille.Text;
+            DateTime uneDateEmbauche = dtpVisitDateEmb.Value; string dateEmbauche = dtpVisitDateEmb.Text;
+            string uneZoneGeo = cbxVisitZoneGeo.Text;
+            try
+            {
+                string id = DAOVisiteur.getIdentifiant(unLogin, unMdp);
+                DAOVisiteur.UpdateVisiteur(id, unNom, unPrenom, uneAdresse, unCP, uneVille, uneDateEmbauche, uneZoneGeo);
+                listVis = DAOVisiteur.getAllVisiteurs();
+                listZoneGeo = DAOVisiteur.getAllZones();
+                dgvVisiteur.DataSource = null;
+                dgvVisiteur.DataSource = listVis;
+                MessageBox.Show("Modification efféctuée !");
+            }
+            catch (Exception ex)
+            {
+                string id = DAOVisiteur.getIdentifiant(unLogin, unMdp);
+                if (id == null)
+                {
+                    MessageBox.Show("Vous ne pouvez pas modifier le login et le Mot de passe !");
+                }
+                else
+                {
+                    MessageBox.Show(ex.ToString());
+                }
             }
         }
 

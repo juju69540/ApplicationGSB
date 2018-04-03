@@ -55,6 +55,7 @@ namespace Authentification
             this.btnMedUpdt = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
+            this.dtpVisitDateEmb = new System.Windows.Forms.DateTimePicker();
             this.cbxVisitZoneGeo = new System.Windows.Forms.ComboBox();
             this.lblVisitZoneGeo = new System.Windows.Forms.Label();
             this.lblVisitRechercherV = new System.Windows.Forms.Label();
@@ -104,7 +105,6 @@ namespace Authentification
             this.lblPratAdresse = new System.Windows.Forms.Label();
             this.lblPratSocial = new System.Windows.Forms.Label();
             this.lblPratNom = new System.Windows.Forms.Label();
-            this.dtpVisitDateEmb = new System.Windows.Forms.DateTimePicker();
             this.tbcOnglets.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
@@ -396,6 +396,13 @@ namespace Authentification
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
             // 
+            // dtpVisitDateEmb
+            // 
+            this.dtpVisitDateEmb.Location = new System.Drawing.Point(536, 59);
+            this.dtpVisitDateEmb.Name = "dtpVisitDateEmb";
+            this.dtpVisitDateEmb.Size = new System.Drawing.Size(161, 20);
+            this.dtpVisitDateEmb.TabIndex = 62;
+            // 
             // cbxVisitZoneGeo
             // 
             this.cbxVisitZoneGeo.FormattingEnabled = true;
@@ -587,6 +594,7 @@ namespace Authentification
             this.btnVisitModif.TabIndex = 6;
             this.btnVisitModif.Text = "Modifier";
             this.btnVisitModif.UseVisualStyleBackColor = true;
+            this.btnVisitModif.Click += new System.EventHandler(this.btnVisitModif_Click);
             // 
             // btnVisitAdd
             // 
@@ -832,13 +840,6 @@ namespace Authentification
             this.lblPratNom.Size = new System.Drawing.Size(29, 13);
             this.lblPratNom.TabIndex = 61;
             this.lblPratNom.Text = "Nom";
-            // 
-            // dtpVisitDateEmb
-            // 
-            this.dtpVisitDateEmb.Location = new System.Drawing.Point(536, 59);
-            this.dtpVisitDateEmb.Name = "dtpVisitDateEmb";
-            this.dtpVisitDateEmb.Size = new System.Drawing.Size(161, 20);
-            this.dtpVisitDateEmb.TabIndex = 62;
             // 
             // GSB___connecté
             // 
