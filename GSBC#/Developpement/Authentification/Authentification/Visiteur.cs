@@ -8,6 +8,7 @@ namespace Authentification
 {
     class Visiteur
     {
+        private string id;
         private string nom;
         private string prenom;
         private string login;
@@ -19,6 +20,19 @@ namespace Authentification
         private string zoneGeo;
 
         #region Accesseur
+        public string Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
         public string Nom
         {
             get
@@ -129,8 +143,9 @@ namespace Authentification
         }
         #endregion
         #region Constructeur
-        public Visiteur(string nom, string prenom, string login, string password, string adresse, string codePostal, string ville, string dateEmbauche, string ZoneGeo)
+        public Visiteur(string id, string nom, string prenom, string login, string password, string adresse, string codePostal, string ville, string dateEmbauche, string ZoneGeo)
         {
+            this.id = id;
             this.Nom = nom;
             this.Prenom = prenom;
             this.Login = login;
