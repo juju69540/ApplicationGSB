@@ -29,14 +29,7 @@ namespace Authentification
             // Part affichage Medicaments
 
             // Part affichage Visiteur
-            listVis = DAOVisiteur.getAllVisiteurs();
-            listZoneGeo = DAOVisiteur.getAllZones();
-            dgvVisiteur.DataSource = null;
-            dgvVisiteur.DataSource = listVis;
-            cbxVisitZoneGeo.Items.Clear();
-            cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
-            cbxVisitZoneGeo.DisplayMember = "Value";
-            cbxVisitZoneGeo.ValueMember = "Key";
+            refreshDgvVisit();
             // Part affichage Praticien
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
@@ -132,6 +125,7 @@ namespace Authentification
             try
             {
                 DAOVisiteur.DeleteVisiteurs(txbVisitNom.Text);
+                refreshDgvVisit();
                 MessageBox.Show("Suppression Bien éffectué !");
             } 
             catch (Exception ex)
@@ -154,12 +148,24 @@ namespace Authentification
             try
             {
                 DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur);
+                refreshDgvVisit();
                 MessageBox.Show("Ajout Bien éffectué !");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        public void refreshDgvVisit()
+        {
+            listVis = DAOVisiteur.getAllVisiteurs();
+            listZoneGeo = DAOVisiteur.getAllZones();
+            dgvVisiteur.DataSource = null;
+            dgvVisiteur.DataSource = listVis;
+            cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
+            cbxVisitZoneGeo.DisplayMember = "Value";
+            cbxVisitZoneGeo.ValueMember = "Key";
         }
     }
 }

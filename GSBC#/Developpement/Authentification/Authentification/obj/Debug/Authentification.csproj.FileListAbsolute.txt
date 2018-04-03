@@ -51,3 +51,13 @@ G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Aut
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 G:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
 >>>>>>> devBENSTITI
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojResolveAssemblyReference.cache
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
+Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
