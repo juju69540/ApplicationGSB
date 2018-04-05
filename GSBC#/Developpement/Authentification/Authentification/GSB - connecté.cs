@@ -74,6 +74,7 @@ namespace Authentification
             txbVisitPrenom.Text = "";
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
+            btnVisitAdd.Enabled = true;
         }
 
         private void btnPratAnnuler_Click(object sender, EventArgs e)
@@ -118,6 +119,7 @@ namespace Authentification
             dtpVisitDateEmb.Value = Convert.ToDateTime(dgvVisiteur.CurrentRow.Cells[8].FormattedValue);
             string zone = dgvVisiteur.CurrentRow.Cells[9].FormattedValue.ToString();
             cbxVisitZoneGeo.Text = zone;
+            btnVisitAdd.Enabled = false;
         }
 
         private void btnVisitDelete_Click(object sender, EventArgs e)
@@ -139,7 +141,7 @@ namespace Authentification
                 txbVisitPrenom.Text = "";
                 txbVisitRechercher.Text = "";
                 txbVisitVille.Text = "";
-                MessageBox.Show("Suppression Bien éffectué !");
+                MessageBox.Show("Suppression Bien Effectué !");
             } 
             catch (Exception ex)
             {
@@ -160,14 +162,21 @@ namespace Authentification
             string zoneGeoVisiteur = cbxVisitZoneGeo.Text;
             try
             {
-                if (DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur))
+                if (nomVisiteur != "" && prenomVisiteur != "" && loginVisiteur != "" && mdpVisiteur != "" && adresseVisiteur != "" && cpVisiteur != "" && villeVisiteur != "" && zoneGeoVisiteur != "")
                 {
-                    refreshDgvVisit();
-                    MessageBox.Show("Ajout bien effectué !");
+                    if (DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur))
+                    {
+                        refreshDgvVisit();
+                        MessageBox.Show("Ajout Bien Effectué !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erreur : Ce compte est déjà existant !");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Erreur : Ce compte existe déjà !");
+                    MessageBox.Show("Erreur : Veuillez remplir tous les champs !");
                 }
             }
             catch (Exception ex)
@@ -196,7 +205,7 @@ namespace Authentification
                 listZoneGeo = DAOVisiteur.getAllZones();
                 dgvVisiteur.DataSource = null;
                 dgvVisiteur.DataSource = listVis;
-                MessageBox.Show("Modification efféctuée !");
+                MessageBox.Show("Modification Efféctuée !");
             }
             catch (Exception ex)
             {
@@ -210,6 +219,14 @@ namespace Authentification
                     MessageBox.Show(ex.ToString());
                 }
             }
+        }
+
+        private void txbVisitRechercher_TextChanged(object sender, EventArgs e)
+        {
+            string unNom = txbVisitRechercher.Text;
+            listVis = DAOVisiteur.getUnVisiteur(unNom);
+            dgvVisiteur.DataSource = null;
+            dgvVisiteur.DataSource = listVis;  
         }
 
         public void refreshDgvVisit()
