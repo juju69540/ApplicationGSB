@@ -44,6 +44,41 @@ namespace Authentification
                 connectBDD.deconnexion();
             }
         }
+        public static List<Visiteur> getUnVisiteur(string unNom)
+        {
+            List<Visiteur> CesVisiteurs = new List<Visiteur>();
+            Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
+            Visiteur unVisiteur;
+            string req = "SELECT * FROM Visiteurs WHERE dateSupp = '0001-01-01' AND nom LIKE '"+unNom+"%';";
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            SqlDataReader result;
+            try
+            {
+                result = connectBDD.execSQLRead(req);
+                while (result.Read())
+                {
+                    unVisiteur = new Visiteur(result[0].ToString(), result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), result[8].ToString(), result[9].ToString());
+                    foreach (KeyValuePair<string, string> entry in lesZoneGeo)
+                    {
+                        if (entry.Key == unVisiteur.ZoneGeo)
+                        {
+                            unVisiteur.ZoneGeo = entry.Value;
+                        }
+                    }
+                    CesVisiteurs.Add(unVisiteur);
+                }
+                return CesVisiteurs;
+            }
+            catch (Exception exVis)
+            {
+                throw exVis;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
         public static Boolean getExistVisiteurs(string unLogin)
         {
             string req = "SELECT * FROM Visiteurs WHERE login='"+unLogin+"';";

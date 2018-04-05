@@ -1,0 +1,14 @@
+if (MessageBox.Show(this, "Etes-vous sûr ?", "ATTENTION !!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    DAOVisiteur.DeleteVisiteurs(id);
+                    refreshDgvVisit();
+                    txbVisitAdresse.Text = "";
+                    txbVisitCP.Text = "";
+                    txbVisitLogin.Text = "";
+                    txbVisitNom.Text = "";
+                    txbVisitPassword.Text = "";
+                    txbVisitPrenom.Text = "";
+                    txbVisitRechercher.Text = "";
+                    txbVisitVille.Text = "";
+                    MessageBox.Show("Suppression Bien Effectué !");
+                }

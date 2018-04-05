@@ -425,16 +425,17 @@ namespace Authentification
             this.lblVisitRechercherV.AutoSize = true;
             this.lblVisitRechercherV.Location = new System.Drawing.Point(363, 133);
             this.lblVisitRechercherV.Name = "lblVisitRechercherV";
-            this.lblVisitRechercherV.Size = new System.Drawing.Size(120, 13);
+            this.lblVisitRechercherV.Size = new System.Drawing.Size(146, 13);
             this.lblVisitRechercherV.TabIndex = 28;
-            this.lblVisitRechercherV.Text = "Rechercher un visiteur :";
+            this.lblVisitRechercherV.Text = "Rechercher un visiteur (nom) ";
             // 
             // txbVisitRechercher
             // 
-            this.txbVisitRechercher.Location = new System.Drawing.Point(500, 130);
+            this.txbVisitRechercher.Location = new System.Drawing.Point(518, 130);
             this.txbVisitRechercher.Name = "txbVisitRechercher";
             this.txbVisitRechercher.Size = new System.Drawing.Size(100, 20);
             this.txbVisitRechercher.TabIndex = 27;
+            this.txbVisitRechercher.TextChanged += new System.EventHandler(this.txbVisitRechercher_TextChanged);
             // 
             // txbVisitVille
             // 
