@@ -55,11 +55,11 @@ namespace Authentification
             this.btnMedUpdt = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
+            this.dtpVisitDateEmb = new System.Windows.Forms.DateTimePicker();
             this.cbxVisitZoneGeo = new System.Windows.Forms.ComboBox();
             this.lblVisitZoneGeo = new System.Windows.Forms.Label();
             this.lblVisitRechercherV = new System.Windows.Forms.Label();
             this.txbVisitRechercher = new System.Windows.Forms.TextBox();
-            this.txbVisitDateEmbauche = new System.Windows.Forms.TextBox();
             this.txbVisitVille = new System.Windows.Forms.TextBox();
             this.txbVisitCP = new System.Windows.Forms.TextBox();
             this.txbVisitAdresse = new System.Windows.Forms.TextBox();
@@ -363,11 +363,11 @@ namespace Authentification
             // 
             // tabVisit
             // 
+            this.tabVisit.Controls.Add(this.dtpVisitDateEmb);
             this.tabVisit.Controls.Add(this.cbxVisitZoneGeo);
             this.tabVisit.Controls.Add(this.lblVisitZoneGeo);
             this.tabVisit.Controls.Add(this.lblVisitRechercherV);
             this.tabVisit.Controls.Add(this.txbVisitRechercher);
-            this.tabVisit.Controls.Add(this.txbVisitDateEmbauche);
             this.tabVisit.Controls.Add(this.txbVisitVille);
             this.tabVisit.Controls.Add(this.txbVisitCP);
             this.tabVisit.Controls.Add(this.txbVisitAdresse);
@@ -396,18 +396,25 @@ namespace Authentification
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
             // 
+            // dtpVisitDateEmb
+            // 
+            this.dtpVisitDateEmb.Location = new System.Drawing.Point(536, 59);
+            this.dtpVisitDateEmb.Name = "dtpVisitDateEmb";
+            this.dtpVisitDateEmb.Size = new System.Drawing.Size(161, 20);
+            this.dtpVisitDateEmb.TabIndex = 62;
+            // 
             // cbxVisitZoneGeo
             // 
             this.cbxVisitZoneGeo.FormattingEnabled = true;
-            this.cbxVisitZoneGeo.Location = new System.Drawing.Point(585, 90);
+            this.cbxVisitZoneGeo.Location = new System.Drawing.Point(536, 90);
             this.cbxVisitZoneGeo.Name = "cbxVisitZoneGeo";
-            this.cbxVisitZoneGeo.Size = new System.Drawing.Size(112, 21);
+            this.cbxVisitZoneGeo.Size = new System.Drawing.Size(161, 21);
             this.cbxVisitZoneGeo.TabIndex = 61;
             // 
             // lblVisitZoneGeo
             // 
             this.lblVisitZoneGeo.AutoSize = true;
-            this.lblVisitZoneGeo.Location = new System.Drawing.Point(469, 93);
+            this.lblVisitZoneGeo.Location = new System.Drawing.Point(414, 93);
             this.lblVisitZoneGeo.Name = "lblVisitZoneGeo";
             this.lblVisitZoneGeo.Size = new System.Drawing.Size(100, 13);
             this.lblVisitZoneGeo.TabIndex = 60;
@@ -429,58 +436,51 @@ namespace Authentification
             this.txbVisitRechercher.Size = new System.Drawing.Size(100, 20);
             this.txbVisitRechercher.TabIndex = 27;
             // 
-            // txbVisitDateEmbauche
-            // 
-            this.txbVisitDateEmbauche.Location = new System.Drawing.Point(585, 59);
-            this.txbVisitDateEmbauche.Name = "txbVisitDateEmbauche";
-            this.txbVisitDateEmbauche.Size = new System.Drawing.Size(112, 20);
-            this.txbVisitDateEmbauche.TabIndex = 26;
-            // 
             // txbVisitVille
             // 
-            this.txbVisitVille.Location = new System.Drawing.Point(585, 30);
+            this.txbVisitVille.Location = new System.Drawing.Point(536, 30);
             this.txbVisitVille.Name = "txbVisitVille";
-            this.txbVisitVille.Size = new System.Drawing.Size(112, 20);
+            this.txbVisitVille.Size = new System.Drawing.Size(161, 20);
             this.txbVisitVille.TabIndex = 25;
             // 
             // txbVisitCP
             // 
-            this.txbVisitCP.Location = new System.Drawing.Point(316, 87);
+            this.txbVisitCP.Location = new System.Drawing.Point(258, 85);
             this.txbVisitCP.Name = "txbVisitCP";
             this.txbVisitCP.Size = new System.Drawing.Size(128, 20);
             this.txbVisitCP.TabIndex = 24;
             // 
             // txbVisitAdresse
             // 
-            this.txbVisitAdresse.Location = new System.Drawing.Point(316, 59);
+            this.txbVisitAdresse.Location = new System.Drawing.Point(258, 59);
             this.txbVisitAdresse.Name = "txbVisitAdresse";
             this.txbVisitAdresse.Size = new System.Drawing.Size(128, 20);
             this.txbVisitAdresse.TabIndex = 23;
             // 
             // txbVisitPassword
             // 
-            this.txbVisitPassword.Location = new System.Drawing.Point(316, 30);
+            this.txbVisitPassword.Location = new System.Drawing.Point(258, 30);
             this.txbVisitPassword.Name = "txbVisitPassword";
             this.txbVisitPassword.Size = new System.Drawing.Size(128, 20);
             this.txbVisitPassword.TabIndex = 22;
             // 
             // txbVisitLogin
             // 
-            this.txbVisitLogin.Location = new System.Drawing.Point(102, 82);
+            this.txbVisitLogin.Location = new System.Drawing.Point(59, 85);
             this.txbVisitLogin.Name = "txbVisitLogin";
             this.txbVisitLogin.Size = new System.Drawing.Size(100, 20);
             this.txbVisitLogin.TabIndex = 21;
             // 
             // txbVisitPrenom
             // 
-            this.txbVisitPrenom.Location = new System.Drawing.Point(102, 56);
+            this.txbVisitPrenom.Location = new System.Drawing.Point(59, 56);
             this.txbVisitPrenom.Name = "txbVisitPrenom";
             this.txbVisitPrenom.Size = new System.Drawing.Size(100, 20);
             this.txbVisitPrenom.TabIndex = 20;
             // 
             // txbVisitNom
             // 
-            this.txbVisitNom.Location = new System.Drawing.Point(102, 30);
+            this.txbVisitNom.Location = new System.Drawing.Point(59, 30);
             this.txbVisitNom.Name = "txbVisitNom";
             this.txbVisitNom.Size = new System.Drawing.Size(100, 20);
             this.txbVisitNom.TabIndex = 19;
@@ -488,7 +488,7 @@ namespace Authentification
             // lblVisitDateEmbauche
             // 
             this.lblVisitDateEmbauche.AutoSize = true;
-            this.lblVisitDateEmbauche.Location = new System.Drawing.Point(478, 62);
+            this.lblVisitDateEmbauche.Location = new System.Drawing.Point(423, 62);
             this.lblVisitDateEmbauche.Name = "lblVisitDateEmbauche";
             this.lblVisitDateEmbauche.Size = new System.Drawing.Size(91, 13);
             this.lblVisitDateEmbauche.TabIndex = 18;
@@ -497,7 +497,7 @@ namespace Authentification
             // lblVisitVille
             // 
             this.lblVisitVille.AutoSize = true;
-            this.lblVisitVille.Location = new System.Drawing.Point(543, 33);
+            this.lblVisitVille.Location = new System.Drawing.Point(488, 33);
             this.lblVisitVille.Name = "lblVisitVille";
             this.lblVisitVille.Size = new System.Drawing.Size(26, 13);
             this.lblVisitVille.TabIndex = 17;
@@ -506,7 +506,7 @@ namespace Authentification
             // lblVisitCP
             // 
             this.lblVisitCP.AutoSize = true;
-            this.lblVisitCP.Location = new System.Drawing.Point(228, 90);
+            this.lblVisitCP.Location = new System.Drawing.Point(178, 88);
             this.lblVisitCP.Name = "lblVisitCP";
             this.lblVisitCP.Size = new System.Drawing.Size(64, 13);
             this.lblVisitCP.TabIndex = 16;
@@ -515,7 +515,7 @@ namespace Authentification
             // lblVisitAdresse
             // 
             this.lblVisitAdresse.AutoSize = true;
-            this.lblVisitAdresse.Location = new System.Drawing.Point(247, 59);
+            this.lblVisitAdresse.Location = new System.Drawing.Point(197, 59);
             this.lblVisitAdresse.Name = "lblVisitAdresse";
             this.lblVisitAdresse.Size = new System.Drawing.Size(45, 13);
             this.lblVisitAdresse.TabIndex = 15;
@@ -524,7 +524,7 @@ namespace Authentification
             // lblVisitMdp
             // 
             this.lblVisitMdp.AutoSize = true;
-            this.lblVisitMdp.Location = new System.Drawing.Point(239, 30);
+            this.lblVisitMdp.Location = new System.Drawing.Point(189, 30);
             this.lblVisitMdp.Name = "lblVisitMdp";
             this.lblVisitMdp.Size = new System.Drawing.Size(53, 13);
             this.lblVisitMdp.TabIndex = 14;
@@ -533,7 +533,7 @@ namespace Authentification
             // lblVisitLogin
             // 
             this.lblVisitLogin.AutoSize = true;
-            this.lblVisitLogin.Location = new System.Drawing.Point(34, 90);
+            this.lblVisitLogin.Location = new System.Drawing.Point(20, 88);
             this.lblVisitLogin.Name = "lblVisitLogin";
             this.lblVisitLogin.Size = new System.Drawing.Size(33, 13);
             this.lblVisitLogin.TabIndex = 13;
@@ -542,7 +542,7 @@ namespace Authentification
             // lblVisitPrenom
             // 
             this.lblVisitPrenom.AutoSize = true;
-            this.lblVisitPrenom.Location = new System.Drawing.Point(24, 59);
+            this.lblVisitPrenom.Location = new System.Drawing.Point(10, 62);
             this.lblVisitPrenom.Name = "lblVisitPrenom";
             this.lblVisitPrenom.Size = new System.Drawing.Size(43, 13);
             this.lblVisitPrenom.TabIndex = 12;
@@ -551,7 +551,7 @@ namespace Authentification
             // lblVisitNom
             // 
             this.lblVisitNom.AutoSize = true;
-            this.lblVisitNom.Location = new System.Drawing.Point(38, 30);
+            this.lblVisitNom.Location = new System.Drawing.Point(24, 30);
             this.lblVisitNom.Name = "lblVisitNom";
             this.lblVisitNom.Size = new System.Drawing.Size(29, 13);
             this.lblVisitNom.TabIndex = 11;
@@ -584,6 +584,7 @@ namespace Authentification
             this.btnVisitDelete.TabIndex = 7;
             this.btnVisitDelete.Text = "Supprimer";
             this.btnVisitDelete.UseVisualStyleBackColor = true;
+            this.btnVisitDelete.Click += new System.EventHandler(this.btnVisitDelete_Click);
             // 
             // btnVisitModif
             // 
@@ -593,6 +594,7 @@ namespace Authentification
             this.btnVisitModif.TabIndex = 6;
             this.btnVisitModif.Text = "Modifier";
             this.btnVisitModif.UseVisualStyleBackColor = true;
+            this.btnVisitModif.Click += new System.EventHandler(this.btnVisitModif_Click);
             // 
             // btnVisitAdd
             // 
@@ -602,6 +604,7 @@ namespace Authentification
             this.btnVisitAdd.TabIndex = 5;
             this.btnVisitAdd.Text = "Ajouter";
             this.btnVisitAdd.UseVisualStyleBackColor = true;
+            this.btnVisitAdd.Click += new System.EventHandler(this.btnVisitAdd_Click);
             // 
             // tabPrat
             // 
@@ -871,7 +874,6 @@ namespace Authentification
             private System.Windows.Forms.Button btnVisitModif;
             private System.Windows.Forms.Button btnVisitAdd;
             private System.Windows.Forms.TabPage tabMed;
-            private System.Windows.Forms.TextBox txbVisitDateEmbauche;
             private System.Windows.Forms.TextBox txbVisitVille;
             private System.Windows.Forms.TextBox txbVisitCP;
             private System.Windows.Forms.TextBox txbVisitAdresse;
@@ -940,5 +942,6 @@ namespace Authentification
             private System.Windows.Forms.ComboBox cbxPartSpé;
             private System.Windows.Forms.Label lblPratSpé;
             private System.Windows.Forms.Button txbPratQuitter;
+        private System.Windows.Forms.DateTimePicker dtpVisitDateEmb;
     }
 }
