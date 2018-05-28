@@ -247,5 +247,6 @@ namespace Authentification
             dgvPrat.DataSource = null;
             dgvPrat.DataSource = listPrat;
         }
+
     }
 }
