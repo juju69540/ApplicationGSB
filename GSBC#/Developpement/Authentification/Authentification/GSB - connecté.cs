@@ -239,5 +239,13 @@ namespace Authentification
             cbxVisitZoneGeo.DisplayMember = "Value";
             cbxVisitZoneGeo.ValueMember = "Key";
         }
+
+        private void txbPratRechercherPracticien_TextChanged(object sender, EventArgs e)
+        {
+            string unNom = txbPratRechercherPracticien.Text;
+            listPrat = DAOPraticien.getUnPraticien(unNom);
+            dgvPrat.DataSource = null;
+            dgvPrat.DataSource = listPrat;
+        }
     }
 }

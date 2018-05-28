@@ -11,9 +11,9 @@ namespace Authentification
     {
         public static List<Praticien> getAllPraticien()
         {
-            List<Praticien> prati = new List<Praticien>();
+            List<Praticien> praticien = new List<Praticien>();
             Dictionary<string, string> specialites = DAOPraticien.getAllSpecialite();
-            Praticien prat;
+            Praticien unPraticien;
             string req = "Select * from Praticiens;";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
@@ -23,22 +23,58 @@ namespace Authentification
                 result = connectBDD.execSQLRead(req);
                 while (result.Read())
                 {
-                    prat = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
+                    unPraticien = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
                     foreach (KeyValuePair<string, string> entry in specialites)
                     {
-                        if (entry.Key == prat.Specialite)
+                        if (entry.Key == unPraticien.Specialite)
                         {
-                            prat.Specialite = entry.Value;
+                            unPraticien.Specialite = entry.Value;
                         }
                     }
-                    prati.Add(prat);
+                    praticien.Add(unPraticien);
                 }
-                return prati;
+                return praticien;
 
             }
             catch (Exception exPrat)
             {
                 throw exPrat;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
+
+        public static List<Praticien> getUnPraticien(string unNom)
+        {
+            List<Praticien> CesPraticiens = new List<Praticien>();
+            Dictionary<string, string> specialites = DAOPraticien.getAllSpecialite();
+            Praticien unPraticien;
+            string req = "SELECT * FROM Praticiens WHERE nom LIKE '" + unNom + "%';";
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            SqlDataReader result;
+            try
+            {
+                result = connectBDD.execSQLRead(req);
+                while (result.Read())
+                {
+                    unPraticien = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
+                    foreach (KeyValuePair<string, string> entry in specialites)
+                    {
+                        if (entry.Key == unPraticien.Specialite)
+                        {
+                            unPraticien.Specialite = entry.Value;
+                        }
+                    }
+                    CesPraticiens.Add(unPraticien);
+                }
+                return CesPraticiens;
+            }
+            catch (Exception exVis)
+            {
+                throw exVis;
             }
             finally
             {
@@ -73,30 +109,23 @@ namespace Authentification
             }
         }
 
-        /*mettre un objet praticien pour les requete insert, update et delete*/
-        /*public static string AddPraticien(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string uneSpe)
+        public static Boolean getExistPraticiens(string unLogin)
         {
-            /*string req = "INSERT INTO Praticiens ([nom],[social],[adresse],[telephone],[contact],[coeffnoto],[coeffconfiance],[idSpecialite]) VALUES (" + unNom +"," + unSocial +"," + uneAdresse +"," + unTelephone +"," + unContact +"," + unCoefNoto +"," + unCoefConfiance +"," + uneSpe +")";
+            string req = "SELECT * FROM Praticiens WHERE login='" + unLogin + "';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
-
+            SqlDataReader result;
             try
             {
                 result = connectBDD.execSQLRead(req);
-                while (result.Read())
+                if (result.Read())
                 {
-                    prat = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
-                    foreach (KeyValuePair<string, string> entry in specialites)
-                    {
-                        if (entry.Key == prat.Specialite)
-                        {
-                            prat.Specialite = entry.Value;
-                        }
-                    }
-                    prati.Add(prat);
+                    return false;
                 }
-                return prati;
-
+                else
+                {
+                    return true;
+                }
             }
             catch (Exception exPrat)
             {
@@ -106,7 +135,6 @@ namespace Authentification
             {
                 connectBDD.deconnexion();
             }
-            MessageBox.Show("Ajout du Praticien effectué !");
-        }*/
+        }
     }
 }

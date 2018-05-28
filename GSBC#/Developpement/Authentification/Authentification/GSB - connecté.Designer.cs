@@ -720,6 +720,7 @@ namespace Authentification
             this.txbPratRechercherPracticien.Name = "txbPratRechercherPracticien";
             this.txbPratRechercherPracticien.Size = new System.Drawing.Size(100, 20);
             this.txbPratRechercherPracticien.TabIndex = 79;
+            this.txbPratRechercherPracticien.TextChanged += new System.EventHandler(this.txbPratRechercherPracticien_TextChanged);
             // 
             // dgvPrat
             // 
