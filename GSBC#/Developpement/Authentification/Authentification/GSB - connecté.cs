@@ -31,14 +31,7 @@ namespace Authentification
             // Part affichage Visiteur
             refreshDgvVisit();
             // Part affichage Praticien
-            listPrat = DAOPraticien.getAllPraticien();
-            listSpecialite = DAOPraticien.getAllSpecialite();
-            dgvPrat.DataSource = null;
-            dgvPrat.DataSource = listPrat;
-            cbxPartSpé.Items.Clear();
-            cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
-            cbxPartSpé.DisplayMember = "Value";
-            cbxPartSpé.ValueMember = "Key";
+            refreshDgvPraticien();
 
         }
 
@@ -75,36 +68,6 @@ namespace Authentification
             txbVisitRechercher.Text = "";
             txbVisitVille.Text = "";
             btnVisitAdd.Enabled = true;
-        }
-
-        private void btnPratAnnuler_Click(object sender, EventArgs e)
-        {
-            txbPratAdresse.Text = "";
-            txbPratContact.Text = "";
-            txbPratCoefConfiance.Text = "";
-            txbPratTel.Text = "";
-            txbPratCoefNoto.Text = "";
-            txbPratNom.Text = "";
-            txbPratRechercherPracticien.Text = "";
-            txbPratSocial.Text = "";
-        }
-
-        private void txbPratQuitter_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void dgvPrat_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txbPratNom.Text = dgvPrat.CurrentRow.Cells[0].FormattedValue.ToString();
-            txbPratSocial.Text = dgvPrat.CurrentRow.Cells[1].FormattedValue.ToString();
-            txbPratAdresse.Text = dgvPrat.CurrentRow.Cells[2].FormattedValue.ToString();
-            txbPratTel.Text = dgvPrat.CurrentRow.Cells[3].FormattedValue.ToString();
-            txbPratContact.Text = dgvPrat.CurrentRow.Cells[4].FormattedValue.ToString();
-            txbPratCoefNoto.Text = dgvPrat.CurrentRow.Cells[5].FormattedValue.ToString();
-            txbPratCoefConfiance.Text = dgvPrat.CurrentRow.Cells[6].FormattedValue.ToString();
-            string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
-            cbxPartSpé.Text = prat;
         }
 
         private void dgvVisiteur_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -240,6 +203,33 @@ namespace Authentification
             cbxVisitZoneGeo.ValueMember = "Key";
         }
 
+
+        #region Praticien_Julien
+
+        private void dgvPrat_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txbPratNom.Text = dgvPrat.CurrentRow.Cells[0].FormattedValue.ToString();
+            txbPratSocial.Text = dgvPrat.CurrentRow.Cells[1].FormattedValue.ToString();
+            txbPratAdresse.Text = dgvPrat.CurrentRow.Cells[2].FormattedValue.ToString();
+            txbPratTel.Text = dgvPrat.CurrentRow.Cells[3].FormattedValue.ToString();
+            txbPratContact.Text = dgvPrat.CurrentRow.Cells[4].FormattedValue.ToString();
+            txbPratCoefNoto.Text = dgvPrat.CurrentRow.Cells[5].FormattedValue.ToString();
+            txbPratCoefConfiance.Text = dgvPrat.CurrentRow.Cells[6].FormattedValue.ToString();
+            string prat = dgvPrat.CurrentRow.Cells[7].FormattedValue.ToString();
+            cbxPartSpé.Text = prat;
+        }
+
+        public void refreshDgvPraticien()
+        {
+            listPrat = DAOPraticien.getAllPraticien();
+            listSpecialite = DAOPraticien.getAllSpecialite();
+            dgvPrat.DataSource = null;
+            dgvPrat.DataSource = listVis;
+            cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
+            cbxPartSpé.DisplayMember = "Value";
+            cbxPartSpé.ValueMember = "Key";
+        }
+
         private void txbPratRechercherPracticien_TextChanged(object sender, EventArgs e)
         {
             string unNom = txbPratRechercherPracticien.Text;
@@ -247,6 +237,120 @@ namespace Authentification
             dgvPrat.DataSource = null;
             dgvPrat.DataSource = listPrat;
         }
+
+        private void btnPratAjouter_Click(object sender, EventArgs e)
+        {
+            string nomPraticien = txbPratNom.Text;
+            string socialPraticien = txbPratSocial.Text;
+            string adressePraticien = txbPratAdresse.Text;
+            string telephonePraticien = txbPratTel.Text;
+            string contactPraticien = txbPratContact.Text;
+            float coefnotoPraticien = Double.Parse(txbPratCoefNoto);
+            float coefConfiancePraticien = Double.Parse(txbPratCoefConfiance);
+            string specialte = cbxPartSpé.Text;
+            try
+            {
+                if (nomPraticien != "" && socialPraticien != "" && adressePraticien != "" && telephonePraticien != "" && contactPraticien != "" && coefnotoPraticien != "" && coefConfiancePraticien != "" && specialte != "")
+                {
+                    if (DAOPraticien.AddPraticiens(nomPraticien, socialPraticien, adressePraticien, telephonePraticien, contactPraticien, coefnotoPraticien, coefConfiancePraticien, specialte))
+                    {
+                        refreshDgvVisit();
+                        MessageBox.Show("Ajout Bien Effectué !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erreur : Ce compte est déjà existant !");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Erreur : Veuillez remplir tous les champs !");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnPratSupp_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string unNom = txbPratNom.Text;
+
+                string id = DAOPraticien.getIdentifiantPraticien(unNom);
+
+                DAOPraticien.DeletePraticiens(id);
+                refreshDgvPraticien();
+                txbPratNom.Text = "";
+                txbPratSocial.Text = "";
+                txbPratAdresse.Text = "";
+                txbPratTel.Text = "";
+                txbPratContact.Text = "";
+                txbPratCoefNoto.Text = "";
+                txbPratCoefConfiance.Text = "";
+                cbxPartSpé.Text = "";
+                MessageBox.Show("La Suppression A Bien Effectué !");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnPratModifier_Click(object sender, EventArgs e)
+        {
+            string unNom = txbPratNom.Text;
+            string unSocial = txbPratSocial.Text;
+            string uneAdresse = txbPratAdresse.Text;
+            string unTelephone = txbPratTel.Text;
+            string unContact = txbPratContact.Text;
+            float unCoefNoto = txbPratCoefNoto.Text;
+            float unCoefConfiance = txbPratCoefConfiance.Text;
+            string specialite = cbxPartSpé.Text;
+            try
+            {
+                string id = DAOPraticien.getIdentifiantPraticien(unNom);
+                DAOPraticien.UpdatePraticiens(id, unNom, unSocial, uneAdresse, unTelephone, unContact, unCoefNoto, unCoefConfiance, specialite);
+                listPrat = DAOPraticien.getAllPraticien();
+                listSpecialite = DAOPraticien.getAllSpecialite();
+                dgvPrat.DataSource = null;
+                dgvPrat.DataSource = listVis;
+                MessageBox.Show("Modification Effectuée !");
+            }
+            catch (Exception ex)
+            {
+                string id = DAOPraticien.getIdentifiantPraticien(unNom);
+                if (id == null)
+                {
+                    MessageBox.Show("Vous ne pouvez pas modifier le login et le Mot de passe !");
+                }
+                else
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+        }
+
+        private void btnPratAnnuler_Click(object sender, EventArgs e)
+        {
+            txbPratAdresse.Text = "";
+            txbPratContact.Text = "";
+            txbPratCoefConfiance.Text = "";
+            txbPratTel.Text = "";
+            txbPratCoefNoto.Text = "";
+            txbPratNom.Text = "";
+            txbPratRechercherPracticien.Text = "";
+            txbPratSocial.Text = "";
+        }
+
+        private void txbPratQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        #endregion
 
     }
 }

@@ -109,9 +109,9 @@ namespace Authentification
             }
         }
 
-        public static Boolean getExistPraticiens(string unLogin)
+        public static Boolean getExistPraticiens(string unNom, string uneAdresse)
         {
-            string req = "SELECT * FROM Praticiens WHERE login='" + unLogin + "';";
+            string req = "SELECT * FROM Praticiens WHERE nom='" + unNom + "' AND adresse='" + uneAdresse + "';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             SqlDataReader result;
@@ -136,5 +136,123 @@ namespace Authentification
                 connectBDD.deconnexion();
             }
         }
+
+        public static string getIdentifiantPraticien(string unNom)
+        {
+            string req = "SELECT idPraticien FROM Praticiens WHERE nom='" + unNom + "';";
+            string id;
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            SqlDataReader result;
+            try
+            {
+                result = connectBDD.execSQLRead(req);
+                if (result.Read())
+                {
+                    id = result[0].ToString();
+                }
+                else
+                {
+                    id = null;
+                }
+                return id;
+            }
+            catch (Exception exVis)
+            {
+                throw exVis;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
+
+        #region button_form_action_sql
+
+        public static Boolean AddPraticiens(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, float unCoefNoto, float unCoefConfiance, string specialite)
+        {
+            Dictionary<string, string> specialites = DAOPraticien.getAllSpecialite();
+            int laspecialite = 0;
+            if (getExistPraticiens(unNom,uneAdresse))
+            {
+                foreach (KeyValuePair<string, string> entry in specialites)
+                {
+                    if (specialite == entry.Value)
+                    {
+                        laspecialite = Convert.ToInt32(entry.Key);
+                    }
+                }
+                string req = "INSERT INTO Praticiens (nom, social, adresse, telephone, contact, coefnoto, coefconfiance, specialite) VALUES ('" + unNom + "','" + unSocial + "','" + uneAdresse + "','" + unTelephone + "','" + unContact + "','" + unCoefNoto + "','" + unCoefConfiance + "','" + specialite + "')";
+                DAOFactory connectBDD = new DAOFactory();
+                connectBDD.connexion();
+                try
+                {
+                    connectBDD.execSQLWrite(req);
+                }
+                catch (Exception exPrat)
+                {
+                    throw exPrat;
+                }
+                finally
+                {
+                    connectBDD.deconnexion();
+                }
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static void UpdatePraticiens(string unId, string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, float unCoefNoto, float unCoefConfiance, string specialite)
+        {
+            int id = int.Parse(unId);
+            Dictionary<string, string> specilaites = DAOPraticien.getAllSpecialite();
+            int laspecialite = 0;
+            foreach (KeyValuePair<string, string> entry in specilaites)
+            {
+                if (specialite == entry.Value)
+                {
+                    laspecialite = Convert.ToInt32(entry.Key);
+                }
+            }
+            string req = "UPDATE Praticiens SET nom='" + unNom + "', social='" + unSocial + "', adresse='" + uneAdresse + "', telephone='" + unTelephone + "', contact='" + unContact + "', coefnoto='" + unCoefNoto + "', coefconfiance='" +unCoefConfiance+ "' WHERE idPraticien='" + id + "';";
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            try
+            {
+                connectBDD.execSQLRead(req);
+            }
+            catch (Exception exPrat)
+            {
+                throw exPrat;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
+
+        public static void DeletePraticiens(string unId)
+        {
+            string req = "DELETE FROM Praticiens WHERE id='" +unId+ "';";
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            try
+            {
+                connectBDD.execSQLWrite(req);
+            }
+            catch (Exception exPrat)
+            {
+                throw exPrat;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
+
+        #endregion
     }
 }
