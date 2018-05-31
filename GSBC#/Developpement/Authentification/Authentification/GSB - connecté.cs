@@ -302,7 +302,7 @@ namespace Authentification
 
         private void btnPratModifier_Click(object sender, EventArgs e)
         {
-            string unNom = txbPratNom.Text;
+            string unNomP = txbPratNom.Text;
             string unSocial = txbPratSocial.Text;
             string uneAdresse = txbPratAdresse.Text;
             string unTelephone = txbPratTel.Text;
@@ -312,8 +312,8 @@ namespace Authentification
             string specialite = cbxPartSpé.Text;
             try
             {
-                string id = DAOPraticien.getIdentifiantPraticien(unNom);
-                DAOPraticien.UpdatePraticiens(id, unNom, unSocial, uneAdresse, unTelephone, unContact, unCoefNoto, unCoefConfiance, specialite);
+                string id = DAOPraticien.getIdentifiantPraticien(unNomP);
+                DAOPraticien.UpdatePraticiens(id, unNomP, unSocial, uneAdresse, unTelephone, unContact, unCoefNoto, unCoefConfiance, specialite);
                 listPrat = DAOPraticien.getAllPraticien();
                 listSpecialite = DAOPraticien.getAllSpecialite();
                 dgvPrat.DataSource = null;
@@ -322,12 +322,6 @@ namespace Authentification
             }
             catch (Exception ex)
             {
-                /*string id = DAOPraticien.getIdentifiantPraticien(unNom);
-                if (id == null)
-                {
-                    MessageBox.Show("Vous ne pouvez pas modifier le login et le Mot de passe !");
-                }
-                else*/
                 {
                     MessageBox.Show(ex.ToString());
                 }

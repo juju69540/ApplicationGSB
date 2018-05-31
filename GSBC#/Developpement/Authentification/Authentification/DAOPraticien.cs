@@ -205,19 +205,19 @@ namespace Authentification
             }
         }
 
-        public static void UpdatePraticiens(string unId, string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string specialite)
+        public static void UpdatePraticiens(string unId, string unNomP, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string specialite)
         {
             int id = int.Parse(unId);
-            Dictionary<string, string> specilaites = DAOPraticien.getAllSpecialite();
+            Dictionary<string, string> specialites = DAOPraticien.getAllSpecialite();
             int laspecialite = 0;
-            foreach (KeyValuePair<string, string> entry in specilaites)
+            foreach (KeyValuePair<string, string> entry in specialites)
             {
                 if (specialite == entry.Value)
                 {
                     laspecialite = Convert.ToInt32(entry.Key);
                 }
             }
-            string req = "UPDATE Praticiens SET nom='" + unNom + "', social='" + unSocial + "', adresse='" + uneAdresse + "', telephone='" + unTelephone + "', contact='" + unContact + "', coeffnoto='" + unCoefNoto + "', coeffconfiance='" +unCoefConfiance+ "', idSpecialite='" +laspecialite+ "' WHERE idPraticien='" + id + "';";
+            string req = "UPDATE Praticiens SET nom='" + unNomP + "', social='" + unSocial + "', adresse='" + uneAdresse + "', telephone='" + unTelephone + "', contact='" + unContact + "', coeffnoto='" + unCoefNoto + "', coeffconfiance='" +unCoefConfiance+ "', idSpecialite='" +laspecialite+ "' WHERE idPraticien='" + id + "';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             try
