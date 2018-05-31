@@ -25,7 +25,7 @@ namespace Authentification
                 case 0: GSB___connecté connected = new GSB___connecté(); connected.Show(); break;
                 case 1: lblErrorConnect.Text = "Login incorrect ou inexistant";lblErrorConnect.Visible = true; break;
                 case 2: lblErrorConnect.Text = "Mot de passe incorrect"; lblErrorConnect.Visible = true; break;
-                case 3: lblErrorConnect.Text = "Erreur inconnue au bataillon"; lblErrorConnect.Visible = true; break;
+                case 3: lblErrorConnect.Text = "Erreur inconnue"; lblErrorConnect.Visible = true; break;
             }
         }
 

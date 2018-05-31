@@ -61,3 +61,14 @@ Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debu
 Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
 Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
 Y:\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.Cache
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe.config
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.exe
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\bin\Debug\Authentification.pdb
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csprojAssemblyReference.cache
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.FormAuth.resources
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.GSB___connecté.resources
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.Properties.Resources.resources
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.GenerateResource.cache
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.csproj.CoreCompileInputs.cache
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.exe
+H:\Bts sio Icof\Deuxieme annee\PPE\PPEGit\ApplicationGSB\GSBC#\Developpement\Authentification\Authentification\obj\Debug\Authentification.pdb

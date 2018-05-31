@@ -351,6 +351,7 @@ namespace Authentification
             this.btnMedUpdt.TabIndex = 30;
             this.btnMedUpdt.Text = "Modifier";
             this.btnMedUpdt.UseVisualStyleBackColor = true;
+//            this.btnMedUpdt.Click += new System.EventHandler(this.btnMedUpdt_Click);
             // 
             // btnMedAdd
             // 
@@ -676,6 +677,7 @@ namespace Authentification
             this.btnPratAjouter.TabIndex = 84;
             this.btnPratAjouter.Text = "Ajouter";
             this.btnPratAjouter.UseVisualStyleBackColor = true;
+            this.btnPratAjouter.Click += new System.EventHandler(this.btnPratAjouter_Click);
             // 
             // btnPratAnnuler
             // 
@@ -695,6 +697,7 @@ namespace Authentification
             this.btnPratSupp.TabIndex = 82;
             this.btnPratSupp.Text = "Supprimer";
             this.btnPratSupp.UseVisualStyleBackColor = true;
+            this.btnPratSupp.Click += new System.EventHandler(this.btnPratSupp_Click);
             // 
             // btnPratModifier
             // 
@@ -704,6 +707,7 @@ namespace Authentification
             this.btnPratModifier.TabIndex = 81;
             this.btnPratModifier.Text = "Modifier";
             this.btnPratModifier.UseVisualStyleBackColor = true;
+            this.btnPratModifier.Click += new System.EventHandler(this.btnPratModifier_Click);
             // 
             // lblPratRechercher
             // 
@@ -720,6 +724,7 @@ namespace Authentification
             this.txbPratRechercherPracticien.Name = "txbPratRechercherPracticien";
             this.txbPratRechercherPracticien.Size = new System.Drawing.Size(100, 20);
             this.txbPratRechercherPracticien.TabIndex = 79;
+            this.txbPratRechercherPracticien.TextChanged += new System.EventHandler(this.txbPratRechercherPracticien_TextChanged);
             // 
             // dgvPrat
             // 
