@@ -206,6 +206,7 @@ namespace Authentification
 
         #region Praticien_Julien
 
+
         private void dgvPrat_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             txbPratNom.Text = dgvPrat.CurrentRow.Cells[0].FormattedValue.ToString();
@@ -224,7 +225,7 @@ namespace Authentification
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
             dgvPrat.DataSource = null;
-            dgvPrat.DataSource = listVis;
+            dgvPrat.DataSource = listPrat;
             cbxPartSpé.DataSource = new BindingSource(listSpecialite, null);
             cbxPartSpé.DisplayMember = "Value";
             cbxPartSpé.ValueMember = "Key";
@@ -245,8 +246,8 @@ namespace Authentification
             string adressePraticien = txbPratAdresse.Text;
             string telephonePraticien = txbPratTel.Text;
             string contactPraticien = txbPratContact.Text;
-            float coefnotoPraticien = Double.Parse(txbPratCoefNoto);
-            float coefConfiancePraticien = Double.Parse(txbPratCoefConfiance);
+            string coefnotoPraticien = txbPratCoefNoto.Text;
+            string coefConfiancePraticien = txbPratCoefConfiance.Text;
             string specialte = cbxPartSpé.Text;
             try
             {
@@ -254,7 +255,7 @@ namespace Authentification
                 {
                     if (DAOPraticien.AddPraticiens(nomPraticien, socialPraticien, adressePraticien, telephonePraticien, contactPraticien, coefnotoPraticien, coefConfiancePraticien, specialte))
                     {
-                        refreshDgvVisit();
+                        refreshDgvPraticien();
                         MessageBox.Show("Ajout Bien Effectué !");
                     }
                     else
@@ -306,8 +307,8 @@ namespace Authentification
             string uneAdresse = txbPratAdresse.Text;
             string unTelephone = txbPratTel.Text;
             string unContact = txbPratContact.Text;
-            float unCoefNoto = txbPratCoefNoto.Text;
-            float unCoefConfiance = txbPratCoefConfiance.Text;
+            string unCoefNoto = txbPratCoefNoto.Text;
+            string unCoefConfiance = txbPratCoefConfiance.Text;
             string specialite = cbxPartSpé.Text;
             try
             {
@@ -316,17 +317,17 @@ namespace Authentification
                 listPrat = DAOPraticien.getAllPraticien();
                 listSpecialite = DAOPraticien.getAllSpecialite();
                 dgvPrat.DataSource = null;
-                dgvPrat.DataSource = listVis;
+                dgvPrat.DataSource = listPrat;
                 MessageBox.Show("Modification Effectuée !");
             }
             catch (Exception ex)
             {
-                string id = DAOPraticien.getIdentifiantPraticien(unNom);
+                /*string id = DAOPraticien.getIdentifiantPraticien(unNom);
                 if (id == null)
                 {
                     MessageBox.Show("Vous ne pouvez pas modifier le login et le Mot de passe !");
                 }
-                else
+                else*/
                 {
                     MessageBox.Show(ex.ToString());
                 }

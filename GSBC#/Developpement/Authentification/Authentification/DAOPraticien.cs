@@ -23,7 +23,7 @@ namespace Authentification
                 result = connectBDD.execSQLRead(req);
                 while (result.Read())
                 {
-                    unPraticien = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
+                    unPraticien = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), /*float.Parse(result[6].ToString()), float.Parse(result[7].ToString())*/ result[8].ToString());
                     foreach (KeyValuePair<string, string> entry in specialites)
                     {
                         if (entry.Key == unPraticien.Specialite)
@@ -60,7 +60,7 @@ namespace Authentification
                 result = connectBDD.execSQLRead(req);
                 while (result.Read())
                 {
-                    unPraticien = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), float.Parse(result[6].ToString()), float.Parse(result[7].ToString()), result[8].ToString());
+                    unPraticien = new Praticien(result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), /*float.Parse(result[6].ToString()), float.Parse(result[7].ToString()),*/ result[8].ToString());
                     foreach (KeyValuePair<string, string> entry in specialites)
                     {
                         if (entry.Key == unPraticien.Specialite)
@@ -157,9 +157,9 @@ namespace Authentification
                 }
                 return id;
             }
-            catch (Exception exVis)
+            catch (Exception exPrat)
             {
-                throw exVis;
+                throw exPrat;
             }
             finally
             {
@@ -169,7 +169,7 @@ namespace Authentification
 
         #region button_form_action_sql
 
-        public static Boolean AddPraticiens(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, float unCoefNoto, float unCoefConfiance, string specialite)
+        public static Boolean AddPraticiens(string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string specialite)
         {
             Dictionary<string, string> specialites = DAOPraticien.getAllSpecialite();
             int laspecialite = 0;
@@ -182,7 +182,7 @@ namespace Authentification
                         laspecialite = Convert.ToInt32(entry.Key);
                     }
                 }
-                string req = "INSERT INTO Praticiens (nom, social, adresse, telephone, contact, coefnoto, coefconfiance, specialite) VALUES ('" + unNom + "','" + unSocial + "','" + uneAdresse + "','" + unTelephone + "','" + unContact + "','" + unCoefNoto + "','" + unCoefConfiance + "','" + specialite + "')";
+                string req = "INSERT INTO Praticiens (nom, social, adresse, telephone, contact, coeffnoto, coeffconfiance, idSpecialite) VALUES ('" + unNom + "','" + unSocial + "','" + uneAdresse + "','" + unTelephone + "','" + unContact + "','" + unCoefNoto + "','" + unCoefConfiance + "','" + laspecialite + "')";
                 DAOFactory connectBDD = new DAOFactory();
                 connectBDD.connexion();
                 try
@@ -205,7 +205,7 @@ namespace Authentification
             }
         }
 
-        public static void UpdatePraticiens(string unId, string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, float unCoefNoto, float unCoefConfiance, string specialite)
+        public static void UpdatePraticiens(string unId, string unNom, string unSocial, string uneAdresse, string unTelephone, string unContact, string unCoefNoto, string unCoefConfiance, string specialite)
         {
             int id = int.Parse(unId);
             Dictionary<string, string> specilaites = DAOPraticien.getAllSpecialite();
@@ -217,7 +217,7 @@ namespace Authentification
                     laspecialite = Convert.ToInt32(entry.Key);
                 }
             }
-            string req = "UPDATE Praticiens SET nom='" + unNom + "', social='" + unSocial + "', adresse='" + uneAdresse + "', telephone='" + unTelephone + "', contact='" + unContact + "', coefnoto='" + unCoefNoto + "', coefconfiance='" +unCoefConfiance+ "' WHERE idPraticien='" + id + "';";
+            string req = "UPDATE Praticiens SET nom='" + unNom + "', social='" + unSocial + "', adresse='" + uneAdresse + "', telephone='" + unTelephone + "', contact='" + unContact + "', coeffnoto='" + unCoefNoto + "', coeffconfiance='" +unCoefConfiance+ "', idSpecialite='" +laspecialite+ "' WHERE idPraticien='" + id + "';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             try
@@ -236,7 +236,7 @@ namespace Authentification
 
         public static void DeletePraticiens(string unId)
         {
-            string req = "DELETE FROM Praticiens WHERE id='" +unId+ "';";
+            string req = "DELETE FROM Praticiens WHERE idPraticien='" +unId+ "';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             try
