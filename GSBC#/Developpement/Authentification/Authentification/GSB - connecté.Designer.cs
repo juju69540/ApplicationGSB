@@ -351,6 +351,7 @@ namespace Authentification
             this.btnMedUpdt.TabIndex = 30;
             this.btnMedUpdt.Text = "Modifier";
             this.btnMedUpdt.UseVisualStyleBackColor = true;
+//            this.btnMedUpdt.Click += new System.EventHandler(this.btnMedUpdt_Click);
             // 
             // btnMedAdd
             // 
