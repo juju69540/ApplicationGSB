@@ -12,12 +12,13 @@ namespace Authentification
 {
     public partial class GSB___connecté : Form
     {
-        //List<Produit> listMed;
+        List<Produit> listMed;
         List<Praticien> listPrat;
         List<Visiteur> listVis;
-        //Dictionary<string, string> listFamilies;
+        Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
         Dictionary<string, string> listSpecialite;
+	string currentId;
 
         public GSB___connecté()
         {
@@ -54,7 +55,8 @@ namespace Authentification
             txbMedEffet.Text = "";
             txbMedContrIndic.Text = "";
             txbMedPrixHt.Text = "";
-
+            txbMedPrixEchant.Text = "";
+            currentId = null;
         }
 
         private void btnVisitAnnuler_Click(object sender, EventArgs e)
