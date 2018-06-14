@@ -28,7 +28,7 @@ namespace Authentification
             /// </summary>
             private void InitializeComponent()
             {
-            this.tbcOnglets = new System.Windows.Forms.TabControl();
+            this.tbcVehicule = new System.Windows.Forms.TabControl();
             this.tabMed = new System.Windows.Forms.TabPage();
             this.cbxMedSearch = new System.Windows.Forms.ComboBox();
             this.txbMedDos = new System.Windows.Forms.TextBox();
@@ -55,6 +55,10 @@ namespace Authentification
             this.btnMedUpdt = new System.Windows.Forms.Button();
             this.btnMedAdd = new System.Windows.Forms.Button();
             this.tabVisit = new System.Windows.Forms.TabPage();
+            this.dtpVisitDateAffec = new System.Windows.Forms.DateTimePicker();
+            this.lvlDateAffec = new System.Windows.Forms.Label();
+            this.cbxVisitVehicule = new System.Windows.Forms.ComboBox();
+            this.lblVehicule = new System.Windows.Forms.Label();
             this.dtpVisitDateEmb = new System.Windows.Forms.DateTimePicker();
             this.cbxVisitZoneGeo = new System.Windows.Forms.ComboBox();
             this.lblVisitZoneGeo = new System.Windows.Forms.Label();
@@ -105,25 +109,30 @@ namespace Authentification
             this.lblPratAdresse = new System.Windows.Forms.Label();
             this.lblPratSocial = new System.Windows.Forms.Label();
             this.lblPratNom = new System.Windows.Forms.Label();
-            this.tbcOnglets.SuspendLayout();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dgvVehicule = new System.Windows.Forms.DataGridView();
+            this.tbcVehicule.SuspendLayout();
             this.tabMed.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).BeginInit();
             this.tabVisit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVisiteur)).BeginInit();
             this.tabPrat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrat)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehicule)).BeginInit();
             this.SuspendLayout();
             // 
-            // tbcOnglets
+            // tbcVehicule
             // 
-            this.tbcOnglets.Controls.Add(this.tabMed);
-            this.tbcOnglets.Controls.Add(this.tabVisit);
-            this.tbcOnglets.Controls.Add(this.tabPrat);
-            this.tbcOnglets.Location = new System.Drawing.Point(12, 12);
-            this.tbcOnglets.Name = "tbcOnglets";
-            this.tbcOnglets.SelectedIndex = 0;
-            this.tbcOnglets.Size = new System.Drawing.Size(966, 398);
-            this.tbcOnglets.TabIndex = 0;
+            this.tbcVehicule.Controls.Add(this.tabMed);
+            this.tbcVehicule.Controls.Add(this.tabVisit);
+            this.tbcVehicule.Controls.Add(this.tabPrat);
+            this.tbcVehicule.Controls.Add(this.tabPage1);
+            this.tbcVehicule.Location = new System.Drawing.Point(12, 12);
+            this.tbcVehicule.Name = "tbcVehicule";
+            this.tbcVehicule.SelectedIndex = 0;
+            this.tbcVehicule.Size = new System.Drawing.Size(966, 398);
+            this.tbcVehicule.TabIndex = 0;
             // 
             // tabMed
             // 
@@ -363,6 +372,10 @@ namespace Authentification
             // 
             // tabVisit
             // 
+            this.tabVisit.Controls.Add(this.dtpVisitDateAffec);
+            this.tabVisit.Controls.Add(this.lvlDateAffec);
+            this.tabVisit.Controls.Add(this.cbxVisitVehicule);
+            this.tabVisit.Controls.Add(this.lblVehicule);
             this.tabVisit.Controls.Add(this.dtpVisitDateEmb);
             this.tabVisit.Controls.Add(this.cbxVisitZoneGeo);
             this.tabVisit.Controls.Add(this.lblVisitZoneGeo);
@@ -396,6 +409,39 @@ namespace Authentification
             this.tabVisit.Text = "Visiteurs";
             this.tabVisit.UseVisualStyleBackColor = true;
             // 
+            // dtpVisitDateAffec
+            // 
+            this.dtpVisitDateAffec.Location = new System.Drawing.Point(275, 114);
+            this.dtpVisitDateAffec.Name = "dtpVisitDateAffec";
+            this.dtpVisitDateAffec.Size = new System.Drawing.Size(162, 20);
+            this.dtpVisitDateAffec.TabIndex = 66;
+            // 
+            // lvlDateAffec
+            // 
+            this.lvlDateAffec.AutoSize = true;
+            this.lvlDateAffec.Location = new System.Drawing.Point(178, 116);
+            this.lvlDateAffec.Name = "lvlDateAffec";
+            this.lvlDateAffec.Size = new System.Drawing.Size(91, 13);
+            this.lvlDateAffec.TabIndex = 65;
+            this.lvlDateAffec.Text = "Date d\'affectation";
+            // 
+            // cbxVisitVehicule
+            // 
+            this.cbxVisitVehicule.FormattingEnabled = true;
+            this.cbxVisitVehicule.Location = new System.Drawing.Point(59, 113);
+            this.cbxVisitVehicule.Name = "cbxVisitVehicule";
+            this.cbxVisitVehicule.Size = new System.Drawing.Size(100, 21);
+            this.cbxVisitVehicule.TabIndex = 64;
+            // 
+            // lblVehicule
+            // 
+            this.lblVehicule.AutoSize = true;
+            this.lblVehicule.Location = new System.Drawing.Point(5, 116);
+            this.lblVehicule.Name = "lblVehicule";
+            this.lblVehicule.Size = new System.Drawing.Size(48, 13);
+            this.lblVehicule.TabIndex = 63;
+            this.lblVehicule.Text = "Vehicule";
+            // 
             // dtpVisitDateEmb
             // 
             this.dtpVisitDateEmb.Location = new System.Drawing.Point(536, 59);
@@ -423,7 +469,7 @@ namespace Authentification
             // lblVisitRechercherV
             // 
             this.lblVisitRechercherV.AutoSize = true;
-            this.lblVisitRechercherV.Location = new System.Drawing.Point(363, 133);
+            this.lblVisitRechercherV.Location = new System.Drawing.Point(356, 147);
             this.lblVisitRechercherV.Name = "lblVisitRechercherV";
             this.lblVisitRechercherV.Size = new System.Drawing.Size(146, 13);
             this.lblVisitRechercherV.TabIndex = 28;
@@ -431,7 +477,7 @@ namespace Authentification
             // 
             // txbVisitRechercher
             // 
-            this.txbVisitRechercher.Location = new System.Drawing.Point(518, 130);
+            this.txbVisitRechercher.Location = new System.Drawing.Point(518, 144);
             this.txbVisitRechercher.Name = "txbVisitRechercher";
             this.txbVisitRechercher.Size = new System.Drawing.Size(100, 20);
             this.txbVisitRechercher.TabIndex = 27;
@@ -842,16 +888,35 @@ namespace Authentification
             this.lblPratNom.TabIndex = 61;
             this.lblPratNom.Text = "Nom";
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dgvVehicule);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(958, 372);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dgvVehicule
+            // 
+            this.dgvVehicule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVehicule.Location = new System.Drawing.Point(113, 102);
+            this.dgvVehicule.Name = "dgvVehicule";
+            this.dgvVehicule.Size = new System.Drawing.Size(690, 248);
+            this.dgvVehicule.TabIndex = 0;
+            // 
             // GSB___connecté
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(990, 420);
-            this.Controls.Add(this.tbcOnglets);
+            this.Controls.Add(this.tbcVehicule);
             this.Name = "GSB___connecté";
             this.Text = "GSB___connecté";
             this.Load += new System.EventHandler(this.GSB___connecté_Load);
-            this.tbcOnglets.ResumeLayout(false);
+            this.tbcVehicule.ResumeLayout(false);
             this.tabMed.ResumeLayout(false);
             this.tabMed.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMed)).EndInit();
@@ -861,13 +926,15 @@ namespace Authentification
             this.tabPrat.ResumeLayout(false);
             this.tabPrat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrat)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehicule)).EndInit();
             this.ResumeLayout(false);
 
             }
 
             #endregion
 
-            private System.Windows.Forms.TabControl tbcOnglets;
+            private System.Windows.Forms.TabControl tbcVehicule;
             private System.Windows.Forms.TabPage tabVisit;
             private System.Windows.Forms.TabPage tabPrat;
             private System.Windows.Forms.DataGridView dgvVisiteur;
@@ -944,5 +1011,11 @@ namespace Authentification
             private System.Windows.Forms.Label lblPratSpé;
             private System.Windows.Forms.Button txbPratQuitter;
         private System.Windows.Forms.DateTimePicker dtpVisitDateEmb;
+        private System.Windows.Forms.Label lblVehicule;
+        private System.Windows.Forms.ComboBox cbxVisitVehicule;
+        private System.Windows.Forms.DateTimePicker dtpVisitDateAffec;
+        private System.Windows.Forms.Label lvlDateAffec;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView dgvVehicule;
     }
 }

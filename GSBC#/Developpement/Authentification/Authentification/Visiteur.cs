@@ -18,6 +18,8 @@ namespace Authentification
         private string ville;
         private string dateEmbauche;
         private string zoneGeo;
+        private string vehicule;
+        private string dateAffec;
 
         #region Accesseur
         public string Id
@@ -141,9 +143,33 @@ namespace Authentification
                 zoneGeo = value;
             }
         }
+        public string Vehicule
+        {
+            get
+            {
+                return vehicule;
+            }
+
+            set
+            {
+                vehicule = value;
+            }
+        }
+        public string DateAffec
+        {
+            get
+            {
+                return dateAffec;
+            }
+
+            set
+            {
+                dateAffec = value;
+            }
+        }
         #endregion
         #region Constructeur
-        public Visiteur(string id, string nom, string prenom, string login, string password, string adresse, string codePostal, string ville, string dateEmbauche, string ZoneGeo)
+        public Visiteur(string id, string nom, string prenom, string login, string password, string adresse, string codePostal, string ville, string dateEmbauche, string ZoneGeo, string vehicule, string dateAffec)
         {
             this.id = id;
             this.Nom = nom;
@@ -155,6 +181,8 @@ namespace Authentification
             this.Ville = ville;
             this.DateEmbauche = dateEmbauche;
             this.ZoneGeo = ZoneGeo;
+            this.Vehicule = vehicule;
+            this.DateAffec = dateAffec;
         }
         #endregion
     }

@@ -13,6 +13,7 @@ namespace Authentification
         {
             List<Visiteur> lesVisiteurs = new List<Visiteur>();
             Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
+            Dictionary<string, string> lesVehicules = DAOVisiteur.getAllVehicules();
             Visiteur unVisiteur;
             string req = "SELECT * FROM Visiteurs WHERE dateSupp = '0001-01-01';";
             DAOFactory connectBDD = new DAOFactory();
@@ -23,12 +24,19 @@ namespace Authentification
                 result = connectBDD.execSQLRead(req);
                 while (result.Read())
                 {
-                    unVisiteur = new Visiteur(result[0].ToString(), result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), result[8].ToString(), result[9].ToString());
+                    unVisiteur = new Visiteur(result[0].ToString(), result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), result[8].ToString(), result[9].ToString(), result[12].ToString(), result[11].ToString());
                     foreach (KeyValuePair<string, string> entry in lesZoneGeo)
                     {
                         if (entry.Key == unVisiteur.ZoneGeo)
                         {
                             unVisiteur.ZoneGeo = entry.Value;
+                        }
+                    }
+                    foreach (KeyValuePair<string, string> entry in lesVehicules)
+                    {
+                        if (entry.Key == unVisiteur.Vehicule)
+                        {
+                            unVisiteur.Vehicule = entry.Value;
                         }
                     }
                     lesVisiteurs.Add(unVisiteur);
@@ -48,6 +56,7 @@ namespace Authentification
         {
             List<Visiteur> CesVisiteurs = new List<Visiteur>();
             Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
+            Dictionary<string, string> lesVehicules = DAOVisiteur.getAllVehicules();
             Visiteur unVisiteur;
             string req = "SELECT * FROM Visiteurs WHERE dateSupp = '0001-01-01' AND nom LIKE '"+unNom+"%';";
             DAOFactory connectBDD = new DAOFactory();
@@ -58,12 +67,19 @@ namespace Authentification
                 result = connectBDD.execSQLRead(req);
                 while (result.Read())
                 {
-                    unVisiteur = new Visiteur(result[0].ToString(), result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), result[8].ToString(), result[9].ToString());
+                    unVisiteur = new Visiteur(result[0].ToString(), result[1].ToString(), result[2].ToString(), result[3].ToString(), result[4].ToString(), result[5].ToString(), result[6].ToString(), result[7].ToString(), result[8].ToString(), result[9].ToString(), result[12].ToString(), result[11].ToString());
                     foreach (KeyValuePair<string, string> entry in lesZoneGeo)
                     {
                         if (entry.Key == unVisiteur.ZoneGeo)
                         {
                             unVisiteur.ZoneGeo = entry.Value;
+                        }
+                    }
+                    foreach (KeyValuePair<string, string> entry in lesVehicules)
+                    {
+                        if (entry.Key == unVisiteur.Vehicule)
+                        {
+                            unVisiteur.Vehicule = entry.Value;
                         }
                     }
                     CesVisiteurs.Add(unVisiteur);
@@ -161,10 +177,39 @@ namespace Authentification
                 connectBDD.deconnexion();
             }
         }
-        public static Boolean AddVisiteurs(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, DateTime uneDate, string uneZoneGeo)
+        public static Dictionary<string, string> getAllVehicules()
+        {
+            Dictionary<string, string> vehicules = new Dictionary<string, string>();
+            string req = "SELECT * FROM Vehicule;";
+            DAOFactory connectBDD = new DAOFactory();
+            connectBDD.connexion();
+            SqlDataReader result;
+            try
+            {
+                result = connectBDD.execSQLRead(req);
+                while (result.Read())
+                {
+                    vehicules.Add(result[0].ToString(), result[1].ToString());
+                }
+                connectBDD.deconnexion();
+                return vehicules;
+            }
+            catch (Exception exVis)
+            {
+                throw exVis;
+            }
+            finally
+            {
+                connectBDD.deconnexion();
+            }
+        }
+
+        public static Boolean AddVisiteurs(string unNom, string unPrenom, string unLogin, string unMdp, string uneAdresse, string unCodeP, string uneVille, DateTime uneDate, string uneZoneGeo, DateTime uneDateAffec, string unVehicule)
         {
             Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
+            Dictionary<string, string> lesVehicules = DAOVisiteur.getAllVehicules();
             int laZoneGeo = 0;
+            int leVehicule = 0;
             if (getExistVisiteurs(unLogin))
             {
                 foreach (KeyValuePair<string, string> entry in lesZoneGeo)
@@ -174,7 +219,14 @@ namespace Authentification
                         laZoneGeo = Convert.ToInt32(entry.Key);
                     }
                 }
-                string req = "INSERT INTO Visiteurs (nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, idGeo) VALUES ('" + unNom + "','" + unPrenom + "','" + unLogin + "','" + unMdp + "','" + uneAdresse + "','" + unCodeP + "','" + uneVille + "','" + uneDate + "','" + laZoneGeo + "')";
+                foreach (KeyValuePair<string, string> entry in lesVehicules)
+                {
+                    if (unVehicule == entry.Value)
+                    {
+                        leVehicule = Convert.ToInt32(entry.Key);
+                    }
+                }
+                string req = "INSERT INTO Visiteurs (nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, idGeo, dateAffec, idVehicule ) VALUES ('" + unNom + "','" + unPrenom + "','" + unLogin + "','" + unMdp + "','" + uneAdresse + "','" + unCodeP + "','" + uneVille + "','" + uneDate + "','" + laZoneGeo + "','" +uneDateAffec+ "','" + leVehicule +"')";
                 DAOFactory connectBDD = new DAOFactory();
                 connectBDD.connexion();
                 try
@@ -214,11 +266,13 @@ namespace Authentification
                 connectBDD.deconnexion();
             }
         }
-        public static void UpdateVisiteur(string unId, string unNom, string unPrenom, string uneAdresse, string unCP, string uneVille, DateTime uneDateEmb, string uneZoneGeo)
+        public static void UpdateVisiteur(string unId, string unNom, string unPrenom, string uneAdresse, string unCP, string uneVille, DateTime uneDateEmb, string uneZoneGeo, string unVehicule, DateTime uneDateAffec)
         {
             int id = int.Parse(unId);
             Dictionary<string, string> lesZoneGeo = DAOVisiteur.getAllZones();
+            Dictionary<string, string> lesVehicules = DAOVisiteur.getAllVehicules();
             int laZoneGeo = 0;
+            int leVehicule = 0;
             foreach (KeyValuePair<string, string> entry in lesZoneGeo)
                 {
                     if (uneZoneGeo == entry.Value)
@@ -226,7 +280,14 @@ namespace Authentification
                         laZoneGeo = Convert.ToInt32(entry.Key);
                     }
                 }
-            string req = "UPDATE Visiteurs SET nom='"+unNom+"', prenom='"+unPrenom+"', adresse='"+uneAdresse+"', cp='"+unCP+"', ville='"+uneVille+"', dateEmbauche='"+uneDateEmb+"', idGeo='"+laZoneGeo+"' WHERE idVisiteur='"+id+"';";
+            foreach (KeyValuePair<string, string> entry in lesVehicules)
+            {
+                if (unVehicule == entry.Value)
+                {
+                    leVehicule = Convert.ToInt32(entry.Key);
+                }
+            }
+            string req = "UPDATE Visiteurs SET nom='"+unNom+"', prenom='"+unPrenom+"', adresse='"+uneAdresse+"', cp='"+unCP+"', ville='"+uneVille+"', dateEmbauche='"+uneDateEmb+"', idGeo='"+laZoneGeo+"' , dateAffec='"+uneDateAffec+"' , idVehicule='"+leVehicule+"' WHERE idVisiteur='"+id+"';";
             DAOFactory connectBDD = new DAOFactory();
             connectBDD.connexion();
             try

@@ -17,6 +17,7 @@ namespace Authentification
         List<Visiteur> listVis;
         //Dictionary<string, string> listFamilies;
         Dictionary<string, string> listZoneGeo;
+        Dictionary<string, string> listVehicule;
         Dictionary<string, string> listSpecialite;
 
         public GSB___connecté()
@@ -30,6 +31,7 @@ namespace Authentification
 
             // Part affichage Visiteur
             refreshDgvVisit();
+            refreshDgvVehicule();
             // Part affichage Praticien
             listPrat = DAOPraticien.getAllPraticien();
             listSpecialite = DAOPraticien.getAllSpecialite();
@@ -160,11 +162,13 @@ namespace Authentification
             string villeVisiteur = txbVisitVille.Text;
             DateTime dateEmbVisiteur = dtpVisitDateEmb.Value;
             string zoneGeoVisiteur = cbxVisitZoneGeo.Text;
+            string vehiculeVisiteur = cbxVisitVehicule.Text;
+            DateTime dateAffecVisiteur = dtpVisitDateAffec.Value;
             try
             {
-                if (nomVisiteur != "" && prenomVisiteur != "" && loginVisiteur != "" && mdpVisiteur != "" && adresseVisiteur != "" && cpVisiteur != "" && villeVisiteur != "" && zoneGeoVisiteur != "")
+                if (nomVisiteur != "" && prenomVisiteur != "" && loginVisiteur != "" && mdpVisiteur != "" && adresseVisiteur != "" && cpVisiteur != "" && villeVisiteur != "" && zoneGeoVisiteur != "" && vehiculeVisiteur != "")
                 {
-                    if (DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur))
+                    if (DAOVisiteur.AddVisiteurs(nomVisiteur, prenomVisiteur, loginVisiteur, mdpVisiteur, adresseVisiteur, cpVisiteur, villeVisiteur, dateEmbVisiteur, zoneGeoVisiteur, dateAffecVisiteur, vehiculeVisiteur))
                     {
                         refreshDgvVisit();
                         MessageBox.Show("Ajout Bien Effectué !");
@@ -197,10 +201,12 @@ namespace Authentification
             string uneVille = txbVisitVille.Text;
             DateTime uneDateEmbauche = dtpVisitDateEmb.Value; string dateEmbauche = dtpVisitDateEmb.Text;
             string uneZoneGeo = cbxVisitZoneGeo.Text;
+            string vehiculeVisiteur = cbxVisitVehicule.Text;
+            DateTime dateAffecVisiteur = dtpVisitDateAffec.Value;
             try
             {
                 string id = DAOVisiteur.getIdentifiant(unLogin, unMdp);
-                DAOVisiteur.UpdateVisiteur(id, unNom, unPrenom, uneAdresse, unCP, uneVille, uneDateEmbauche, uneZoneGeo);
+                DAOVisiteur.UpdateVisiteur(id, unNom, unPrenom, uneAdresse, unCP, uneVille, uneDateEmbauche, uneZoneGeo, vehiculeVisiteur, dateAffecVisiteur);
                 listVis = DAOVisiteur.getAllVisiteurs();
                 listZoneGeo = DAOVisiteur.getAllZones();
                 dgvVisiteur.DataSource = null;
@@ -233,11 +239,22 @@ namespace Authentification
         {
             listVis = DAOVisiteur.getAllVisiteurs();
             listZoneGeo = DAOVisiteur.getAllZones();
+            listVehicule = DAOVisiteur.getAllVehicules();
             dgvVisiteur.DataSource = null;
             dgvVisiteur.DataSource = listVis;
             cbxVisitZoneGeo.DataSource = new BindingSource(listZoneGeo, null);
             cbxVisitZoneGeo.DisplayMember = "Value";
             cbxVisitZoneGeo.ValueMember = "Key";
+            cbxVisitVehicule.DataSource = new BindingSource(listVehicule, null);
+            cbxVisitVehicule.DisplayMember = "Value";
+            cbxVisitVehicule.ValueMember = "Key";
+        }
+
+        public void refreshDgvVehicule()
+        {
+            listVehicule = DAOVisiteur.getAllVehicules();
+            dgvVehicule.DataSource = null;
+            dgvVehicule.DataSource = listVehicule;
         }
     }
 }
